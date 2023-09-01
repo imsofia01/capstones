@@ -3,6 +3,7 @@ body{
     padding: 0;
     background: #FFFC85
 }
+/* toggle function */
 .toggle{
     position: fixed;
     top: 40px;
@@ -56,3 +57,10 @@ ul li a:hover{
     left: 0;
     overflow: auto;
 }
+
+/* conatiner */
+
+.container h1{
+    text-align: center;
+    margin-top: 100px;
+  }
