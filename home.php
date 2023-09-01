@@ -14,7 +14,7 @@
     </div>
     <div class="menu">
         <ul>
-            <li><a href="home.php">HOME</a></li>
+            <li><a href="index.php">HOME</a></li>
             <li><a href="videos.php">2D VIDEO & ASSESSMENT</a></li>
             <li><a href="#">LEADERBOARD</a></li>
             <li><a href="#">ABOUT US</a></li>
