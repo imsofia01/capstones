@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" href="css/video.css">
-    <title>2D Video</title>
+    <title> 2D Video </title>
 
 </head>
 <body>
@@ -24,18 +24,40 @@
     </div>
     <br>
     <body>
+    <div class="header">
+    <h1> Mga Aralin </h1>
+    </div>
+    
 
+    <!-- button sa contain -->
+    <div ontouchstart="">
+        <div id="showButton" class="button">
+        <a href="#"> Mga Video </a>
+         </div>
+    </div>
 
-   
-    <div id="video-container">
-        <video id="myVideo" width="100%" controls>
-            <source src="./videos/lesson1.mp4" type="video/mp4">
-            Your browser does not support the video tag.
+    <!-- conatiner -->
+    <div class="container" id="myContainer">
+        <div id="video-container">
+            <video id="myVideo" width="100%" controls>
+            <source src="./videos/lesson1.mp4"  type="video/mp4">
         </video>
-    </div>
-    <div id="video-controls">
+        
+        
+        
+        <div id="video-controls">
+        <button id="playButton">Ulitin ang Video</button>
         <button id="skip-button">Skip Ahead</button>
+        <button id="openAssessmentButton" >Play</button>
+
+        </div>
     </div>
+
+</div>
+
+</div>
+
+  
 
     <script>
         // toggle function
@@ -45,10 +67,66 @@
             });
         });
 
+        document.getElementById("openAssessmentButton").addEventListener("click", function() {
+            // Replace 'assessment_url' with the actual URL of your assessment
+            var assessmentUrl = "assessment.php";
+            
+            // Open the assessment in a new window or tab
+            window.open(assessmentUrl, "_blank");
+        });
+
+
+           // Get references to the button and container
+           const showButton = document.getElementById('showButton');
+        const myContainer = document.getElementById('myContainer');
+
+        // Add a click event listener to the button
+        showButton.addEventListener('click', () => {
+            // Check the current display state of the container
+            if (myContainer.style.display === 'none' || myContainer.style.display === '') {
+                // If it's hidden, show it
+                myContainer.style.display = 'block';
+            } else {
+                // If it's visible, hide it
+                myContainer.style.display = 'none';
+            }
+        });
+
 
         // video skip funtion
         const video = document.getElementById('myVideo');
-        const skipButton = document.getElementById('skip-button');
+        const skipButton = document.getElementById('skip-button');  
+
+        // Get a reference to the play button
+        const playButton = document.getElementById("playButton");
+
+        // Add an event listener to listen for the "ended" event
+        video.addEventListener("ended", () => {
+            // Hide the video element when it finishes playing
+            video.style.display = "none";
+            
+            // Show the play button
+            playButton.style.display = "block";
+        });
+
+        // Add a click event listener to the play button
+        playButton.addEventListener("click", () => {
+            // Show the video element
+            video.style.display = "block";
+            
+            // Hide the play button
+            playButton.style.display = "none";
+            
+            // Restart the video
+            video.currentTime = 0;
+            video.play();
+        });
+
+        // Add an event listener to listen for the "ended" event
+        video.addEventListener("ended", () => {
+         // Hide the video element when it finishes playing
+         video.style.display = "none";
+        }); 
 
         skipButton.addEventListener('click', () => {
             // Define the number of seconds to skip
@@ -66,7 +144,8 @@
             }
         });
 
-       
+        
+
     </script>
 </body>
 </html>
