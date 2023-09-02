@@ -3,34 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Interactive Video with Skip Feature</title>
-    <style>
-        #video-container {
-            max-width: 800px;
-            margin: 0 auto;
-        }
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/video.css">
+    <title>2D Video</title>
 
-        #video-controls {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-top: 10px;
-        }
-
-        #skip-button {
-            background-color: #007bff;
-            color: white;
-            padding: 10px 20px;
-            cursor: pointer;
-            border: none;
-            margin: 0 10px;
-        }
-    </style>
 </head>
 <body>
+
+<div class="toggle">
+        <a><i class="fa fa-bars"></i></a>
+    </div>
+    <div class="menu">
+        <ul>
+            <li><a href="home.php">HOME</a></li>
+            <li><a href="videos.php">2D VIDEO & ASSESSMENT</a></li>
+            <li><a href="#">LEADERBOARD</a></li>
+            <li><a href="about-us.php">ABOUT US</a></li>
+        </ul>
+    </div>
+    <br>
+    <body>
+
+
+   
     <div id="video-container">
         <video id="myVideo" width="100%" controls>
-            <source src="lesson1.mp4" type="video/mp4">
+            <source src="./videos/lesson1.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
     </div>
@@ -39,6 +38,15 @@
     </div>
 
     <script>
+        // toggle function
+        $(document).ready(function(){
+            $('.toggle').click(function(){
+                $('.menu').toggleClass('active');
+            });
+        });
+
+
+        // video skip funtion
         const video = document.getElementById('myVideo');
         const skipButton = document.getElementById('skip-button');
 
@@ -57,6 +65,8 @@
                 video.currentTime = video.duration;
             }
         });
+
+       
     </script>
 </body>
 </html>
