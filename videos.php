@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" href="css/video.css">
-    <title>2D Interactive Video</title>
+    <title>2D Video</title>
 
 </head>
 <body>
@@ -19,10 +19,14 @@
             <li><a href="home.php">HOME</a></li>
             <li><a href="videos.php">2D VIDEO & ASSESSMENT</a></li>
             <li><a href="#">LEADERBOARD</a></li>
-            <li><a href="#">ABOUT US</a></li>
+            <li><a href="about-us.php">ABOUT US</a></li>
         </ul>
     </div>
     <br>
+    <body>
+
+
+   
     <div id="video-container">
         <video id="myVideo" width="100%" controls>
             <source src="./videos/lesson1.mp4" type="video/mp4">
@@ -61,6 +65,8 @@
                 video.currentTime = video.duration;
             }
         });
+
+       
     </script>
 </body>
 </html>

@@ -1,7 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Lilita+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Lilita+One&family=Roboto:wght@700&display=swap');
+
+
 body{
     margin: 0;
     padding: 0;
-    background: #FFFC85
+    background: #FF8989;
 }
 /* toggle function */
 .toggle{
@@ -24,7 +28,7 @@ body{
     left: -100%;
     width: 100%;
     height: 100%;
-    background: #FFF;
+    background: #98EECC;
     z-index: 1;
     transition: 0.5s;
 }
@@ -44,14 +48,16 @@ ul li{
 ul li a{
     padding: 10px;
     display: inline-block;
-    font-family: verdana;
-    font-size: 2em;
+    font-family: 'ADLaM Display', cursive;
+    font-family: 'Lilita One', cursive;
+    font-size: 3em;
     text-decoration: none;
     text-transform: uppercase;
     color: #262626;
 }
 ul li a:hover{
-    background: #FFFC85
+    background: #FFFC85;
+    border-radius: 10px;
 }
 .menu.active{
     left: 0;
@@ -80,3 +86,5 @@ ul li a:hover{
     border: none;
     margin: 0 10px;
 }
+
+
