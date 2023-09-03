@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Assistant:wght@700&family=Lilita+One&family=Roboto:wght@900&display=swap');
+html {
+    height: 100%;
+  }
+  body {
+    margin:0;
+    padding:0;
+    font-family: 'Assistant', sans-serif;
+    background: linear-gradient(#141e30, #243b55);
+  }
+  
+  .login-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    background: #3AA6B9;
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    border-radius: 10px;
+  }
+  
+  .login-box h2 {
+    font-family: 'Assistant', sans-serif;
+    margin: 0 0 30px;
+    padding: 0;
+    color: #000000;
+    text-align: center;
+  }
+  
+  .login-box .user-box {
+    position: relative;
+  }
+  
+  .login-box .user-box input {
+    font-family: 'Assistant', sans-serif;
+    width: 100%;
+    padding: 10px 0;
+    font-size: 26px;
+    color: #000000;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #1450A3;
+    outline: none;
+    background: transparent;
+  }
+  .login-box .user-box label {
+    font-family: 'Assistant', sans-serif;
+    position: absolute;
+    top:0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 26px;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+  }
+  
+  .login-box .user-box input:focus ~ label,
+  .login-box .user-box input:valid ~ label {
+    top: -20px;
+    left: 0;
+    color: #ffffff;
+    font-size: 12px;
+    font-family: 'Assistant', sans-serif;
+  }
+  
+  .login-box form button {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #262626;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 40px;
+    letter-spacing: 4px
+  }
+  
+  button{
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #262626;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 40px;
+    letter-spacing: 4px
+  }
+  
+  .login-box button:hover {
+    font-family: 'Assistant', sans-serif;
+    background: #85E6C5;
+    color: #000000;
+    border-radius: 5px;
+    
+  }
+  
+  
+  
+  
+  
+  @keyframes btn-anim1 {
+    0% {
+      left: -100%;
+    }
+    50%,100% {
+      left: 100%;
+    }
+  }
+  
+  
+  
+  @keyframes btn-anim2 {
+    0% {
+      top: -100%;
+    }
+    50%,100% {
+      top: 100%;
+    }
+  }
+  
+  
+  
+  @keyframes btn-anim3 {
+    0% {
+      right: -100%;
+    }
+    50%,100% {
+      right: 100%;
+    }
+  }
+  
+  
+  
+  @keyframes btn-anim4 {
+    0% {
+      bottom: -100%;
+    }
+    50%,100% {
+      bottom: 100%;
+    }
+  }
+  
+  /* Keyframes animations */
+
+@keyframes btn-anim1 {
+    0% {
+      left: -100%;
+    }
+    50%, 100% {
+      left: 100%;
+    }
+  }
+  
+  @keyframes btn-anim2 {
+    0% {
+      top: -100%;
+    }
+    50%, 100% {
+      top: 100%;
+    }
+  }
+  
+  @keyframes btn-anim3 {
+    0% {
+      right: -100%;
+    }
+    50%, 100% {
+      right: 100%;
+    }
+  }
+  
+  @keyframes btn-anim4 {
+    0% {
+      bottom: -100%;
+    }
+    50%, 100% {
+      bottom: 100%;
+    }
+  }
+  
+  /* Mobile responsiveness */
+  @media (max-width: 768px) {
+    .login-box {
+      width: 90%;
+      max-width: 90%;
+      padding: 50px;
+      height: 35%;
+    }
+  
+    .login-box h2 {
+      font-size: 20px;
+      margin-bottom: 15px;
+    }
+  
+    .login-box .user-box input {
+      font-size: 14px;
+      margin-bottom: 15px;
+    }
+  
+    .login-box form a {
+      font-size: 14px;
+      margin-top: 20px;
+    }
+  }

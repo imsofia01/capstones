@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Lilita+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Lilita+One&family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@500&family=Montserrat:wght@500;600&family=Rubik+Puddles&display=swap');
+
+
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    outline: none;
+}
+
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    background: #3F497F;
+}
+
+.toggle{
+    position: fixed;
+    top: 40px;
+    left: 40px;
+    z-index: 2
+}
+
+.toggle a{
+    text-decoration: none;
+    color: #262626;
+    font-size: 44px;
+    cursor: pointer;
+}
+
+.menu.active{
+    left: 0;
+    overflow: auto;
+}
+
+
+
+
+
+/* question box css */
+.custom-box{
+
+    max-width: 900px;
+    background-color: #539165;
+    margin: 40px auto;
+    padding: 30px;
+    border-radius: 10px;
+    animation: fadeInRight 1s ease;
+}
+@keyframes fadeInRight {
+    0%{
+        transform:  translateX(40px);
+        opacity:0;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity:1;
+    }
+
+}
+.custom-box::before,
+.custom-box::after{
+    content: '';
+    clear: both;
+    display: table;
+}
+
+.custom-box.hide{
+    display: none;
+}
+
+/* instruction start */
+.home-box h1{
+    color: #FCAEAE;
+    font-family: 'Geologica';
+    font-size: 50px;
+}
+.home-box h2{
+    
+    font-family: 'Geologica', sans-serif;
+    max-width: 700px;
+    font-size: 35px;
+    color: #000c1a;
+    font-weight: 500px;
+    margin-top: 2px;
+    line-height: 25px;
+
+}
+
+.home-box p{
+    font-size: 16px;
+    line-height: 50px;
+    color: #000000;
+    font-weight: 400;
+}
+.home-box p span{
+    font-weight: 500;
+    
+}
+
+.home-box .btn{
+    margin-top: 20px;
+}
+
+.btn{
+    padding: 15px 45px;
+    background-color:  #A8E890;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.assess-box .tanong-bilang,
+.assess-box .tanong-text,
+.assess-box .option-container,
+.assess-box .sunod-tanong-btn,
+.assess-box .sagot-indicator{
+ width: 100%;
+ float: left;
+}
+.assess-box .tanong-bilang{
+    font-size: 20px;
+    color: #0088ff;
+    font-weight: 600;
+    border-bottom: 1px solid #cd8ccd;
+    padding-bottom: 10px;
+    line-height: 25px;
+}
+.assess-box .tanong-text{
+    font-size: 22px;
+    color: #000000;
+    line-height: 28px;
+    font-weight: 400;
+    padding: 20px 0;
+    margin: 0;
+}
+
+.assess-box .option-container .option{
+    background-color: #cccccc;
+    padding: 13px 15px;
+    font-size: 16px;
+    line-height: 22px;
+    color: #000000;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    text-transform: capitalize;
+    opacity: 0;
+    animation: fadeIn 0.3s ease forwards;
+    position: relative;
+    overflow: hidden;
+
+}
+.assess-box .option-container .option.nakasagot-kana{
+    pointer-events: none;
+}
+    
+@keyframes fadeIn{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+
+}
+.assess-box .option-container .option.tama::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(17, 205, 17);
+    z-index: -1;
+    animation: slideInLeft .5s ease forwards;
+}
+@keyframes slideInLeft {
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(-0%);
+    }
+}
+.assess-box .option-container .option.mali::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: red;
+    z-index: -1;
+    animation: slideInLeft .5s ease forwards;
+}
+.assess-box .option-container .option.mali{
+    color: #ffffff;
+
+}
+
+.assess-box .option-container .option.tama {
+    color: #ffffff;
+}
+
+.assess-box .btn{
+    margin: 10px 0;
+    
+
+}
+.assess-box .sagot-indicator{
+    border-top: 1px solid #cd8ccd;
+    padding-top: 4px;
+}
+.assess-box .sagot-indicator div{
+    height: 40px;
+    width: 40px;
+    display: inline-block;
+    background-color: #ABD9FF;
+    border-radius: 50%;
+    margin-right: 3px;
+    margin-top: 15px;
+}
+
+.assess-box .sagot-indicator div.tama{
+    background-color: #36AE7C;
+    background-image: url("../pics/correct.png");
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.assess-box .sagot-indicator div.mali{
+    background-color: #EB5353;
+    background-image: url("../pics/wrong.png");
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.result-box{
+    text-align: center;
+}
+.result-box.hide{
+    display: none;
+}
+
+.result-box h1{
+    font-size: 36px;
+    line-height: 42px;
+    color: #000000;
+}
+.result-box table{
+    width: 100%;
+    border-collapse: collapse;
+    margin: 30px 0;
+}
+.result-box table td{
+    border: 1px solid #000000;
+    padding: 8px 15px;
+    font-weight: 500; 
+    color: #000000;
+    width: 50%;
+    font-size: 18px;
+}
+.result-box .btn{
+    margin-right: 20px;
+}
+
+@media(max-width: 767px){
+    .result-box .btn{
+        margin-bottom: 15px;
+    }
+    body{
+        padding: 15px;
+    }
+}
+
