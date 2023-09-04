@@ -32,10 +32,10 @@ if (!$result) {
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
  
     <link rel="stylesheet" href="css/names.css">
-    <title>Piliin ang Tamang Sagot</title>
+    <title>Ilagay ang pangalan</title>
 </head>
 <body>
-<div class="login-box">
+<div class="login-box" id="boxbox">
   <h2>PANGALAN</h2>
   <form action="multipleChoice.php" class="saveName" method="POST" id="nameForm">
     <div class="user-box">
@@ -47,11 +47,16 @@ if (!$result) {
         <ul id="nameList"></ul>
     </div>
   
-    <button type="submit" name="submit" value="submit">
+    <button type="submit" name="submit" onclick="hideLoginBox()" value="submit">
         Submit
     </button>
 </form>
 </div>
+
+
+
+
+
 
 
 

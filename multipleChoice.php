@@ -2,9 +2,9 @@
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 include 'config/database.php';
+ob_start();
 include 'save-names.php';
-
-
+ob_end_clean();
 
 $sql = "SELECT * FROM `names`";
 $result = mysqli_query($conn, $sql);

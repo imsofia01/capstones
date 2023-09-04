@@ -32,7 +32,7 @@
     <!-- button sa contain -->
     <div ontouchstart="">
         <div id="showButton" class="button">
-        <a href="#"> Mga Video </a>
+        <a href="#"> MGA PATINIG </a>
          </div>
     </div>
 
