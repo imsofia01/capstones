@@ -8,6 +8,25 @@
     <link rel="stylesheet" type="text/css" href="./css/assess.css">
 
     <title>Video and Assessment Game</title>
+
+    <style>
+        /* Style for the video container */
+        #video-container {
+            width: 80%;
+            margin: 0 auto;
+        }
+        
+
+
+        
+        /* Style for the assessment game */
+        #assessment-game {
+            display: none; /* Initially hidden */
+            width: 80%;
+            margin: 0 auto;
+        }
+    </style>
+
 </head>
 <body>
 
