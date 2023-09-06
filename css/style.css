@@ -1,22 +1,138 @@
-body{
-    margin: 0;
-    padding: 0;
-    height: 100vh;
-    justify-content: center;
-    align-items: center;
-    background-image: url('../pics/Welcome\ to.gif');
-    background-size: cover;
-    background-repeat: no-repeat;
-}
- 
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
 
-.btn{
-   margin-top: 370px;
+        /* book loading */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  text-align: center;
+    
+}
+h1{
+   font-family: 'Concert One', cursive; 
+   color: #F2F5C8;
+   text-align: center;
+   font-size: 100px;
+   margin-bottom: 400px;
+}
+
+.loader-container {
+    margin-top: 400px;
+    display: none;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.loader {
+    border: 16px solid #f3f3f3;
+    border-top: 16px solid #3498db;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    animation: spin 1s linear infinite;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@keyframes spin {
+    0% { transform: translate(-50%, -50%) rotate(0deg); }
+    100% { transform: translate(-50%, -50%) rotate(360deg); }
+}
+
+/* animation tuklasko */
+
+:root {
+--primary-color: #393E46;
+--secondary-color: #6D9886;
+  --complimentary-color: #F2E7D5;
+}
+
+.container {
+  
+  min-height: 100vh;
+  position: relative;
+  width: 100vw;
+  display: flex;
+  background-color: var(--complimentary-color);
+  justify-content: center;
+  align-items: center;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+ position: relative;
+}
+
+h1 {
+
+  font-size: 100px;
+  color: var(--primary-color);
+  transform: translateY(-600px);
+  animation: 1.2s slideIn ease-in-out forwards 1s;
+  z-index: 10;
+  opacity: 0;
+  position: relative;
+}
+
+h1::before {
+    content: '';
+    width: 0%;
+    height: 70px;
+    background-color: var(--secondary-color);
+    position: absolute;
+    bottom: -10px;
+    animation: 1s underline ease-in-out forwards 2s;
+    mix-blend-mode: screen;
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    opacity: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--secondary-color);
+    transform: scale(.5);
+    animation: .5s slideIn ease-in-out forwards, 1s skewBg ease-in-out;
+}
+
+@keyframes skewBg {
+  0% {
+    transform: scale(.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes underline {
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes slideIn {
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+/* button  */
+#startButton{
+    margin-top: 490px;
+    position:absolute;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 30px;
     font-weight: bold;
     background-color: #cc99ff;
-    width: 160px;
+    width: 260px;
     padding: 20px;
     text-align: center;
     text-decoration: none;
@@ -30,14 +146,13 @@ body{
     -webkit-transition-property: box-shadow, transform;
     transition-property: box-shadow, transform;
 }
-.btn:hover, .btn:focus, .btn:active{
+#startButton:hover, #startButton:focus, #startButton:active{
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
 }
-
-  .btn {
-	padding: 20px 60px;
+#startButton {
+	padding: 20px 50px;
 	border: unset;
 	border-radius: 15px;
 	color: #000000;
@@ -51,13 +166,12 @@ body{
 	transition: all 250ms;
 	overflow: hidden;
    }
-   
-   .btn::before {
+   #startButton::before {
 	content: "";
 	position: absolute;
 	top: 0;
 	left: 0;
-	height: 100%;
+	height: 100px;
 	width: 0;
 	border-radius: 15px;
 	background-color: #4368c5e9;
@@ -66,26 +180,10 @@ body{
 	box-shadow: 4px 8psx 19px -3px rgba(0,0,0,0.27);
 	transition: all 250ms
    }
-   
-   .btn:hover {
+   #startButton:hover {
 	color: #e8e8e8;
    }
    
-   .btn:hover::before {
+   #startButton:hover::before {
 	width: 100%;
    }
-
-  .container {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 100vh; 
-  }
-
-  .center {
-	text-align: center;
-  }
-  
-
-
-  
