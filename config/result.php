@@ -5,7 +5,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   include_once "config/database.php";
 
   
-
   function getAllscore($formData, $conn) {
     $total_tanong = $formData["total_tanong"];
     $total_correct = $formData["total_correct"];

@@ -1,9 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Lilita+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Lilita+One&family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600&display=swap');
+
+
 
 body{
     margin: 0;
     padding: 0;
+    height: 100vh;
  
    
 }
@@ -20,6 +24,7 @@ body{
     font-size: 44px;
     cursor: pointer;
 }
+
 .menu{
     margin: 0;
     padding: 0;
@@ -65,16 +70,91 @@ ul li a:hover{
     overflow: auto;
 }
 
-/* conatiner */
 
+/* button  */
+#startButton{
+  
+    
+    margin-top: 60px;
+    position:absolute;
+    font-family: 'Roboto Slab', serif;
+    font-size: 30px;
+    font-weight: bold;
+    background-color: #cc99ff;
+    width: 260px;
+
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #040404;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: box-shadow, transform;
+    transition-property: box-shadow, transform;
+}
+#startButton:hover, #startButton:focus, #startButton:active{
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+#startButton {
+	padding: 30px 50px;
+	border: unset;
+	border-radius: 15px;
+	color: #000000;
+	z-index: 1;
+	background: #e8e8e8;
+	position: relative;
+	font-weight: 1000;
+	font-size: 17px;
+	-webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+	box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+	transition: all 250ms;
+	overflow: hidden;
+   }
+   #startButton::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 500px;
+	width: 0;
+	border-radius: 15px;
+	background-color: #4368c5e9;
+	z-index: -1;
+	-webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+	box-shadow: 4px 8psx 19px -3px rgba(0,0,0,0.27);
+	transition: all 250ms
+   }
+   #startButton:hover {
+	color: #e8e8e8;
+   }
+   
+   #startButton:hover::before {
+	width: 100%;
+   }
+
+   /* Style the dropdown button */
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+
+
+/* conatiner */
 .div-1 {
     display: inline-block;
-    background-image: url(../pics/HOME-PAGE.png); 
     max-width: 100%;
     height: auto;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 800px;
+    height: 100vh;
     width: 100%;
     text-align: center;
     font-family: 'Roboto', sans-serif;
@@ -90,12 +170,114 @@ ul li a:hover{
   h1{
     margin-top: 5%;
     font-weight: bold;
+    font-family: 'Roboto Slab', serif;
   
   }
    
-  .div-2 {
-    background-color: #146C94; 
-    height: 800px;
-    width: 100%
+
+  * {
+    margin:0;
+    padding:0;
+    font-family: 'Arvo';
   }
-     
+  
+  body{
+    background-color: #E63946;
+  }
+  
+  .main{
+    margin-top: 50px;
+    width:100%;  
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+  }
+  h1{
+    text-align:center;
+    text-transform: uppercase;
+    color: #F1FAEE; 
+    font-size: 4rem;
+  }
+  
+  .roller{
+    height: 4.125rem;
+    line-height: 4rem;
+    position: relative;
+    overflow: hidden; 
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    color: #1D3557;
+  }
+  
+  
+  #spare-time{
+    font-size: 1rem;
+    font-style: italic;
+    letter-spacing: 1rem;
+    margin-top: 0;
+    color: #A8DADC;
+    
+  }
+  
+  .roller #rolltext {
+    position: absolute;
+    top: 0;
+    animation: slide 5s infinite;  
+  }
+  
+  @keyframes slide {
+    0%{
+      top:0;
+    }
+    25%{
+      top: -4rem;    
+    }
+    50%{
+      top: -8rem;
+    }
+    72.5%{
+      top: -12.25rem;
+    }
+  }
+  
+  @media screen and (max-width: 600px){
+    h1{
+    text-align:center;
+    text-transform: uppercase;
+    color: #F1FAEE; 
+    font-size: 2.125rem;
+  }
+    
+    .roller{
+    height: 2.6rem; 
+    line-height: 2.125rem;  
+    }
+    
+    #spare-time {
+      font-size: 1rem;
+      letter-spacing: 0.1rem;
+    }
+    
+    .roller #rolltext {  
+    animation: slide-mob 5s infinite;  
+  }
+    
+    @keyframes slide-mob {
+    0%{
+      top:0;
+    }
+    25%{
+      top: -2.125rem;    
+    }
+    50%{
+      top: -4.25rem;
+    }
+    72.5%{
+      top: -6.375rem;
+    }
+  }
+  }

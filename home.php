@@ -9,38 +9,34 @@
     <title>Tuklas-KO!</title>
 </head>
 <body>
-<div class="toggle">
-        <a><i class="fa fa-bars"></i></a>
-    </div>
-    <div class="menu">
-        <ul>
-            <li><a href="home.php">HOME</a></li>
-            <li><a href="videos.php">2D VIDEO & ASSESSMENT</a></li>
-            <li><a href="quizresult.php">LEADERBOARD</a></li>
-            <li><a href="about-us.php">ABOUT US</a></li>
-        </ul>
-    </div>
+
    
 
 
 <div class="div-1">
     
-    <h1> Maligayang Bati Mga Bata</h1>
-    <p> The 2D Interactive learning and Assessment Application for Kindergarten Pupils will help the children to understand some Filipino words
-    that they difficult to understand.
-</p>
+
+<div class="main">
+  <h1>TUKLAKSO!: 2D Interactive<div class="roller">
+    <span id="rolltext">LEARNING<br/>
+    ASSESSMENT<br/>
+    APPLICATION<br/>
+    <span id="spare-time">FOR KINDERGARTEN PUPILS</span><br/>
+    </div>
+    </h1>
+  </div>
+
+  <a href="videos.php">
+<button href="videos.php" id="startButton"> ARALIN AT PAGSUSULIT </button>
+  </a>
+<br>
+
+
+<a href="quizresult.php">
+<button href="quizresult.php" id="startButton"> LEADERBOARD </button>
+</a>
 </div>
-<div class="div-2"></div>
-
-
 
 
 </body>
-<script>
-    $(document).ready(function(){
-            $('.toggle').click(function(){
-                $('.menu').toggleClass('active');
-            });
-        });
-    </script>
 </html>

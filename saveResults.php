@@ -7,25 +7,22 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     
 
     // Extract data from the quizResultsArray
-    $totalTanong = $quizResultsArray['totalTanong'];
-    $totalCorrect = $quizResultsArray['totalCorrect'];
-    $totalWrong = $quizResultsArray['totalWrong'];
-    $percentage = $quizResultsArray['percentage'];
-    $totalPuntos = $quizResultsArray['totalPuntos'];
+    $correctCount = $quizResultsArray['correctCount'];
+    $wrongCount = $quizResultsArray['wrongCount'];
+    $total = $quizResultsArray['total'];
+    
 
 
-    $getHighestUidQuery = "SELECT MAX(id) AS maxUid FROM names";
+    $getHighestUidQuery = "SELECT MAX(id) AS maxUid FROM drag_img";
     $result = mysqli_query($conn, $getHighestUidQuery);
     $row = mysqli_fetch_assoc($result);
     $highestUid = $row['maxUid'];
 
     // Perform the database insertion
-    $updateQuery = "UPDATE names SET
-                    total_tanong = '$totalTanong',
-                    total_correct = '$totalCorrect',
-                    total_wrong = '$totalWrong',
-                    percentage = '$percentage',
-                    puntos = '$totalPuntos'
+    $updateQuery = "UPDATE drag_img SET
+                    correctCount = '$coorectCount',
+                    wrongCount = '$wrongCount',
+                    total = '$total',
                     WHERE id = '$highestUid'";
 
     if (mysqli_query($conn,  $updateQuery)) {

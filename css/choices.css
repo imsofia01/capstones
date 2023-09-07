@@ -20,7 +20,7 @@ body{
     padding: 0;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
-    background: #0C356A;
+    background: #FF8989;
 }
 
 .toggle{
@@ -46,7 +46,7 @@ body{
 .custom-box{
     
     max-width: 900px;
-    background-color: #2457a3;
+    background-color: #16C79A;
     margin: 40px auto;
     padding: 30px;
     border-radius: 10px;
@@ -76,7 +76,7 @@ body{
 
 /* instruction start */
 .home-box h1{
-    color: #FCAEAE;
+    color: #F99417;
     font-family: 'Geologica';
     font-size: 50px;
 }
@@ -92,15 +92,34 @@ body{
 
 }
 
+h3{
+    font-family: 'Geologica', sans-serif;
+    max-width: 700px;
+    font-size: 25px;
+    color: #000c1a;
+    font-weight: 500px;
+    margin-top: 2px;
+    line-height: 25px;
+}
+
+h4{
+    font-family: 'Geologica', sans-serif;
+    max-width: 700px;
+    font-size: 25px;
+    color: #000c1a;
+    font-weight: 500px;
+    margin-top: 2px;
+    line-height: 25px;
+}
+
 .home-box p{
-    font-size: 16px;
+    font-size: 18px;
     line-height: 50px;
     color: #000000;
     font-weight: 400;
 }
 .home-box p span{
-    font-weight: 500;
-    
+    font-weight: 500; 
 }
 
 .home-box .btn{
@@ -126,6 +145,7 @@ body{
  width: 100%;
  float: left;
 }
+
 .assess-box .tanong-bilang{
     font-size: 20px;
     color: #0088ff;

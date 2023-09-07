@@ -1,17 +1,18 @@
 <?php
 // Start a PHP session to store data across pages
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-  include_once "./config/database.php";
-//   include "save-names.php";
+  include_once "./config/dDatabase.php";
 
-if (isset($_POST['username'])  )
+
+if (isset($_POST['pangalan'])  )
  {
-    $username = $_POST['username'];
+    $username = $_POST['pangalan'];
     $currentDate = date("Y-m-d"); // Get the current date and time
 
+  
 
 // Create the SQL INSERT query
-$sql = "INSERT INTO names (username, petsa) VALUES ('$username', '$currentDate')";
+$sql = "INSERT INTO drag_img (pangalan, petsa) VALUES ('$username', '$currentDate')";
 $result = mysqli_query($conn,$sql);
 
 if (!$result) {
@@ -35,14 +36,10 @@ if (!$result) {
 <body>
 <div class="login-box" id="boxbox">
   <h2>PANGALAN</h2>
-  <form action="multipleChoice.php" class="saveName" method="POST" id="nameForm">
+  <form action="sampleD.php" class="saveName" method="POST" id="nameForm">
     <div class="user-box">
-        <input type="text" id="name" name="username" required="">
-        <label for="username"> ILAGAY ANG PANGALAN </label>
-    </div>
-
-    <div id="output">
-        <ul id="nameList"></ul>
+        <input type="text" id="name" name="pangalan" required="">
+        <label for="pangalan"> ILAGAY ANG PANGALAN </label>
     </div>
   
     <button type="submit" name="submit" onclick="hideLoginBox()" value="submit">
@@ -59,7 +56,6 @@ if (!$result) {
 
 
 <script type="text/javascript">
-
 
 </script>
 

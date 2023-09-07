@@ -29,14 +29,18 @@ $resultCheck = mysqli_num_rows($result);
     <div class="home-box custom-box">
         <h1><?php echo isset($_POST['username']) ? htmlspecialchars($_POST['username']) : ''; ?>!</h1>
         <br>
-        <h2> Pagsusulit  </h2>
+        <h2> Simulan ang Pagsusulit  </h2>
+        <br>
+        <h3> Piliin lamang ang tamang sagot </h3>
         <p> Bilang ng mga Tanong: <span class="tanong"> </span></p>
         <button type="button" class="btn" onclick="simulaQuiz()"> Simula </button>
     </div>
 
          
     <div class="assess-box custom-box hide">
+    <h4> Piliin lamang ang tamang sagot </h4>
         <div class="tanong-bilang">
+        
             
         </div>
         <div class="tanong-text">
@@ -268,9 +272,6 @@ function quizOver(){
 
 //get the quiz result
 function quizResult(){
-
-
-    
     resultBox.querySelector(".total-tanong").innerHTML = quiz.length;
     resultBox.querySelector(".total-attempt").innerHTML = attempts;
     resultBox.querySelector(".total-correct").innerHTML = correctAnswers;
@@ -292,7 +293,7 @@ function quizResult(){
 // Inside your existing code
 function saveQuizResults() {
     const quizResults = quizResult();
-    document.getElementById("quizResultsInput").value = JSON.stringify(quizResults);
+    document.getElementById("quizResults").value = JSON.stringify(quizResults);
 
     // Send quiz results to the server using AJAX
     const xhr = new XMLHttpRequest();

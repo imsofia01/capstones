@@ -26,10 +26,7 @@
             <li><a href="about-us.php">ABOUT US</a></li>
         </ul>
     </div>
-   
-
-
-
+  
   <section class="about-us">
 
     <div class="about">

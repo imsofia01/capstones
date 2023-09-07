@@ -12,18 +12,9 @@
 <body>
 
 <div class="toggle">
-        <a><i class="fa fa-bars"></i></a>
+        <a href="home.php"><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></a>
     </div>
-    <div class="menu">
-        <ul>
-            <li><a href="home.php">HOME</a></li>
-            <li><a href="videos.php">2D VIDEO & ASSESSMENT</a></li>
-            <li><a href="quizresult.php">LEADERBOARD</a></li>
-            <li><a href="about-us.php">ABOUT US</a></li>
-        </ul>
-    </div>
-    <br>
-    <body>
+
     <div class="header">
     <h1> Mga Aralin </h1>
     </div>
@@ -139,7 +130,7 @@
     // Function to open the assessment after video completion
     function openAssessment2() {
     // Replace 'assessment_url' with the actual URL of your assessment
-     var assessmentUrl = "dragImg.php";
+     var assessmentUrl = "save-namesD.php";
 
     // Open the assessment in a new window or tab
     window.open(assessmentUrl, "_blank");
@@ -168,31 +159,39 @@
         openAssessment2();
     });
 
+    // Replay button for the first video
+const replayButton = document.getElementById('playButton');
+replayButton.addEventListener('click', () => {
+    // Show the video element
+    video.style.display = 'block';
+    
+    // Hide the replay button
+    replayButton.style.display = 'none';
 
-    playButton.addEventListener("click", () => {
-        // Check if the video is currently paused
-    if (video.paused) {
-        // Play the video
-        video.play();
-        // Change the button text to "Pause Video"
-        playButton.textContent = 'Pause Video';
-    } else {
-        // Pause the video
-        video.pause();
-        // Change the button text to "Play Video"
-        playButton.textContent = 'Play Video';
-    }
-    });
+    // Reset the video to the beginning
+    video.currentTime = 0;
 
-    playButton2.addEventListener('click', function() {
-        if (video2.paused) {
-            video2.play();
-            playButton2.textContent = 'Pause Video';
-        } else {
-            video2.pause();
-            playButton2.textContent = 'Ulitin ang Video';
-        }
-    });
+    // Play the video
+    video.play();
+});
+
+// Replay button for the second video
+const replayButton2 = document.getElementById('playButton2');
+replayButton2.addEventListener('click', () => {
+    // Show the video element
+    video2.style.display = 'block';
+    
+    // Hide the replay button
+    replayButton2.style.display = 'none';
+
+    // Reset the video to the beginning
+    video2.currentTime = 0;
+
+    // Play the video
+    video2.play();
+});
+
+
 
     skipButton.addEventListener('click', () => {
         // Define the number of seconds to skip

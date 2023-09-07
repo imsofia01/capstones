@@ -8,7 +8,7 @@
 
         .word-container {
             display: flex;
-            flex-wrap: wrap;
+            flex-wrap:nowrap;
             gap: 10px;
         }
 
@@ -26,9 +26,43 @@
             flex-wrap: wrap;
             gap: 10px;
         }
+
+        /* question box css */
+        .custom-box{
+
+            max-width: 900px;
+            background-color: #2457a3;
+            margin: 40px auto;
+            padding: 30px;
+            border-radius: 10px;
+            animation: fadeInRight 1s ease;
+        }
+        @keyframes fadeInRight {
+            0%{
+                transform:  translateX(40px);
+                opacity:0;
+            }
+            100%{
+                transform: translateX(0px);
+                opacity:1;
+            }
+        
+        }
+        .custom-box::before,
+        .custom-box::after{
+            content: '';
+            clear: both;
+            display: table;
+        }
+
+        .custom-box.hide{
+        display: none;
+    }
     </style>
 </head>
 <body>
+
+    <div class="assess-box custom-box">
     <h1>Word Arrangement Puzzle</h1>
     <div class="word-container" id="word-container">
         <div class="word" draggable="true">Hello</div>
