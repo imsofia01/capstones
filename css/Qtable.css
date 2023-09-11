@@ -18,6 +18,33 @@ h1{
     padding: 30px 0;
 }
 
+/* toggle function */
+.toggle{
+    position: fixed;
+    top: 40px;
+    left: 40px;
+    z-index: 2
+}
+.toggle a{
+    text-decoration: none;
+    color: #262626;
+    font-size: 60px;
+    cursor: pointer;
+    font-weight: bold;
+
+}
+
+
+
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 800,
+    'GRAD' 200,
+    'opsz' 60,
+    
+  }
+
 /* Table Styles */
 
 .table-wrapper{
