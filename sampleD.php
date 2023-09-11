@@ -1,7 +1,7 @@
 <?php 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 include 'config/database.php';
-include 'config/result.php';
+
 
 ob_start();
 include 'save-namesD.php';
@@ -94,7 +94,7 @@ $resultCheck = mysqli_num_rows($result);
                   </tr>
                   <tr>
                     <td> <span for="total"> Kabuoang Tama</label></td>
-                    <td><span class="total" id="totalDisplay" type="hidden" name="quizResults" id="quizResultsInput"></span></td>
+                    <td><span class="total" id="totalDisplay" type="hidden" name="quizResults" id="quizResultsInput" ></span></td>
                 </tr>
             </table>
             <button type="button" class="btn" onclick="tryAgain()"> Subukan Ulit </button>

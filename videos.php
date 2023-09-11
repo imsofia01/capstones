@@ -136,7 +136,7 @@ arrow_back
     // Function to open the assessment after video completion
     function openAssessment2() {
     // Replace 'assessment_url' with the actual URL of your assessment
-     var assessmentUrl = "dragImg.php";
+     var assessmentUrl = "save-namesD.php";
 
     // Open the assessment in a new window or tab
     window.open(assessmentUrl, "_blank");

@@ -1,7 +1,7 @@
 <?php
 // Start a PHP session to store data across pages
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-  include_once "./config/dDatabase.php";
+
 
 
 if (isset($_POST['pangalan'])  )
