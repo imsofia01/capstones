@@ -63,11 +63,11 @@ h2{
   text-align: center;
   width: 100%;
   margin: 0px auto;
-  font-size: 80px;
+  font-size: 90px;
   letter-spacing: 5px;
   top: 50%;
   position: absolute;
-  margin-top: -40px;
+  margin-top: -200px;
   transition: 4s;
   
   text-shadow: -1px -1px 0px var(--background),
