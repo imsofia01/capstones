@@ -14,7 +14,15 @@
 <div class="div-1">
     <h1> Maligayang Bati Mga Bata</h1>
 
+    <a href="videos.php">
+<button id="startButton"> ARALIN AT PAGSUSULIT </button>
+</a>
+<br>
+    <a href="quizresult.php">
+<button id="startButton"> TALAAN NG NANGUNGUNA </button>
+</a>
 </div>
+
 
 
 
