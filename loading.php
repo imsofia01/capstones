@@ -8,9 +8,8 @@
   
 </head>
 <body>
-<div class = 'container projects'>
-   <h1>Tuklas-KO!</h1>
-<div class="overlay">
+
+<h2>TUKLASKO</h2>
 
 
 <button id="startButton"> MAGSIMULA </button>
@@ -21,6 +20,21 @@
         
 </body>
 <script>
+
+const colors = [
+  '#2196f3',
+  '#f43f5e',
+  '#ec4899',
+  '#d946ef',
+  '#a855f7',
+
+]
+
+setInterval(() => {
+  const color = colors[Math.floor(Math.random()*colors.length)]
+  document.body.style.setProperty('--background', color)
+}, 5000)
+
 const startButton = document.getElementById('startButton');
 const loaderContainer = document.querySelector('.loader-container');
 const loader = document.getElementById('loader');

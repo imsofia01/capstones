@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,600,0,200" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" href="css/video.css">
     <title> 2D Video </title>
@@ -12,16 +14,11 @@
 <body>
 
 <div class="toggle">
-        <a><i class="fa fa-bars"></i></a>
+        <a href="home.php" class="material-symbols-outlined">
+arrow_back
+</a>
     </div>
-    <div class="menu">
-        <ul>
-            <li><a href="home.php">HOME</a></li>
-            <li><a href="videos.php">2D VIDEO & ASSESSMENT</a></li>
-            <li><a href="quizresult.php">LEADERBOARD</a></li>
-            <li><a href="about-us.php">ABOUT US</a></li>
-        </ul>
-    </div>
+
     <br>
     <body>
     <div class="header">

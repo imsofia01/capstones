@@ -9,28 +9,13 @@
     <title>Tuklas-KO!</title>
 </head>
 <body>
-<div class="toggle">
-        <a><i class="fa fa-bars"></i></a>
-    </div>
-    <div class="menu">
-        <ul>
-            <li><a href="home.php">HOME</a></li>
-            <li><a href="videos.php">2D VIDEO & ASSESSMENT</a></li>
-            <li><a href="quizresult.php">LEADERBOARD</a></li>
-            <li><a href="about-us.php">ABOUT US</a></li>
-        </ul>
-    </div>
-   
 
 
 <div class="div-1">
-    
     <h1> Maligayang Bati Mga Bata</h1>
-    <p> The 2D Interactive learning and Assessment Application for Kindergarten Pupils will help the children to understand some Filipino words
-    that they difficult to understand.
-</p>
+
 </div>
-<div class="div-2"></div>
+
 
 
 
