@@ -74,20 +74,20 @@ $resultCheck = mysqli_num_rows($result);
       </div>
   </div>
   
-  <form action=".php" class="results" id="formData" method="POST" onsubmit="saveQuizResults()">
+  <form action="dragResult.php" class="results" id="formData" method="POST" onsubmit="saveQuizResults()">
         <div class="result-box custom-box hide">
             <h1> Mga resulta ng pagsusulit </h1>
             <table>
                   <tr>
                       <td> <label for="tamangSagot"> Tamang Sagot </label> </td>
-                      <td><span class="tamangSagot" id="correctCountDisplay">0</span></td>
+                      <td><span class="tamangSagot" name="quiz_results" id="quizResultsInput">0</span></td>
                   </tr>
                   <tr>
                       <td> <label for="malingSagot"> Maling Sagot </label> </td>
-                      <td><span class="malingSagot" id="wrongCountDisplay">0</span></td>
+                      <td><span class="malingSagot" name="quiz_results" id="quizResultsInput">0</span></td>
                   </tr>
                     <td> <span for="total"> Kabuoang Tama</label></td>
-                    <td><span class="total" id="totalDisplay" type="hidden" <?php echo isset($_POST['username']) ? htmlspecialchars($_POST['username']) : ''; ?> name="tanka" id="quizResultsInput"></span></td>
+                    <td><span class="total" id="quizResultsInput"  name="quiz_results" type="hidden" <?php echo isset($_POST['username']) ? htmlspecialchars($_POST['username']) : ''; ?> name="tanka" id="quizResultsInput"></span></td>
                 </tr>
             </table>
             <button type="button" class="btn" onclick="tryAgain()"> Subukan Ulit </button>
@@ -196,17 +196,55 @@ droppableElements.forEach((element) => {
       wrongCount++;
     }
   }
-  document.getElementById('correctCount').textContent = correctCount;
-  document.getElementById('wrongCount').textContent = wrongCount;
-
-
   // Update the displayed counts in the table
-document.getElementById('correctCountDisplay').textContent = correctCount;
-document.getElementById('wrongCountDisplay').textContent = wrongCount;
-document.getElementById('totalDisplay').textContent = correctCount + "/" + results.length;
+function quizResult(){
+    resultBox.querySelector(".tamangSagot").innerHTML = correctCount;
+    resultBox.querySelector(".malingSagot").innerHTML = wrongCount;
+    resultBox.querySelector(".total").innerHTML = correctCount + "/" + results.length;
+return {
+    correctCount: correctCount,
+    wrongCount: wrongCount,
+    total: correctCount + "/" + results.length
+};
+}
+
+function saveQuizResults() {
+    const quizResults = quizResult();
+    document.getElementById("quizResultsInput").value = JSON.stringify(quizResults);
+
+    // Send quiz results to the server using AJAX
+    const xhr = new XMLHttpRequest();
+    xhr.open("POST", "saveResults.php", true);
+    xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+    xhr.onreadystatechange = function () {
+        if (xhr.readyState === XMLHttpRequest.DONE) {
+            if (xhr.status === 200) {
+                console.log(xhr.responseText); // You can handle the server's response here
+                // You can handle the server's response here
+              
+            } else {
+                alert("Error saving quiz results");
+            }
+        }
+    };
+    
+    const formData = `quizResults=${JSON.stringify(quizResults)}`;
+    xhr.send(formData);
+}
 });
 });
 
+
+function quizOver(){
+   // hide quiz quiz
+   quizBox.classList.add("hide");
+   //show result box
+   resultBox.classList.remove("hide");
+   quizResult();
+
+   const quizResults = quizResult();
+    document.getElementById("quizResultsInput").value = JSON.stringify(quizResults);
+}
 
 function sunod() {
   // hide
