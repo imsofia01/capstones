@@ -29,10 +29,17 @@
 <button id="startButton"> ARALIN AT PAGSUSULIT </button>
 </a>
 <br>
-    <a href="quizresult.php">
-<button id="startButton"> TALAAN NG NANGUNGUNA </button>
-</a>
+<div class="dropdown">
+  <button class="dropdown-button" id="startButton">Dropdown</button>
+  <div class="dropdown-content" >
+    <a href="#">Patinig</a>
+    <br>
+    <a href="#">Katinig</a>
+  </div>
 </div>
+</div>
+
+
 
 
 
