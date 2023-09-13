@@ -32,9 +32,9 @@
 <div class="dropdown">
   <button class="dropdown-button" id="startButton">Dropdown</button>
   <div class="dropdown-content" >
-    <a href="#">Patinig</a>
+    <a href="quizresult.php">Patinig</a>
     <br>
-    <a href="#">Katinig</a>
+    <a href="dragResult.php">Katinig</a>
   </div>
 </div>
 </div>
