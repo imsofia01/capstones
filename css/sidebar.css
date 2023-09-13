@@ -1,5 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Lilita+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Lilita+One&family=Roboto:wght@700&display=swap');
+
+  @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
 
 body{
     margin: 0;
@@ -39,6 +40,7 @@ body{
 
 
   h1{
+    font-family: 'Lobster', cursive;
     text-align:center;
     text-transform: uppercase;
     color: #F1FAEE; 
@@ -46,14 +48,17 @@ body{
   }
   
    h2{
+    font-family: 'Lobster', cursive;
     margin-top: 90px;
+    padding: 20px 50px;
     text-align:center;
     text-transform: uppercase;
     color: #000000; 
-    font-size: 6rem;
+    font-size: 8rem;
   }
   .roller{
-    height: 4.125rem;
+    
+    height: 8.125rem;
     line-height: 4rem;
     position: relative;
     overflow: hidden; 

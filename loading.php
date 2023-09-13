@@ -19,11 +19,11 @@
 <script>
 
 const colors = [
-  '#2196f3',
-  '#f43f5e',
-  '#ec4899',
-  '#d946ef',
-  '#a855f7',
+  '#33BBC5',
+  '#D0BFFF',
+  '#BEADFA',
+  '#DFCCFB',
+  '#DFCCFB',
 
 ]
 
