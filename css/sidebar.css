@@ -39,13 +39,23 @@ body{
     justify-content:center;
     text-align:center;
   }
+
+
+
   h1{
     text-align:center;
     text-transform: uppercase;
     color: #F1FAEE; 
-    font-size: 4rem;
+    font-size: 3rem;
   }
   
+   h2{
+    margin-top: 90px;
+    text-align:center;
+    text-transform: uppercase;
+    color: #000000; 
+    font-size: 6rem;
+  }
   .roller{
     height: 4.125rem;
     line-height: 4rem;

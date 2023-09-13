@@ -12,7 +12,8 @@
 
 <div class="div-1">
 <div class="main">
-  <h1>TUKLASKO!: 2D INTERACTIVE <div class="roller">
+    <h2>TUKLASKO </h2>
+  <h1>2D INTERACTIVE <div class="roller">
     <span id="rolltext">LEARNING<br/>
     ASSESSMENT<br/>
     APPLICATION<br/>

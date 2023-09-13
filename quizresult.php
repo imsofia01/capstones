@@ -75,6 +75,8 @@ arrow_back
             <th> Maling sagot </th>
             <th> Percentage </th>
             <th> Puntos </th>
+       
+
         </tr>
         </thead>
             <tbody id="myTable">
@@ -97,6 +99,7 @@ arrow_back
                 <div class="progress-bar" role="progressbar" style="width: <?php echo $row['percentage']; ?>%;" aria-valuenow="<?php echo $row['percentage']; ?>" aria-valuemin="0" aria-valuemax="100"><?php echo $row['percentage']; ?>%</div>
             </div> </td>
     <td> <?php echo $row['puntos'];?> </td>
+    
     
   
                   
