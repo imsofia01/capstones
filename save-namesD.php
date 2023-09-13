@@ -9,7 +9,6 @@ if (isset($_POST['pangalan'])  )
     $username = $_POST['pangalan'];
     $currentDate = date("Y-m-d"); // Get the current date and time
 
-  
 
 // Create the SQL INSERT query
 $sql = "INSERT INTO drag_img (pangalan, petsa) VALUES ('$username', '$currentDate')";
