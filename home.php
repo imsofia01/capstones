@@ -10,9 +10,16 @@
 </head>
 <body>
 
-
 <div class="div-1">
-    <h1> Maligayang Bati Mga Bata</h1>
+<div class="main">
+  <h1>TUKLASKO!: 2D INTERACTIVE <div class="roller">
+    <span id="rolltext">LEARNING<br/>
+    ASSESSMENT<br/>
+    APPLICATION<br/>
+    <span id="spare-time">for Kindergarten Pupils</span><br/>
+    </div>
+    </h1>
+  </div>
 
     <a href="videos.php">
 <button id="startButton"> ARALIN AT PAGSUSULIT </button>
