@@ -4,7 +4,7 @@
 body{
     margin: 0;
     padding: 0;
- 
+    background-color: #E63946;
    
 }
 /* toggle function */
@@ -25,10 +25,6 @@ body{
     margin:0;
     padding:0;
     font-family: 'Arvo';
-  }
-  
-  body{
-    background-color: #E63946;
   }
   
   .main{
