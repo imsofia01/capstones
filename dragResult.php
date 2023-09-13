@@ -52,7 +52,7 @@
 <br>
 </div>
   <h1> Talaan ng Nangunguna </h1>
-    <form action="deleteQresult.php" method="post">
+    <form action="deleteDresult.php" method="post">
   <div class="input-group mb-3">
   <input type="text" name ="search" id="search"<?php echo isset($searchQuery) ? $searchQuery : ''; ?> class="form-control" placeholder="Search">
       </div>
