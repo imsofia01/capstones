@@ -4,7 +4,7 @@
 body{
     margin: 0;
     padding: 0;
-    background-color: #E63946;
+    background-color: #9384D1;
    
 }
 /* toggle function */
@@ -61,7 +61,6 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    
     color: #1D3557;
   }
   
