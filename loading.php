@@ -8,12 +8,32 @@
 
 </head>
 <body>
+<div class="context">
+      <h2>TUKLASKO</h2>
+    </div>
+    
 
-<h2>TUKLASKO</h2>
-
-<a href="home.php">
+<div class="area" >
+            <ul class="circles">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+            </ul>
+            
+    <a href="home.php">
 <button id="startButton"> MAGSIMULA </button>
 </a>
+    </div >
+
+
+
         
 </body>
 <script>
