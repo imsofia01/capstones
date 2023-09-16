@@ -29,13 +29,12 @@ h2{
   text-align: center;
   width: 100%;
   margin: 0px auto;
-  font-size: 90px;
+  font-size: 20px;
   letter-spacing: 5px;
   top: 50%;
   position: absolute;
   margin-top: -200px;
   transition: 4s;
-  
   text-shadow: -1px -1px 0px var(--background),
     3px 3px 0px var(--background),
     6px 6px 0px #00000055;
@@ -62,7 +61,7 @@ h2{
 .context h2{
     text-align: center;
     color: #fff;
-    font-size: 7rem;
+    font-size: 9rem;
 }
 
 
@@ -223,11 +222,9 @@ h2{
 /* button  */
 #startButton{
     margin-top: 490px;
-    position:fixed;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 30px;
     font-weight: bold;
-
     width: 260px;
     padding: 20px;
     text-align: center;
