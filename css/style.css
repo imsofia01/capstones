@@ -41,6 +41,15 @@ h2{
     6px 6px 0px #00000055;
 }
 
+/* Responsive styles */
+@media (max-width: 768px) {
+    h2 {
+      font-size: 20px; /* Adjust font size for smaller screens */
+      margin-top: -100px; /* Adjust margin for smaller screens */
+    }
+  }
+  
+
 
 
 .context {
@@ -162,6 +171,35 @@ h2{
     animation-delay: 0s;
     animation-duration: 11s;
 }
+
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .context h2 {
+        font-size: 4rem; /* Adjust font size for smaller screens */
+    }
+
+    .circles li:nth-child(1) {
+        width: 40px; /* Adjust circle size for smaller screens */
+        height: 40px;
+    }
+
+    /* Adjust other circle sizes as needed for smaller screens */
+}
+
+@media (max-width: 480px) {
+    .context h2 {
+        font-size: 3rem; /* Further adjust font size for smaller screens */
+    }
+
+    .circles li:nth-child(1) {
+        width: 30px; /* Further adjust circle size for smaller screens */
+        height: 30px;
+    }
+
+    /* Further adjust other circle sizes as needed for smaller screens */
+}
+
 
 
 

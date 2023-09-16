@@ -38,14 +38,7 @@
 </body>
 <script>
 
-const colors = [
-  '#33BBC5',
-  '#D0BFFF',
-  '#BEADFA',
-  '#DFCCFB',
-  '#DFCCFB',
 
-]
 
 setInterval(() => {
   const color = colors[Math.floor(Math.random()*colors.length)]
