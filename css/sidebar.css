@@ -140,24 +140,9 @@ body{
 
 
 
-ul li a{
-    padding: 10px;
-    display: inline-block;
-    font-family: 'ADLaM Display', cursive;
-    font-family: 'Lilita One', cursive;
-    font-size: 3em;
-    text-decoration: none;
-    text-transform: uppercase;
-    color: #262626;
-}
-ul li a:hover{
-    background: #337CCF;
-    border-radius: 10px;
-}
-.menu.active{
-    left: 0;
-    overflow: auto;
-}
+/* cube animation */
+
+
 
 /* button  */
 #startButton{
@@ -252,12 +237,7 @@ ul li a:hover{
   
   }
    
-  .div-2 {
-    background-color: #146C94; 
-    height: 800px;
-    width: 100%
-  }
-  
+
   /* dropdown */
   .dropdown {
     position: relative;
