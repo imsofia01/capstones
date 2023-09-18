@@ -38,7 +38,7 @@ $resultCheck = mysqli_num_rows($result);
   <!-- drag box w/ picture -->
   <div  id="container-box-1" class="container-box custom-box hide" >
         <div class="tanong-bilang">
-    
+        <h2> Ilagay ang tamang imahe sa kahon </h2>
         </div>
      
         <div class="draggable-element">
