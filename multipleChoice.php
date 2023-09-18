@@ -36,8 +36,9 @@ $resultCheck = mysqli_num_rows($result);
 
          
     <div class="assess-box custom-box hide">
+         <h2> Piliin lamang ang Tamang letra  </h2>
         <div class="tanong-bilang">
-            
+
         </div>
         <div class="tanong-text">
             
