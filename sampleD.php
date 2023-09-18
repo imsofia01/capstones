@@ -32,7 +32,7 @@ $resultCheck = mysqli_num_rows($result);
         <h1><?php echo isset($_POST['pangalan']) ? htmlspecialchars($_POST['pangalan']) : ''; ?>!</h1>
         <br>
         <h2> Pagsusulit  </h2>
-        <p> Bilang ng mga Tanong: <span class="tanong"> </span></p>
+        <p> Bilang ng mga Imahe: 6 </p>
         <button id="btn" type="button" class="btn" onclick="simulaQuiz()"> Simula </button>
     </div>
 
@@ -62,9 +62,9 @@ $resultCheck = mysqli_num_rows($result);
           <div class="droppable" data-draggable-id="Lalaki"> <span> Lalaki </span> </div> 
           <div class="droppable" data-draggable-id="Kamay"> <span> Kamay </span> </div>
           <div class="droppable" data-draggable-id="Babae"> <span> Babae </span> </div>
-            <div class="droppable" data-draggable-id="Aso"> <span> Aso </span> </div> 
-            <div class="droppable" data-draggable-id="Paru-paro"> <span> Paru-paro </span> </div>
-            <div class="droppable" data-draggable-id="Ibon"> <span> Ibon </span> </div>
+          <div class="droppable" data-draggable-id="Aso"> <span> Aso </span> </div> 
+          <div class="droppable" data-draggable-id="Paru-paro"> <span> Paru-paro </span> </div>
+          <div class="droppable" data-draggable-id="Ibon"> <span> Ibon </span> </div>
         </div>
         <br>
         <div class="score-indicator">
@@ -81,7 +81,7 @@ $resultCheck = mysqli_num_rows($result);
 
    
 <form action="dragResult.php" class="results" id="submitButton" method="POST" onsubmit="saveQuizResults()">
-        <div class="result-box custom-box">
+        <div class="result-box custom-box hide">
             <h1> Mga resulta ng pagsusulit </h1>
             <table>
                   <tr>
@@ -118,10 +118,6 @@ const sagotIndicator = document.querySelector('.sagot-indicator');
 
 let questionCounter = 0;
 let results = [];
-
-function getNewQuestion(){
-  dropNumber.innerHTML = "Tanong " + (questionCounter + 1) + " hanggang " + containerBox;
-}
 
 
 // Get all draggable elements
