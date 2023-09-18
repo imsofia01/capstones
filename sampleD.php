@@ -218,23 +218,6 @@ return {
     };
 });
 
-// Your existing code for calculating correct and wrong counts
-let correctCount = 0;
-let wrongCount = 0;
-for (let i = 0; i < results.length; i++) {
-    if (results[i] === true) {
-        correctCount++;
-    } else {
-        wrongCount++;
-    }
-}
-document.getElementById('correctCount').textContent = correctCount;
-document.getElementById('wrongCount').textContent = wrongCount;
-
-// Update the displayed counts in the table
-document.getElementById('correctCountDisplay').textContent = correctCount;
-document.getElementById('wrongCountDisplay').textContent = wrongCount;
-document.getElementById('totalDisplay').textContent = correctCount + "/" + results.length;
 
 // Function to save quiz results and send them to the server
 function saveQuizResults() {
