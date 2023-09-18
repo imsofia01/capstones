@@ -36,7 +36,6 @@
   <a href="quizresult.php">
 <button class="dropdown-button" id="startButton"> PATINIG </button>
 </a>
-
     
     <br>
     

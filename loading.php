@@ -38,13 +38,6 @@
 </body>
 <script>
 
-
-
-setInterval(() => {
-  const color = colors[Math.floor(Math.random()*colors.length)]
-  document.body.style.setProperty('--background', color)
-}, 5000)
-
  
 </script>
 </html>

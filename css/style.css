@@ -5,7 +5,7 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+ 
 }
 body {
   text-align: center;
@@ -27,12 +27,9 @@ body {
 
 h2{
   text-align: center;
-  width: 100%;
   margin: 0px auto;
   font-size: 20px;
   letter-spacing: 5px;
-  top: 50%;
-  position: absolute;
   margin-top: -200px;
   transition: 4s;
   text-shadow: -1px -1px 0px var(--background),
@@ -59,6 +56,8 @@ h2{
 }
 
 .context h2{
+    
+    margin-top: -200px;
     text-align: center;
     color: #fff;
     font-size: 9rem;
