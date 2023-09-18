@@ -36,7 +36,6 @@
   <a href="quizresult.php">
 <button class="dropdown-button" id="startButton"> PATINIG </button>
 </a>
-    
     <br>
     
   <a href="dragResult.php">
@@ -48,18 +47,8 @@
 </div>
 
 
-
-
-
-
-
-
 </body>
 <script>
-    $(document).ready(function(){
-            $('.toggle').click(function(){
-                $('.menu').toggleClass('active');
-            });
-        });
+   
     </script>
 </html>
