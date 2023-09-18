@@ -233,8 +233,6 @@ function saveQuizResults() {
         total: total
     };
 
-    
-
     // Send quiz results to the server using AJAX
     const xhr = new XMLHttpRequest();
     xhr.open("POST", "saveResults.php", true);
