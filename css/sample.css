@@ -18,7 +18,7 @@ body{
     height: auto;
     padding: 0;
     font-size: 16px;
-    background-color: #09a0ca;
+    background-color: #655DBB;
     font-family: '', sans-serif;
     font-weight: 400;
 
@@ -26,7 +26,7 @@ body{
 
 #btn{
     padding: 15px 45px;
-    background-color: #01fe49;
+    background-color: #6ec2bf;
     border: none;
     border-radius: 5px;
     font-family: 'Montserrat', sans-serif;
@@ -58,7 +58,7 @@ body{
   }
   
   #correctCount {
-    color: #3fb573; /* Green color for correct count */
+    color: #000000; /* Green color for correct count */
     border: 3px solid #3fb573; /* Green border for correct answers */
     box-shadow: 0 0 10px #3fb573;
     
@@ -67,7 +67,7 @@ body{
   }
   
   #wrongCount {
-    color: #e74c3c; /* Red color for wrong count */
+    color: #000000; /* Red color for wrong count */
     border: 3px solid #e74c3c; /* Red border for wrong answers */
     box-shadow: 0 0 10px #e74c3c;
     
@@ -93,7 +93,7 @@ body{
 }
 
 .home-box h1{
-    color: rgb(251, 142, 0);
+    color: #0d6e6b;
     font-family: 'Geologica';
     font-size: 50px;
 }
@@ -112,7 +112,7 @@ body{
 .home-box #btn{
     margin-top: 20px;
     padding: 15px 45px;
-    background-color: #01fe49;
+    background-color: #8BE8E5;
     border: none;
     border-radius: 5px;
     font-family: 'Montserrat', sans-serif;
@@ -126,7 +126,7 @@ body{
 /* uhmm */
 .custom-box {
     max-width: 700px;
-    background-color: #93FF96;
+    background-color: #9681EB;
     margin: 10px auto;
     padding: 30px;
     border-radius: 10px;
@@ -267,7 +267,7 @@ img {
 .result-box .btn{
     margin-right: 20px;
     padding: 15px 45px;
-    background-color: #01fe49;
+    background-color: #8BE8E5;
     border: none;
     border-radius: 5px;
     font-family: 'Montserrat', sans-serif;
