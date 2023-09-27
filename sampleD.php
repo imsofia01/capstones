@@ -24,7 +24,7 @@ $resultCheck = mysqli_num_rows($result);
 
    
     <link rel="stylesheet" href="css/sample.css">
-    <title>MGA IMGAHE</title>
+    <title>Pagsusulit</title>
 </head>
 
 <body>
