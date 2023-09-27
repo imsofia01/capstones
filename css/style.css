@@ -13,17 +13,11 @@ body {
   background: var(--background);
   color: var(--color);
   transition: 4s;
+  
  
     
 }
 
-
-
-/* animation tuklasko */
-:root {
-  --color: #ffffff;
-  --background: #614BC3;
-}
 
 h2{
   text-align: center;
@@ -35,16 +29,8 @@ h2{
   text-shadow: -1px -1px 0px var(--background),
     3px 3px 0px var(--background),
     6px 6px 0px #00000055;
+    
 }
-
-/* Responsive styles */
-@media (max-width: 768px) {
-    h2 {
-      font-size: 20px; /* Adjust font size for smaller screens */
-      margin-top: -100px; /* Adjust margin for smaller screens */
-    }
-  }
-  
 
 
 .context {
@@ -60,6 +46,7 @@ h2{
     text-align: center;
     color: #fff;
     font-size: 9rem;
+    text-shadow: #2f3046;
 }
 
 

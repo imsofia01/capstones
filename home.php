@@ -7,23 +7,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" href="css/sidebar.css">
     <title>Tuklas-KO!</title>
 </head>
 <body>
 
 <div class="div-1">
-<div class="main">
-    <h2>TUKLASKO </h2>
-  <h1>2D INTERACTIVE <div class="roller">
-    <span id="rolltext">LEARNING &<br/>
-    ASSESSMENT<br/>
-    APPLICATION<br/>
-    <span id="spare-time">for Kindergarten Pupils</span><br/>
-    </div>
-    </h1>
-  </div>
+<h1><span>T</span><span>U</span><span>K</span><span>L</span><span>A</span><span>S</span><span>K</span><span>O</span><span> </span><span>O</span><span>V</span><span>E</span><span>R</span><span> </span><span>M</span><span>E</span><span>!</span></h1>
 
     <a href="videos.php">
 <button id="startButton"> ARALIN AT PAGSUSULIT </button>
