@@ -19,12 +19,22 @@ arrow_back
 </a>
     </div>
 
-    <br>
-    <body>
-    <div class="header">
-    <h1> Mga Aralin </h1>
-    </div>
-    
+
+<div class="area" >
+<h1><span>M</span><span>G</span><span>A</span><span> </span><span>A</span><span>R</span><span>A</span><span>L</span><span>I</span><span>N</span><span>!</span></h1>
+
+            <ul class="circles">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+            </ul>
 
     <!-- button sa contain -->
     <div ontouchstart="">
@@ -47,7 +57,7 @@ arrow_back
         </div>
     </div>
 </div>
-</div>
+
 <br>
 <br>
 
@@ -71,15 +81,12 @@ arrow_back
         </div>
     </div>
 </div>
+</div>
+    </body>
+    </html>
 
     <script>
         
-         // Toggle function
-    $(document).ready(function(){
-        $('.toggle').click(function(){
-            $('.menu').toggleClass('active');
-        });
-    });
 
     // Get references to the button and container
     const showButton = document.getElementById('showButton');
@@ -172,19 +179,19 @@ arrow_back
         // Play the video
         video.play();
         // Change the button text to "Pause Video"
-        playButton.textContent = 'Pause Video';
+        playButton.textContent = 'i-Pause Video';
     } else {
         // Pause the video
         video.pause();
         // Change the button text to "Play Video"
-        playButton.textContent = 'Play Video';
+        playButton.textContent = 'i-Play Video';
     }
     });
 
     playButton2.addEventListener('click', function() {
         if (video2.paused) {
             video2.play();
-            playButton2.textContent = 'Pause Video';
+            playButton2.textContent = 'i-Pause Video';
         } else {
             video2.pause();
             playButton2.textContent = 'Ulitin ang Video';
