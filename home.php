@@ -9,12 +9,26 @@
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" href="css/sidebar.css">
-    <title>Tuklas-KO!</title>
+    <title>TUKLASKO</title>
 </head>
 <body>
 
-<div class="div-1">
+
+<div class="area" >
 <h1><span>T</span><span>U</span><span>K</span><span>L</span><span>A</span><span>S</span><span>K</span><span>O</span><span> </span><span>O</span><span>V</span><span>E</span><span>R</span><span> </span><span>M</span><span>E</span><span>!</span></h1>
+
+            <ul class="circles">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+            </ul>
 
     <a href="videos.php">
 <button id="startButton"> ARALIN AT PAGSUSULIT </button>
@@ -34,6 +48,7 @@
 </a>
     
   </div>
+</div>
 </div>
 </div>
 
