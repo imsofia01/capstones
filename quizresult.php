@@ -38,6 +38,7 @@
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
@@ -58,7 +59,9 @@ arrow_back
 <br>
 
 </div>
-  <h1> Talaan ng Nangunguna </h1>
+<h1><span>T</span><span>A</span><span>L</span><span>A</span><span>A</span><span>N</span><span> </span><span>N</span><span>G</span><span> </span>
+<span>N</span><span>A</span><span>N</span><span>G</span><span>U</span><span>N</span><span>G</span><span>U</span><span>N</span><span>A</span></h1>
+
     <form action="deleteQresult.php" method="post">
   <div class="input-group mb-3">
   <input type="text" name ="search" id="search"<?php echo isset($searchQuery) ? $searchQuery : ''; ?> class="form-control" placeholder="Search">

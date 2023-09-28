@@ -52,7 +52,9 @@ arrow_back
 </a>
 <body class ="bg" style="margin: 50px;">
 </div>
-  <h1> Talaan ng Nangunguna </h1>
+<h1><span>T</span><span>A</span><span>L</span><span>A</span><span>A</span><span>N</span><span> </span><span>N</span><span>G</span><span> </span>
+<span>N</span><span>A</span><span>N</span><span>G</span><span>U</span><span>N</span><span>G</span><span>U</span><span>N</span><span>A</span></h1>
+
     <form action="deleteDresult.php" method="post">
   <div class="input-group mb-3">
   <input type="text" name ="search" id="search"<?php echo isset($searchQuery) ? $searchQuery : ''; ?> class="form-control" placeholder="Search">
