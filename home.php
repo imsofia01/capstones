@@ -30,7 +30,7 @@
                     <li></li>
             </ul>
 
-    <a href="videos.php">
+    <a href="buttons.php">
 <button id="startButton"> ARALIN AT PAGSUSULIT </button>
 </a>
 <br>
