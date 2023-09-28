@@ -37,9 +37,9 @@ arrow_back
 
             </ul>
             
-            <div class="button-9" role="button">
-        <a href="videos.php"> MGA PATINIG </a>
-    </div>
+            <a href="videos.php">
+        <button id="startButton"> PATINIG AT KATINIG </button>
+        </a>
 
   <div class="cols">
 			<div class="col" ontouchstart="this.classList.toggle('hover');">
