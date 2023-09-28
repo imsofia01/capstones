@@ -21,7 +21,11 @@ arrow_back
 
 <div class="area" >
 <div class="wrapper">
-<h1><span>P</span><span>A</span><span>T</span><span>I</span><span>N</span><span>I</span><span>G</span></h1>
+<h1><span>P</span><span>A</span><span>T</span><span>I</span><span>N</span><span>I</span><span>G</span>
+<br>
+<a href="videos.php">
+        <button id="startButton"> PATINIG AT KATINIG </button>
+        </a></h1>
 
 <ul class="circles">
                     <li></li>
@@ -37,10 +41,7 @@ arrow_back
 
             </ul>
             
-            <a href="videos.php">
-        <button id="startButton"> PATINIG AT KATINIG </button>
-        </a>
-
+          
   <div class="cols">
 			<div class="col" ontouchstart="this.classList.toggle('hover');">
 				<div class="container">

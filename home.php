@@ -31,7 +31,7 @@
                     <li></li>
             </ul>
 
-    <a href="buttons.php">
+    <a href="lessonChoices.php">
 <button id="startButton"> ARALIN AT PAGSUSULIT </button>
 </a>
 <br>

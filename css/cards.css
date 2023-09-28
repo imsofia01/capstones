@@ -369,13 +369,10 @@ h1 span:nth-child(14){ animation-delay:.65s; }
     
 
 
-
-  /* button */
   /* CSS */
 
 /* button  */
 #startButton{
-    margin-left: 640px;
     margin-top: 20px;
     position:relative;
     font-family: Arial, Helvetica, sans-serif;
@@ -441,6 +438,14 @@ h1 span:nth-child(14){ animation-delay:.65s; }
    }
 
 
+/* Adjusted font size and padding for smaller screens */
+@media (max-width: 600px) {
+    #startButton {
+        font-size: 1.5rem;
+        padding: 15px;
+        text-align: center;
+    }
+}
 
 
   /* CSS */
