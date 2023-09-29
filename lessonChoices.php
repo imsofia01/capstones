@@ -200,7 +200,7 @@ arrow_back
 
     skipButton2.addEventListener('click', function() {
         // Add logic to skip ahead in the second video
-        // You can use video2.currentTime to set the current playback time.
+     
            // Define the number of seconds to skip
            const skipSeconds = 60; // You can adjust this value
 
