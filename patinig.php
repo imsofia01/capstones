@@ -24,7 +24,7 @@ arrow_back
 <h1><span>P</span><span>A</span><span>T</span><span>I</span><span>N</span><span>I</span><span>G</span>
 <br>
 <a href="videos.php">
-        <button id="startButton"> PATINIG AT KATINIG </button>
+        <button id="startButton"> PATINIG </button>
         </a></h1>
 
 <ul class="circles">
