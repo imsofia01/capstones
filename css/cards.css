@@ -41,6 +41,18 @@
   'opsz' 24
 }
 
+h2{
+  text-align: center;
+  color: #ffffff;
+  font-size: 2rem;
+  font-family: 'monospace';
+}
+
+ .card{
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
   
   h1{
     
@@ -52,22 +64,31 @@
     margin: 2rem 0;
   }
   
+  .area{
+  background: #614BC3;  
+    
+  width: 100%;
+  height: 400%;
+   position: absolute;
 
+
+
+  }
   .wrapper .area{
     width: 90%;
     margin: 0 auto;
     max-width: 80rem;
-    margin-top: 15  0px;
+    margin-top: 100px; 
   }
   
   .cols{
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-  
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+            flex-wrap: wrap;
   }
   
   .col{
@@ -237,15 +258,7 @@ h1 span:nth-child(14){ animation-delay:.65s; }
 
 
 /* CUDE ANIMATION */
-.area{
-    background: #614BC3;  
-    background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);  
-    width: 100%;
-    height: 100%; 
-    position: fixed;
-    
-   
-  }
+
 
   
   .circles li{

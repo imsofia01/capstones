@@ -38,7 +38,7 @@ arrow_back
 
         <div class="border">
         <div id="showButton2" class="button">
-            <a href="patinig.php"> ABAKADA </a>
+            <a href="patinig.php"> ARALIN 1 </a>
             </div>
           </div>
 
@@ -49,7 +49,7 @@ arrow_back
     
           <div class="border">
             <div id="showButton2" class="button">
-            <a href="buttons.php"> MGA SALITANG FILIPINO </a>
+            <a href="buttons.php"> ARALIN 2 </a>
             </div>
           </div>
     
