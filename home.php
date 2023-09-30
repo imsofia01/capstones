@@ -41,7 +41,7 @@
   <div class="dropdown-content" >
 
   <a href="quizresult.php">
-<button class="dropdown-button" id="startButton"> PATINIG </button>
+<button class="dropdown-button" id="startButton"> ALPABETONG FILIPINO </button>
 </a>
     <br>
     

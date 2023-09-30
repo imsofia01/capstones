@@ -23,10 +23,11 @@ arrow_back
 <br>
 <br>
 <br>
-<h1><span>A</span><span>R</span><span>A</span><span>L</span><span>I</span><span>N 1:</span><span> </span><span>A</span><span>L</span><span>P</span><span>A</span><span>B</span><span>E</span><span>T</span><span>O</span><span>N</span><span>G</span>
-<span> </span><span>P</span><span>I</span><span>L</span><span>I</span><span>P</span><span>I</span><span>N</span><span>O</span>
+<h1><span>A</span><span>R</span><span>A</span><span>L</span><span>I</span><span>N</span><span> </span><span> 1:</span><span> </span>
+<br><span>A</span><span>L</span><span>P</span><span>A</span><span>B</span><span>E</span><span>T</span><span>O</span><span>N</span><span>G</span> 
+<span> </span> <span>F</span><span>I</span><span>L</span><span>I</span><span>P</span><span>I</span><span>N</span><span>O</span>
 </h1>
-<h2> Ang mga letrang inyong nakikita ay mga salitang bumubuo sa ALPABETONG PILIPINO </h2>
+<h2> Ang mga letrang inyong nakikita ay mga salitang bumubuo sa ALPABETONG FILIPINO </h2>
 
 <ul class="circles">
                     <li></li>
