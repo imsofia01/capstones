@@ -8,9 +8,9 @@
 
   /* toggle function */
 .toggle{
-    position: fixed;
+    position: absolute;
     top: 40px;
-    left: 40px;
+    left: 60px;
     z-index: 2
 }
 .toggle a{
@@ -52,47 +52,43 @@ h2{
   align-items: center;
   justify-content: center;
   display: flex;
+  
 }
   
   h1{
     
-    font-size: 7rem;
+
     font-family: 'Montserrat';
     font-weight: normal;
     color: #444;
     text-align: center;
-    margin: 2rem 0;
-  }
-  
-  .area{
-  background: #614BC3;  
     
-  width: 100%;
-  height: 400%;
-   position: absolute;
-
-
-
-  }
-  .wrapper .area{
-    width: 90%;
-    margin: 0 auto;
-    max-width: 80rem;
-    margin-top: 100px; 
   }
   
+  .area{ 
+  background: #614BC3;  
+  background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);  
+  width: 100%;
+  
+  position: relative;
+  overflow-y: hidden;
+
+  }
+
   .cols{
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    padding: 50px 50px;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
             flex-wrap: wrap;
+            
   }
   
   .col{
-    width: calc(25% - 2rem);
+    width: calc(20% - 2rem);
     margin: 1rem;
     cursor: pointer;
   }
@@ -123,23 +119,6 @@ h2{
       color: #000000;
       font-size: 1.5rem;
   }
-  
-
-  .front:after{
-      position: absolute;
-      top: 0;
-      left: 0;
-      z-index: 1;
-      width: 100%;
-      height: 100%;
-      content: '';
-      display: block;
-      opacity: .6;
-      
-      -webkit-backface-visibility: hidden;
-              backface-visibility: hidden;
-      border-radius: 10px;
-  }
 
 
   
@@ -160,13 +139,6 @@ h2{
   }
   
  
-  
-  .container .front{
-      -webkit-transform: rotateY(0deg);
-              transform: rotateY(0deg);
-      -webkit-transform-style: preserve-3d;
-              transform-style: preserve-3d;
-  }
 
   
 

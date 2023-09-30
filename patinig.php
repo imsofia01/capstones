@@ -20,7 +20,9 @@ arrow_back
     </div>
 
 <div class="area" >
-<div class="wrapper">
+<br>
+<br>
+<br>
 <h1><span>A</span><span>R</span><span>A</span><span>L</span><span>I</span><span>N 1:</span><span> </span><span>A</span><span>L</span><span>P</span><span>A</span><span>B</span><span>E</span><span>T</span><span>O</span><span>N</span><span>G</span>
 <span> </span><span>P</span><span>I</span><span>L</span><span>I</span><span>P</span><span>I</span><span>N</span><span>O</span>
 </h1>
@@ -41,7 +43,7 @@ arrow_back
             </ul>
             
   <div class="cols">
-			<div class="col" ontouchstart="this.classList.toggle('hover');">
+			<div class="col">
 				<div class="container">
 					<div class="front" style="background-color: #9AC5F4">
 						<div class="inner">
@@ -57,7 +59,7 @@ arrow_back
 					</div>
 				</div>
 			</div>
-			<div class="col" ontouchstart="this.classList.toggle('hover');">
+			<div class="col">
 				<div class="container">
 					<div class="front" style="background-color: #FDF7C3">
 						<div class="inner">
@@ -73,7 +75,7 @@ arrow_back
 				</div>
 			</div>
 	
-			<div class="col" ontouchstart="this.classList.toggle('hover');">
+			<div class="col">
 				<div class="container">
 					<div class="front" style="background-color: #FFB4B4">
 						<div class="inner">
@@ -88,7 +90,7 @@ arrow_back
 					</div>
 				</div>
 			</div>
-			<div class="col" ontouchstart="this.classList.toggle('hover');">
+			<div class="col">
 				<div class="container">
 					<div class="front" style="background-color: #B2A4FF">
 						<div class="inner">
@@ -130,7 +132,7 @@ arrow_back
                     </div>
                 </div>
             </div>
-			<div class="col" ontouchstart="this.classList.toggle('hover');">
+			<div class="col">
 				<div class="container">
 					<div class="front" style="background-color: #FFA1F5">
 						<div class="inner">
@@ -144,7 +146,7 @@ arrow_back
                     </div>
                 </div>
             </div>
-			<div class="col" ontouchstart="this.classList.toggle('hover');">
+			<div class="col">
 				<div class="container">
 					<div class="front" style="background-color: #F8FF95">
 						<div class="inner">
@@ -158,7 +160,7 @@ arrow_back
                     </div>
                 </div>
             </div>
-			<div class="col" ontouchstart="this.classList.toggle('hover');">
+			<div class="col">
 				<div class="container">
 					<div class="front" style="background-color: #C8E4B2">
 						<div class="inner">
@@ -172,7 +174,7 @@ arrow_back
                     </div>
                 </div>
             </div>
-			<div class="col" ontouchstart="this.classList.toggle('hover');">
+			<div class="col">
 				<div class="container">
 					<div class="front" style="background-color: #33BBC5">
 						<div class="inner">
@@ -186,7 +188,7 @@ arrow_back
                     </div>
                 </div>
             </div>
-			<div class="col" ontouchstart="this.classList.toggle('hover');">
+			<div class="col">
 				<div class="container">
 					<div class="front" style="background-color: #85E6C5">
 						<div class="inner">
@@ -200,7 +202,7 @@ arrow_back
                     </div>
                 </div>
             </div>
-			<div class="col" ontouchstart="this.classList.toggle('hover');">
+			<div class="col">
 				<div class="container">
 					<div class="front" style="background-color: #FCBAAD">
 						<div class="inner">
@@ -214,7 +216,7 @@ arrow_back
                     </div>
                 </div>
             </div>
-			<div class="col" ontouchstart="this.classList.toggle('hover');">
+			<div class="col">
 				<div class="container">
 					<div class="front" style="background-color: #FBA1B7">
 						<div class="inner">
@@ -228,7 +230,7 @@ arrow_back
                     </div>
                 </div>
             </div>
-			<div class="col" ontouchstart="this.classList.toggle('hover');">
+			<div class="col">
 				<div class="container">
 					<div class="front" style="background-color: #FFD9C0">
 						<div class="inner">
@@ -242,7 +244,7 @@ arrow_back
                     </div>
                 </div>
             </div>
-			<div class="col" ontouchstart="this.classList.toggle('hover');">
+			<div class="col">
 				<div class="container">
 					<div class="front" style="background-color: #9AC5F4">
 						<div class="inner">
@@ -256,7 +258,7 @@ arrow_back
                     </div>
                 </div>
             </div>
-			<div class="col" ontouchstart="this.classList.toggle('hover');">
+			<div class="col">
 				<div class="container">
 					<div class="front" style="background-color: #A7ECEE">
 						<div class="inner">
@@ -270,7 +272,7 @@ arrow_back
                     </div>
                 </div>
             </div>
-			<div class="col" ontouchstart="this.classList.toggle('hover');">
+			<div class="col">
 				<div class="container">
 					<div class="front" style="background-color: #FF8989">
 						<div class="inner">
@@ -284,7 +286,7 @@ arrow_back
                     </div>
                 </div>
             </div>
-			<div class="col" ontouchstart="this.classList.toggle('hover');">
+			<div class="col">
 				<div class="container">
 					<div class="front" style="background-color: #98EECC">
 						<div class="inner">
@@ -298,7 +300,7 @@ arrow_back
                     </div>
                 </div>
             </div>
-			<div class="col" ontouchstart="this.classList.toggle('hover');">
+			<div class="col">
 				<div class="container">
 					<div class="front" style="background-color: #B6EAFA">
 						<div class="inner">
@@ -312,7 +314,7 @@ arrow_back
                     </div>
                 </div>
             </div>
-			<div class="col" ontouchstart="this.classList.toggle('hover');">
+			<div class="col">
 				<div class="container">
 					<div class="front" style="background-color: #6DA9E4">
 						<div class="inner">
@@ -326,7 +328,7 @@ arrow_back
                     </div>
                 </div>
             </div>
-			<div class="col" ontouchstart="this.classList.toggle('hover');">
+			<div class="col" >
 				<div class="container">
 					<div class="front" style="background-color: #FFF9DE">
 						<div class="inner">
@@ -340,7 +342,7 @@ arrow_back
                     </div>
                 </div>
             </div>
-			<div class="col" ontouchstart="this.classList.toggle('hover');">
+			<div class="col" >
 				<div class="container">
 					<div class="front" style="background-color: #FDF7C3">
 						<div class="inner">
@@ -354,7 +356,7 @@ arrow_back
                     </div>
                 </div>
             </div>
-			<div class="col" ontouchstart="this.classList.toggle('hover');">
+			<div class="col" >
 				<div class="container">
 					<div class="front" style="background-color: #FFB4B4">
 						<div class="inner">
@@ -368,7 +370,7 @@ arrow_back
                     </div>
                 </div>
             </div>
-			<div class="col" ontouchstart="this.classList.toggle('hover');">
+			<div class="col" >
 				<div class="container">
 					<div class="front" style="background-color: #B2A4FF">
 						<div class="inner">
@@ -382,7 +384,7 @@ arrow_back
                     </div>
                 </div>
             </div>
-			<div class="col" ontouchstart="this.classList.toggle('hover');">
+			<div class="col">
 				<div class="container">
 					<div class="front" style="background-color: #8DDFCB">
 						<div class="inner">
@@ -396,7 +398,7 @@ arrow_back
                     </div>
                 </div>
             </div>
-			<div class="col" ontouchstart="this.classList.toggle('hover');">
+			<div class="col">
 				<div class="container">
 					<div class="front" style="background-color: #E8A0BF">
 						<div class="inner">
@@ -410,7 +412,7 @@ arrow_back
                     </div>
                 </div>
             </div>
-			<div class="col" ontouchstart="this.classList.toggle('hover');">
+			<div class="col" >
 				<div class="container">
 					<div class="front" style="background-color: #B0DAFF">
 						<div class="inner">
