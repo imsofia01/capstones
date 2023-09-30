@@ -23,6 +23,7 @@ $resultCheck = mysqli_num_rows($result);
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.0/mdb.min.css"rel="stylesheet"/>
     <link rel="stylesheet" href="css/choices.css">
     <title>Document</title>
+    <link rel="icon" type="image/x-icon" href="./pics/logo.png">
 </head>
 <body>
     

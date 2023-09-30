@@ -40,6 +40,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,600,0,200" />
     <link rel="stylesheet" href="css/Qtable.css">
     <title>Pagsusulit</title>
+    <link rel="icon" type="image/x-icon" href="./pics/logo.png">
 
     <script src="js/search.js"></script>
 

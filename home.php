@@ -10,6 +10,7 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" href="css/sidebar.css">
     <title>TUKLASKO</title>
+    <link rel="icon" type="image/x-icon" href="./pics/logo.png">
 </head>
 <body>
 

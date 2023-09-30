@@ -25,6 +25,7 @@ $resultCheck = mysqli_num_rows($result);
    
     <link rel="stylesheet" href="css/sample.css">
     <title>Pagsusulit</title>
+    <link rel="icon" type="image/x-icon" href="./pics/logo.png">
 </head>
 
 <body>
