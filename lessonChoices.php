@@ -39,7 +39,7 @@ arrow_back
 
         <div class="border">
         <div id="showButton2" class="button">
-            <a href="patinig.php"> ARALIN 1 </a>
+            <a href="alpabeto.php"> ARALIN 1 </a>
             </div>
           </div>
 
