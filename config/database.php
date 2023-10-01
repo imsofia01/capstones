@@ -13,9 +13,6 @@ if (!$conn) {
     die("Connection failed");
 }
 
-// $sql = "SELECT id, username, edad, kasarian FROM gamescore";
-// $result = mysqli_query($conn, $sql);
-
 $sql = "SELECT id, username, total_tanong, total_correct, total_wrong, percentage, puntos FROM names";
 $result = mysqli_query($conn, $sql);
 

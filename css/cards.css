@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Rowdies&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -47,7 +49,7 @@ h2{
   text-align: center;
   color: #ffffff;
   font-size: 2rem;
-  font-family: 'monospace';
+  font-family: 'Rowdies', cursive;
 }
 
  .card{

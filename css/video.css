@@ -55,6 +55,8 @@ body{
     border: 1px solid #ccc;
     background-color: #242325d7;
     border-radius: 20px;
+    position: relative;
+    justify-content: center;
 }
 
 

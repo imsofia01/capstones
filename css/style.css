@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Exo:400,700');
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
 
         /* book loading */
 * {
@@ -40,11 +39,11 @@ h2{
 }
 
 .context h2{
-    
+    font-family: 'Luckiest Guy', cursive;
     margin-top: -200px;
     text-align: center;
     color: #fff;
-    font-size: 9rem;
+    font-size: 10rem;
     text-shadow: #2f3046;
 }
 
@@ -202,7 +201,6 @@ h2{
 
 }
 
-
 /* button  */
 #startButton{
     margin-top: 490px;
@@ -264,3 +262,4 @@ h2{
    #startButton:hover::before {
 	width: 100%;
    }
+

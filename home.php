@@ -16,7 +16,7 @@
 
 
 <div class="area" >
-<h1><span>T</span><span>U</span><span>K</span><span>L</span><span>A</span><span>S</span><span>K</span><span>O</span><span> </span> <br>
+<h1>
 <span> </span><span>L</span><span>E</span><span>A</span><span>R</span><span>N</span><span>I</span><span>N</span><span>G</span><span> </span><span>&</span><span> </span><span>A</span><span>S</span><span>S</span><span>E</span><span>S</span><span>S</span><span>M</span><span>E</span><span>N</span><span>T</span></h1>
 
             <ul class="circles">
