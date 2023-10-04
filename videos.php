@@ -69,7 +69,7 @@ arrow_back
 
     function skipVideo() {
         // Skip 10 seconds ahead in the video
-        video.currentTime += 90; // You can adjust the number of seconds to skip
+        video.currentTime += 100; // You can adjust the number of seconds to skip
     }
 
     function playVideo() {

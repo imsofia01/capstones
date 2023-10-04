@@ -122,6 +122,9 @@ let attempts = 0;
 
 // push the questions into availableQuestions Array
 function setAvailableQuestions(){
+    // Shuffle the quiz array
+    quiz.sort(() => Math.random() - 0.5);
+    
     const totalQuestion = quiz.length;
     for(let i=0; i<totalQuestion; i++) {
         availableQuestions.push(quiz[i])
@@ -140,6 +143,8 @@ function getNewQuestion(){
     currentQuestion = questionIndex;
     tanongText.innerHTML = currentQuestion.q;
     // console.log(questionIndex)
+
+
     // get the position ng 'questionIndex' sa availableQuestions Array;
     const index1 = availableQuestions.indexOf(questionIndex);
         // remove the 'questionIndex' sa availableQuestions Array; para hindi mag repeat yung questions

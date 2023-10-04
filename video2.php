@@ -37,41 +37,54 @@ arrow_back
                     <li></li>
             </ul>
 
-        <div class="border">
-        <div id="showButton2" class="button">
-            <a href="alpabeto.php"> ARALIN 1 </a>
-            </div>
-          </div>
 
-          <br>
-          <br>
-
-
-          <div class="border">
-            <div id="showButton2" class="button">
-            <a href="pananalita.php"> ARALIN 2 </a>
-            </div>
-          </div>
-    
-    <br>
-    <br>
-
-        <div class="border">
-            <div id="showButton2" class="button">
-            <a href="buttons.php"> ARALIN 3 </a>
-            </div>
-          </div>
+   <!-- conatiner -->
+   <div class="container" id="myContainer">
+        <div id="video-container">
+            <video id="myVideo" width="100%" controls>
+            <source src="./videos/lesson1.mp4"  type="video/mp4">
+        </video>
+        
+        <div id="video-controls">
+        <button id="playButton">Ulitin ang Video</button>
+        <button id="skip-button">Maglaktaw sa Video</button>
+        <!-- <button id="openAssessmentButton" >Play</button> -->
+        </div>
+    </div>
+</div>
 
 
     </body>
     </html>
-
     <script>
         
+        document.addEventListener('DOMContentLoaded', function() {
+    const video = document.getElementById('myVideo');
+    const skipButton = document.getElementById('skip-button');
+    const playButton = document.getElementById('playButton');
 
-    
-        
+    skipButton.addEventListener('click', skipVideo);
+    video.addEventListener('ended', goToNextPage);
+    playButton.addEventListener('click', playVideo);
+
+    function skipVideo() {
+        // Skip 10 seconds ahead in the video
+        video.currentTime += 100; // You can adjust the number of seconds to skip
+    }
+
+    function playVideo() {
+        // Play the video from the beginning
+        video.currentTime = 0;
+        video.play();
+    }
+
+    function goToNextPage() {
+        // Redirect to the next page when the video ends
+        window.location.href = 'save-namesD.php'; // Replace with the actual URL of the next page
+    }
+});
 
     </script>
+
 </body>
 </html>
