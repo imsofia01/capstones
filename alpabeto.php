@@ -430,7 +430,7 @@ arrow_back
 			</div>
 			<div class="card">
 		<a href="videos.php">
-        <button id="startButton"> ABAKADA </button>
+        <button id="startButton"> Alpabetong Filipino </button>
         </a>
 
 

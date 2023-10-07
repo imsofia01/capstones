@@ -46,7 +46,7 @@
     <br>
     
   <a href="dragResult.php">
-<button class="dropdown-button" id="startButton"> KATINIG </button>
+<button class="dropdown-button" id="startButton"> Magagalang na Pananalita at Pagbati </button>
 </a>
     
   </div>

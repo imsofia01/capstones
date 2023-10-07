@@ -22,8 +22,6 @@ arrow_back
 
 
 <div class="area" >
-<h1><span>M</span><span>G</span><span>A</span><span> </span><span>A</span><span>R</span><span>A</span><span>L</span><span>I</span><span>N</span><span>!</span></h1>
-
             <ul class="circles">
                     <li></li>
                     <li></li>

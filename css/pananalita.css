@@ -415,10 +415,7 @@ article {
     transition: transform 0.4s ease-in-out;
   }
   
-  .article-body {
-    padding: 24px;
-  }
-  
+
   article a {
     display: inline-flex;
     align-items: center;
@@ -473,7 +470,7 @@ article {
     }
   }
   
-  @container card (min-width: 380px) {
+  .container {
     .article-wrapper {
       display: grid;
       grid-template-columns: 100px 1fr;

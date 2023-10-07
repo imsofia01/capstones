@@ -53,14 +53,6 @@ arrow_back
             </div>
           </div>
     
-    <br>
-    <br>
-
-        <div class="border">
-            <div id="showButton2" class="button">
-            <a href="buttons.php"> ARALIN 3 </a>
-            </div>
-          </div>
 
 
     </body>

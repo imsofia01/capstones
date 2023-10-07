@@ -57,6 +57,7 @@ body{
     border-radius: 20px;
     position: relative;
     justify-content: center;
+    margin-top: 100px;
 }
 
 
@@ -88,34 +89,6 @@ body{
     display: flex;
 } 
 
-/* video2 */
-#video-controls2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 10px;
-}
-
-
-#skip-button2 {
-    background-color: #007bff;
-    color: white;
-    padding: 10px 20px;
-    cursor: pointer;
-    border: none;
-    margin: 0 10px;
-    display: flex;
-}
-
-#playButton2{
-    background-color: #007bff;
-    color: white;
-    padding: 10px 20px;
-    cursor: pointer;
-    border: none;
-    margin: 0 10px;
-    display: flex;
-} 
 
 
   .button{
