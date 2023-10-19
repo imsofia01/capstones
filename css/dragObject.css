@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@500&family=Montserrat:wght@500;600&family=Rubik+Puddles&display=swap');
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  
+}
+
+body{
+    margin: 0;
+    height: auto;
+    padding: 0;
+    font-size: 16px;
+    background-color: #09a0ca;
+    font-family: '', sans-serif;
+    font-weight: 400;
+
+}
+.custom-box{
+    max-width: 700px;
+    background-color: #93FF96;
+    margin: 100px auto;
+    padding: 30px;
+    border-radius: 10px;  
+    animation: fadeInRight 1s ease;
+}
+@keyframes fadeInRight {
+    0%{
+        transform: translateX(40px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+.custom-box::before,
+.custom-box::after{
+    content: '';
+    clear: both;
+    display: table;
+}
+
+.custom-box.hide{
+    display: none;
+}
+
+
+#btn{
+    padding: 15px 45px;
+    background-color: #01fe49;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+
+
+/* drag box css */
+/* Style for the score indicator */
+.score-indicator {
+    text-align: center;
+    margin-top: 10px;
+   
+    
+  }
+  
+  span#correctCount, #wrongCount {
+    font-weight: bold;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    margin-left: 5px;
+
+    
+    
+  }
+  
+  #correctCount {
+    color: #3fb573; /* Green color for correct count */
+    border: 3px solid #3fb573; /* Green border for correct answers */
+    box-shadow: 0 0 10px #3fb573;
+    
+ 
+   
+  }
+  
+  #wrongCount {
+    color: #e74c3c; /* Red color for wrong count */
+    border: 3px solid #e74c3c; /* Red border for wrong answers */
+    box-shadow: 0 0 10px #e74c3c;
+    
+  }
+  
+  /* Add spacing between correct and wrong counts */
+  #correctCount::before {
+    content: "Correct: ";
+  }
+  
+  #wrongCount::before {
+    content: "Wrong: ";
+  }
+
+
+
+.home-box p{
+    font-size: 16px;
+    margin-bottom: 10px;
+    line-height: 50px;
+    color: #000000;
+    font-weight: 400;
+}
+
+.home-box h1{
+    color: rgb(251, 142, 0);
+    font-family: 'Geologica';
+    font-size: 50px;
+}
+
+.home-box h2{
+    
+    font-family: 'Geologica', sans-serif;
+    max-width: 700px;
+    font-size: 35px;
+    color: #000c1a;
+    font-weight: 500px;
+    margin-top: 2px;
+    line-height: 25px;
+}
+
+.home-box #btn{
+    margin-top: 20px;
+    padding: 15px 45px;
+    background-color: #01fe49;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+
+
+ .droppable,
+ .draggable {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 23px;
+   font-weight: bold;
+   transition: border-width 0.2s, transform 0.2s, background-color 0.4s;
+   padding: 10px;
+   border: 1px dashed #101010;
+   background-color: #f2f2f2;
+ }
+
+
+/* drag & drop CSS */
+.draggable-element,
+.droppable-points {
+    display: flex;
+    justify-content: space-around;
+    margin: 3rem;
+    
+}
+
+.draggable {
+    height: 9rem;
+    width: 9rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
+    margin: 0rem 0.5rem;
+    cursor: move;
+    transition: opacity 0.5s;
+    box-shadow: transparent #000000;
+}
+
+
+.draggable:hover {
+    opacity: 0.5;
+}
+
+
+.droppable span {
+    font-size: 1.25rem;
+    pointer-events: none;  
+}
+
+
+
+/* Drag and Drop Related Styling */
+
+.droppable.droggable-hover{
+    border-width: 5px;
+    transform: scale(1.1);
+}
+.droppable.draggable
+.hide {
+    display: none;
+    cursor: move;
+}
+
+img {
+    
+    width: 10em;
+    filter: drop-shadow(0 0.3em 0.9em rgba(0, 0, 0, 0.25));
+
+}
+
+/* responsive */
+/* Media query for screens with a maximum width of 768px */
+@media (max-width: 768px) {
+    .droppable,
+    .draggable {
+        font-size: 18px; /* Adjust font size for smaller screens */
+        /* ... adjust other properties as needed ... */
+    }
+
+    .draggable {
+        height: 7rem;
+        width: 7rem;
+        font-size: 3rem;
+        /* ... adjust other properties as needed ... */
+    }
+}
+
+/* Media query for screens with a maximum width of 576px */
+@media (max-width: 576px) {
+    .droppable,
+    .draggable {
+        font-size: 16px; /* Further adjust font size for smaller screens */
+        /* ... adjust other properties as needed ... */
+    }
+
+    .draggable {
+        height: 6rem;
+        width: 6rem;
+        font-size: 2.5rem;
+        /* ... adjust other properties as needed ... */
+    }
+}
+
+
+@media(max-width: 767px){
+    .result-box .btn{
+        margin-bottom: 15px;
+    }
+    body{
+        padding: 15px;
+    }
+}
+
+
+
+.result-box{
+    text-align: center;
+}
+.result-box.hide{
+    display: none;
+}
+
+.result-box h1{
+    font-size: 36px;
+    line-height: 42px;
+    color: #000000;
+}
+.result-box table{
+    width: 100%;
+    border-collapse: collapse;
+    margin: 30px 0;
+}
+.result-box table td{
+    border: 1px solid #000000;
+    padding: 8px 15px;
+    font-weight: 500; 
+    color: #000000;
+    width: 50%;
+    font-size: 18px;
+}
+.result-box .btn{
+    margin-right: 20px;
+    padding: 15px 45px;
+    background-color: #01fe49;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+
+@media(max-width: 767px){
+    .result-box .btn{
+        margin-bottom: 15px;
+    }
+    body{
+        padding: 15px;
+    }
+}
+
+
+
+
+
+

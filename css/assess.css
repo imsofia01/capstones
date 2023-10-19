@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Lilita+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Lilita+One&family=Roboto:wght@700&display=swap');
+
+
+body{
+    margin: 0;
+    padding: 0;
+    background: #93C6E7;
+}
+
+.toggle{
+    position: fixed;
+    top: 40px;
+    left: 40px;
+    z-index: 2
+}
+
+.toggle a{
+    text-decoration: none;
+    color: #262626;
+    font-size: 44px;
+    cursor: pointer;
+}
+
+.menu.active{
+    left: 0;
+    overflow: auto;
+}
+
+  /* Style for the video container */
+  #video-container {
+    padding: 0% 50%;
+   
+    align-items: center;
+}
+
+/* Style for the assessment game */
+#assessment-game {
+    display: none; /* Initially hidden */
+    width: 80%;
+    margin: 0 auto;
+}
