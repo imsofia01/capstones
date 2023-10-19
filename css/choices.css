@@ -20,7 +20,7 @@ body{
     padding: 0;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
-    background: #3F497F;
+    background: #655DBB;
 }
 
 .toggle{
@@ -42,15 +42,11 @@ body{
     overflow: auto;
 }
 
-
-
-
-
 /* question box css */
 .custom-box{
     
     max-width: 900px;
-    background-color: #539165;
+    background-color: #9C9EFE;
     margin: 40px auto;
     padding: 30px;
     border-radius: 10px;

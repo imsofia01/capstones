@@ -22,7 +22,6 @@ arrow_back
 
 
 <div class="area" >
-
             <ul class="circles">
                     <li></li>
                     <li></li>
@@ -79,7 +78,7 @@ arrow_back
 
     function goToNextPage() {
         // Redirect to the next page when the video ends
-        window.location.href = 'save-names.php'; // Replace with the actual URL of the next page
+        window.location.href = 'save-namesD.php'; // Replace with the actual URL of the next page
     }
 });
 

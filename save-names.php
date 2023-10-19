@@ -33,6 +33,7 @@ if (!$result) {
  
     <link rel="stylesheet" href="css/names.css">
     <title>Ilagay ang pangalan</title>
+    <link rel="icon" type="image/x-icon" href="./pics/logo.png">
 </head>
 <body>
 <div class="login-box" id="boxbox">

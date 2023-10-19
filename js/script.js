@@ -1,13 +1,13 @@
 // Array of Objects
 const quiz = [
     {
-    q: 'BA ___ BI BO BU ?',
-    option:['BA', 'BE', 'BU', 'BO'],
-    answer: 1
+    q: 'Ang mga sumusunod na salita ay nag sisimula sa Letrang A, maliban sa?',
+    option:['Araw', 'Alahas', 'Apoy', 'Buhok'],
+    answer: 3
     },
     {
-    q: 'A E __ O U ?',
-    option:[ 'A', 'E', 'I', 'U'],
+    q: 'Alin sa mga sumusunod na salita ang nag sisimula sa Letrang E?',
+    option:[ 'Apoy', 'Buhok', 'Elepante', 'Alahas'],
     answer: 2
     },
     {
@@ -18,7 +18,8 @@ const quiz = [
     {
     q: ' BA __ E ?',
     option:[ 'BU', 'DA', 'LA', 'BA'],
-    answer: 3
+    answer: 3,
+    image: "../pics/girl.jpg" // Add the image URL for this question
     },
     {
     q: ' LA LA __ ?',

@@ -23,6 +23,7 @@ $resultCheck = mysqli_num_rows($result);
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.0/mdb.min.css"rel="stylesheet"/>
     <link rel="stylesheet" href="css/choices.css">
     <title>Document</title>
+    <link rel="icon" type="image/x-icon" href="./pics/logo.png">
 </head>
 <body>
     
@@ -36,8 +37,9 @@ $resultCheck = mysqli_num_rows($result);
 
          
     <div class="assess-box custom-box hide">
+         <h2> Piliin lamang ang Tamang letra  </h2>
         <div class="tanong-bilang">
-            
+
         </div>
         <div class="tanong-text">
             
@@ -120,6 +122,9 @@ let attempts = 0;
 
 // push the questions into availableQuestions Array
 function setAvailableQuestions(){
+    // Shuffle the quiz array
+    quiz.sort(() => Math.random() - 0.5);
+    
     const totalQuestion = quiz.length;
     for(let i=0; i<totalQuestion; i++) {
         availableQuestions.push(quiz[i])
@@ -138,6 +143,8 @@ function getNewQuestion(){
     currentQuestion = questionIndex;
     tanongText.innerHTML = currentQuestion.q;
     // console.log(questionIndex)
+
+
     // get the position ng 'questionIndex' sa availableQuestions Array;
     const index1 = availableQuestions.indexOf(questionIndex);
         // remove the 'questionIndex' sa availableQuestions Array; para hindi mag repeat yung questions

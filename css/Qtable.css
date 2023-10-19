@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
 *{
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -6,28 +7,61 @@
 body{
     font-family: Helvetica;
     -webkit-font-smoothing: antialiased;
-    background: #8CC0DE;
+    background: #9384D1;
 }
 h1{
     font-weight: bold;
     text-align: center;
-    font-size: 28px;
-    text-transform: uppercase;
+    font-size: 58px;
     letter-spacing: 1px;
     color: rgb(0, 0, 0);
     padding: 30px 0;
+    font-family: cursive;
 }
 
-/* Table Styles */
+/* toggle function */
+.toggle{
+    
+    top: 40px;
+    left: 40px;
+    z-index: 2
+}
+.toggle a{
+    text-decoration: none;
+    color: #262626;
+    font-size: 60px;
+    cursor: pointer;
+    font-weight: bold;
 
-.table-wrapper{
-    margin: 10px 70px 70px;
-    box-shadow: 0px 35px 50px rgba( 0, 0, 0, 0.2 );
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 800,
+    'GRAD' 200,
+    'opsz' 60,
+    
+  }
+
+/* Table Styles */
+/* Table Styles */
+.input-group {
+    width: 90%;
+    align-items: center;
+    padding: 10px;
+    margin: 0 auto; /* Center the input group */
+}
+
+.table-wrapper {
+    margin: 10px;
+    overflow-x: auto; /* Enable horizontal scrolling for smaller screens */
+    box-shadow: 0px 35px 50px rgba(0, 0, 0, 0.2);
 }
 
 .fl-table {
     border-radius: 5px;
-    font-size: 12px;
+    font-size: 1rem;
     font-weight: normal;
     border: none;
     border-collapse: collapse;
@@ -39,24 +73,33 @@ h1{
 
 .fl-table td, .fl-table th {
     text-align: center;
-    padding: 8px;
+    padding: 12px;
 }
 
 .fl-table td {
     border-right: 1px solid #f8f8f8;
-    font-size: 16px;
 }
 
 .fl-table thead th {
     color: #ffffff;
     background: #005e42;
-    font-size: 16px;
 }
-
-
 
 .fl-table tr:nth-child(even) {
     background: #F8F8F8;
+}
+
+/* Adjust styles for smaller screens */
+@media (max-width: 768px) {
+    .fl-table {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .table-wrapper {
+        margin: 10px 20px 20px; /* Adjusted margin for smaller screens */
+    }
 }
 
 /* Responsive */
@@ -125,28 +168,45 @@ h1{
     }
 }
 
+/* text tuklasko animation */
 
-/* Colours btn*/
+@import url(https://fonts.googleapis.com/css?family=Signika:700,300,600);
 
-.purple {
-    background-color: #564f8a;
+h1 span {
+ font-size:5em;
+ font:bold 5.5vw/1.6 'Signika', sans-serif;
+ user-select:none;
+
 }
-  #mySidenav a {
-    position: absolute;
-    left: -40px;
-    transition: 0.3s;
-    padding: 15px;
-    width: 140px;
-    text-decoration: none;
-    font-size: 20px;
-    color: white;
-    border-radius: 0 5px 5px 0;
-  }
-  
-  @media (max-width: 1520px) {
-    .main {
-      margin-left: 0;
-      padding: 10px;
-  
-    }
-  }
+
+h1 span { display:inline-block; animation:float .2s ease-in-out infinite; }
+ @keyframes float {
+  0%,100%{ transform:none; }
+  33%{ transform:translateY(-1px) rotate(-2deg); }
+  66%{ transform:translateY(1px) rotate(2deg); }
+}
+body:hover span { animation:bounce .6s; }
+@keyframes bounce {
+  0%,100%{ transform:translate(0); }
+  25%{ transform:rotateX(20deg) translateY(2px) rotate(-3deg); }
+  50%{ transform:translateY(-20px) rotate(3deg) scale(1.1);  }
+}
+
+span:nth-child(4n) { color:hsl(50, 75%, 55%); text-shadow:1px 1px hsl(50, 75%, 45%), 2px 2px hsl(50, 45%, 45%), 3px 3px hsl(50, 45%, 45%), 4px 4px hsl(50, 75%, 45%); }
+span:nth-child(4n-1) { color:hsl(135, 35%, 55%); text-shadow:1px 1px hsl(135, 35%, 45%), 2px 2px hsl(135, 35%, 45%), 3px 3px hsl(135, 35%, 45%), 4px 4px hsl(135, 35%, 45%); }
+span:nth-child(4n-2) { color:hsl(155, 35%, 60%); text-shadow:1px 1px hsl(155, 25%, 50%), 2px 2px hsl(155, 25%, 50%), 3px 3px hsl(155, 25%, 50%), 4px 4px hsl(140, 25%, 50%); }
+span:nth-child(4n-3) { color:hsl(30, 65%, 60%); text-shadow:1px 1px hsl(30, 45%, 50%), 2px 2px hsl(30, 45%, 50%), 3px 3px hsl(30, 45%, 50%), 4px 4px hsl(30, 45%, 50%); }
+
+h1 span:nth-child(2){ animation-delay:.05s; }
+h1 span:nth-child(3){ animation-delay:.1s; }
+h1 span:nth-child(4){ animation-delay:.15s; }
+h1 span:nth-child(5){ animation-delay:.2s; }
+h1 span:nth-child(6){ animation-delay:.25s; }
+h1 span:nth-child(7){ animation-delay:.3s; }
+h1 span:nth-child(8){ animation-delay:.35s; }
+h1 span:nth-child(9){ animation-delay:.4s; }
+h1 span:nth-child(10){ animation-delay:.45s; }
+h1 span:nth-child(11){ animation-delay:.5s; }
+h1 span:nth-child(12){ animation-delay:.55s; }
+h1 span:nth-child(13){ animation-delay:.6s; }
+h1 span:nth-child(14){ animation-delay:.65s; }
