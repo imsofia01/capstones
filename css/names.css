@@ -79,8 +79,20 @@ html {
     overflow: hidden;
     transition: .5s;
     margin-top: 10px;
-    letter-spacing: 4px
+    letter-spacing: 4px;
+    margin-top: 55px;
   }
+
+  .login-box form #selectName{
+    margin-top: 45px;
+    width: 100px;
+    height: 40px;
+  }
+
+.login-box .user-box label {
+  font-size: 20px;
+}
+
   
   button{
     position: relative;
@@ -194,7 +206,7 @@ html {
       width: 90%;
       max-width: 90%;
       padding: 50px;
-      height: 35%;
+      height: 53%;
     }
   
     .login-box h2 {
