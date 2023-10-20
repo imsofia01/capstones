@@ -10,6 +10,12 @@ if (isset($_POST['username'])  )
     $currentDate = date("Y-m-d"); // Get the current date and time
 
   
+  // Set a default value for total_tanong
+  $total_tanong = 0;
+  $total_correct = 0;
+  $total_wrong = 0;
+  $percentage = 0;
+  $puntos = 0;
 
 
 // Create the SQL INSERT query
@@ -44,9 +50,17 @@ if (!$result) {
         <label for="username"> ILAGAY ANG PANGALAN </label>
     </div>
 
-    <div id="output">
-        <ul id="nameList"></ul>
+    <div class="user-box">
+      <label for="selectName">Pumili ng Pangalan ng Guro:</label>
+      <select id="selectName" name="selectedName">
+        <option value="Option 1">Option 1</option>
+        <option value="Option 2">Option 2</option>
+        <option value="Option 3">Option 3</option>
+        <!-- Add more options as needed -->
+      </select>
     </div>
+
+  
   
     <button type="submit" name="submit" onclick="hideLoginBox()" value="submit">
         Submit
@@ -63,27 +77,6 @@ if (!$result) {
 
 <script type="text/javascript">
 
-        // document.addEventListener("DOMContentLoaded", function () {
-        //     const nameForm = document.getElementById("nameForm");
-        //     const nameInput = document.getElementById("name");
-        //     const nameList = document.getElementById("nameList");
-
-        //     nameForm.addEventListener("submit", function (e) {
-        //         e.preventDefault();
-        //         const name = nameInput.value;
-        //         const currentDate = new Date().toLocaleString();
-
-        //         // Create a new list item to display the name and date
-        //         const listItem = document.createElement("li");
-        //         listItem.textContent = `${name} - ${currentDate}`;
-
-        //         // Append the new list item to the list
-        //         nameList.appendChild(listItem);
-
-        //         // Clear the input field
-        //         nameInput.value = "";
-        //     });
-        // });
 
 
 </script>
