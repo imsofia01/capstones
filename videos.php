@@ -45,44 +45,43 @@ arrow_back
         </video>
         
         <div id="video-controls">
-        <button id="playButton">Ulitin ang Video</button>
-        <button id="skip-button">Maglaktaw sa Video</button>
-        <!-- <button id="openAssessmentButton" >Play</button> -->
+            <button id="playButton">Ulitin ang Video</button>
+            <button id="skip-button">Maglaktaw sa Video</button>
         </div>
     </div>
 </div>
 
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const video = document.getElementById('myVideo');
+        const skipButton = document.getElementById('skip-button');
+        const playButton = document.getElementById('playButton');
+      
 
-    </body>
-    </html>
-    <script>
-        
-        document.addEventListener('DOMContentLoaded', function() {
-    const video = document.getElementById('myVideo');
-    const skipButton = document.getElementById('skip-button');
-    const playButton = document.getElementById('playButton');
+        skipButton.addEventListener('click', skipVideo);
+        video.addEventListener('ended', goToNextPage);
+        playButton.addEventListener('click', playVideo);
+       
 
-    skipButton.addEventListener('click', skipVideo);
-    video.addEventListener('ended', goToNextPage);
-    playButton.addEventListener('click', playVideo);
+        function skipVideo() {
+            // Skip 10 seconds ahead in the video
+            video.currentTime += 100; // You can adjust the number of seconds to skip
+        }
 
-    function skipVideo() {
-        // Skip 10 seconds ahead in the video
-        video.currentTime += 100; // You can adjust the number of seconds to skip
-    }
+        function playVideo() {
+            // Play the video from the beginning
+            video.currentTime = 0;
+            video.play();
+        }
 
-    function playVideo() {
-        // Play the video from the beginning
-        video.currentTime = 0;
-        video.play();
-    }
-
-    function goToNextPage() {
-        // Redirect to the next page when the video ends
-        window.location.href = 'save-names.php'; // Replace with the actual URL of the next page
-    }
-});
-
+        function goToNextPage() {
+            // Redirect to the next page when the video ends
+            var result = confirm("Do you want to proceed to the assessment?");
+            if (result) {
+                window.location.href = 'save-names.php'; // Replace with the actual URL of the assessment page
+            }
+        }
+    });
     </script>
 
 </body>
