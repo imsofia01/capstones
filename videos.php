@@ -76,7 +76,7 @@ arrow_back
 
         function goToNextPage() {
             // Redirect to the next page when the video ends
-            var result = confirm("Do you want to proceed to the assessment?");
+            var result = confirm("Gusto mo bang ipag-patuloy ang pagsusulit?");
             if (result) {
                 window.location.href = 'save-names.php'; // Replace with the actual URL of the assessment page
             }
