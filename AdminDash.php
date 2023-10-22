@@ -9,7 +9,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/dash.css">
-    <title>Document</title>
+    <title>Guro admin</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
@@ -77,20 +77,6 @@
         </div>
       </li>
 
-      <li id="dash_categories">
-        <div id="dash_categories_header" class="collapsible-header waves-effect"><b>Categories</b></div>
-        <div id="dash_categories_body" class="collapsible-body">
-          <ul>
-            <li id="categories_category">
-              <a class="waves-effect" style="text-decoration: none;" href="#!">Category</a>
-            </li>
-
-            <li id="categories_sub_category">
-              <a class="waves-effect" style="text-decoration: none;" href="#!">Sub Category</a>
-            </li>
-          </ul>
-        </div>
-      </li>
 
       <li id="dash_brands">
         <div id="dash_brands_header" class="collapsible-header waves-effect"><b>Setting</b></div>
@@ -132,8 +118,8 @@
 
     <nav>
       <div class="nav-wrapper indigo darken-2">
-        <a style="margin-left: 20px;" class="breadcrumb" href="#!">Admin</a>
-        <a class="breadcrumb" href="#!">Index</a>
+        <a style="margin-left: 20px;" class="breadcrumb" href="#!">GURO</a>
+        <a class="breadcrumb" href="#!">Talaan ng Nangunguna</a>
 
         <div style="margin-right: 20px;" id="timestamp" class="right"></div>
       </div>

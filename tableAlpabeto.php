@@ -78,7 +78,7 @@
       </div>
     </li>
 
-    <li id="dash_dashboard"><a class="waves-effect" href="#!"><b>Dashboard</b></a></li>
+    <li id="dash_dashboard"><a class="waves-effect" href="AdminDash.php"><b>Dashboard</b></a></li>
 
     <ul class="collapsible" data-collapsible="accordion">
       <li id="dash_users">
@@ -192,7 +192,8 @@
         {
       ?>
       
-    <td> <input type="checkbox" value="<?php echo $row['id']; ?>" name="id[]"> </td>
+    <td> 
+        <input type="checkbox" value="<?php echo $row['id']; ?>" name="id[]"> </td>
     <td> <?php echo $row['username'];?> </td>
     <td> <?php echo $row['guro'];?> </td>
     <td> <?php echo $row['petsa'];?> </td>
