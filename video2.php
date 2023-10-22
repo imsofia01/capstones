@@ -40,7 +40,7 @@ arrow_back
    <div class="container" id="myContainer">
         <div id="video-container">
             <video id="myVideo" width="100%" controls>
-            <source src="./videos/lesson1.mp4"  type="video/mp4">
+            <source src="./videos/Magagalang.mp4"  type="video/mp4">
         </video>
         
         <div id="video-controls">

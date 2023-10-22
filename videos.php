@@ -41,7 +41,7 @@ arrow_back
    <div class="container" id="myContainer">
         <div id="video-container">
             <video id="myVideo" width="100%" controls>
-            <source src="./videos/lesson1.mp4"  type="video/mp4">
+            <source src="./videos/Alpabetong filipino.mp4"  type="video/mp4">
         </video>
         
         <div id="video-controls">
@@ -65,7 +65,7 @@ arrow_back
 
         function skipVideo() {
             // Skip 10 seconds ahead in the video
-            video.currentTime += 100; // You can adjust the number of seconds to skip
+            video.currentTime += 50; // You can adjust the number of seconds to skip
         }
 
         function playVideo() {
