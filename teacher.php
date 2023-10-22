@@ -28,10 +28,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 if (isset($_POST['signup_submit'])) {
     // Sign-up form submission
     $signup_username = $_POST['signup_username'];
-    $signup_password = $_POST['signup_password'];
+    $signup_password = password_hash($_POST['signup_password'], PASSWORD_BCRYPT);
     $signup_cpassword = $_POST['signup_cpassword'];
     $signup_email = $_POST['signup_email'];
-
+	
     // Add proper validation and security measures here
 
     // Insert user data into the database
@@ -84,7 +84,7 @@ if (isset($_POST['signup_submit'])) {
             <div class="login-wrap">
 		<div class="login-html">
 			<input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">Sign In</label>
-			<input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">Sign Up</label>
+			<input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab"></label>
 			<div class="login-form">
 				<div class="sign-in-htm">
 					<form action="teacher.php" method="post">
@@ -110,27 +110,7 @@ if (isset($_POST['signup_submit'])) {
 					</div>
 				</div>
 
-				<div class="sign-up-htm">
-					<form action="teacher.php" method="post">
-						<div class="group">
-							<label for="username" class="label">Username</label>
-							<input id="username" type="text" name="signup_username" class="input" required>
-						</div>
-						<div class="group">
-							<label for="password" class="label">Password</label>
-							<input id="password" type="password" name="signup_password" class="input" data-type="password" required>
-						</div>
-						<div class="group">
-							<label for="cpassword" class="label">Repeat Password</label>
-							<input id="cpassword" type="password" name="signup_cpassword" class="input" data-type="password" required>
-						</div>
-						<div class="group">
-							<label for="email" class="label">Email Address</label>
-							<input id="email" type="text" name="signup_email" class="input" required>
-						</div>
-						<div class="group">
-							<input type="submit" name="signup_submit" class="button" value="Sign Up">
-						</div>
+				
 					</form>
 				</div>
 			</div>

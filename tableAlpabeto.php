@@ -101,8 +101,8 @@
         <div id="dash_products_body" class="collapsible-body">
           <ul>
             <li id="products_product">
-              <a class="waves-effect" style="text-decoration: none;" href="#!">Alpabetong Filipino</a>
-              <a class="waves-effect" style="text-decoration: none;" href="#!">Magagalang na Pananalita</a>
+            <a class="waves-effect" style="text-decoration: none;" href="tableAlpabeto.php">Alpabetong Filipino</a>
+              <a class="waves-effect" style="text-decoration: none;" href="tableMagagalang.php">Magagalang na Pananalita</a>
             </li>
           </ul>
         </div>

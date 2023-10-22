@@ -288,8 +288,7 @@ ul{
       border-top: solid thin #D6D6D6;
       border-left: solid thin #D6D6D6;
   }
-  #fantasyTable tr {
-  }
+
   /*controls odd rows*/
   #fantasyTable tr:nth-child(odd) {
       background: #FFFFFF;
@@ -348,8 +347,7 @@ ul{
       background: #D6D6D6;
       text-align: left;
   }
-  .pointsTable {
-  }
+
   .pointLeader img {
       float: left;
       padding-right: 20px;
@@ -390,9 +388,10 @@ ul{
   }
   
   /* Add a media query for smaller screens */
-  @media (max-width: 868px) {
+  @media (max-width: 968px) {
     .card {
-      padding: 2rem; /* Decrease padding on smaller screens */
+      padding: 3rem; /* Decrease padding on smaller screens */
+      max-width: 920px;
     }
   }
   
