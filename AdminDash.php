@@ -38,10 +38,10 @@
     <li class="center no-padding">
       <div class="indigo darken-2 white-text" style="height: 180px;">
         <div class="row">
-          <img style="margin-top: 5%;" width="100" height="100" src="https://res.cloudinary.com/dacg0wegv/image/upload/t_media_lib_thumb/v1463990208/photo_dkkrxc.png" class="circle responsive-img" />
+          <img style="margin-top: 5%; border-radius: 50px" width="100" height="100" src="./pics/teacher.jpg" />
 
           <p style="margin-top: -13%;">
-            Tirth Patel
+            Teacher Sarah
           </p>
         </div>
       </div>
@@ -51,11 +51,11 @@
 
     <ul class="collapsible" data-collapsible="accordion">
       <li id="dash_users">
-        <div id="dash_users_header" class="collapsible-header waves-effect"><b>Users</b></div>
+        <div id="dash_users_header" class="collapsible-header waves-effect"><b>Students</b></div>
         <div id="dash_users_body" class="collapsible-body">
           <ul>
             <li id="users_seller">
-              <a class="waves-effect" style="text-decoration: none;" href="#!">Seller</a>
+              <a class="waves-effect" style="text-decoration: none;" href="#!">Student</a>
             </li>
 
             <li id="users_customer">
@@ -66,12 +66,12 @@
       </li>
 
       <li id="dash_products">
-        <div id="dash_products_header" class="collapsible-header waves-effect"><b>Products</b></div>
+        <div id="dash_products_header" class="collapsible-header waves-effect"><b>Talaan ng nangunguna</b></div>
         <div id="dash_products_body" class="collapsible-body">
           <ul>
             <li id="products_product">
-              <a class="waves-effect" style="text-decoration: none;" href="#!">Products</a>
-              <a class="waves-effect" style="text-decoration: none;" href="#!">Orders</a>
+              <a class="waves-effect" style="text-decoration: none;" href="#!">Alpabetong Filipino</a>
+              <a class="waves-effect" style="text-decoration: none;" href="#!">Magagalang na Pananalita</a>
             </li>
           </ul>
         </div>
@@ -93,15 +93,15 @@
       </li>
 
       <li id="dash_brands">
-        <div id="dash_brands_header" class="collapsible-header waves-effect"><b>Brands</b></div>
+        <div id="dash_brands_header" class="collapsible-header waves-effect"><b>Setting</b></div>
         <div id="dash_brands_body" class="collapsible-body">
           <ul>
             <li id="brands_brand">
-              <a class="waves-effect" style="text-decoration: none;" href="#!">Brand</a>
+              <a class="waves-effect" style="text-decoration: none;" href="#!">Profile</a>
             </li>
 
             <li id="brands_sub_brand">
-              <a class="waves-effect" style="text-decoration: none;" href="#!">Sub Brand</a>
+              <a class="waves-effect" style="text-decoration: none;" href="#!">Logout</a>
             </li>
           </ul>
         </div>
