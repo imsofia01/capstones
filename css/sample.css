@@ -42,7 +42,7 @@ body{
 /* Style for the score indicator */
 .score-indicator {
     text-align: center;
-    margin-top: 10px;
+    margin-top: 33px;
    
     
   }
@@ -128,7 +128,7 @@ body{
     max-width: 700px;
     background-color: #9681EB;
     margin: 10px auto;
-    padding: 30px;
+    padding: 25px;
     border-radius: 10px;
     animation: fadeInRight 1s ease;
 }
@@ -145,6 +145,8 @@ body{
 }
 
   #draggable-container > img {
+    max-width: 100%;
+    
     background-color: rgba(255, 255, 255, 0.8);
     align-items: center;
     padding: 10%;
@@ -152,20 +154,36 @@ body{
   }
 
   
-  #draggable-container{
+  #draggable-container {
     display: grid;
-    grid-template-columns: auto auto auto ;
-    grid-template-rows: 50% 50%;
+    grid-template-columns: 26% 26% 26%; /* Three equal columns */
+    grid-template-rows: 50% 50%; /* Two equal rows */
     grid-gap: 5%;
     padding: 10px;
     position: relative;
-  }
+}
 
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    #draggable-container {
+        grid-template-columns: 44% 44%; /* Two equal columns */
+        grid-template-rows: 31% 35% 34%;/* Adjust rows as needed */
+        column-gap: 2px;
+        padding: 2px 0px;
+       
+    }
+}
+/* grid-template-columns: 37% 47%;
+grid-template-rows: 31% 32% 35% 34%;
+grid-column-gap: -43px;
+column-gap: 34px;
+padding: 2px 0px;
+columns: -2px; */
 
 .custom-box .row {
     display: grid;
     grid-template-rows: auto auto auto;
-    padding: 10px;
+    padding: 0;
     border: 1px solid #cccccc00;
     gap: 20px; /* Add spacing between rows */
     align-items: center; /* Vertically center the content */
@@ -227,7 +245,13 @@ img {
     background-color: #f2f2f2;
     height: 13rem;
     width: 10rem;
-  
+}
+
+@media (max-width: 768px) {
+    .droppable {
+        margin: 5px;
+       
+    }
 }
 
 /* tama hover */
