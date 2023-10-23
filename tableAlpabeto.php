@@ -192,7 +192,8 @@
         {
       ?>
       
-    <td> 
+    <td>
+
         <input type="checkbox" value="<?php echo $row['id']; ?>" name="id[]"> </td>
     <td> <?php echo $row['username'];?> </td>
     <td> <?php echo $row['guro'];?> </td>

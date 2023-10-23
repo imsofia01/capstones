@@ -47,12 +47,12 @@ $resultCheck = mysqli_num_rows($result);
       <div class="row">
       <!-- Content for the first row goes here -->
       <div id="draggable-container" class="draggable-element">
-        <img class="draggable" draggable="true" src="pics/girl.jpg" id="Babae"> </img>
-        <img class="draggable" draggable="true" src="pics/lalaki.png" id="Lalaki"> </img>
-        <img class="draggable" draggable="true" src="pics/kamay.png" id="Kamay"> </img>
-        <img class="draggable" draggable="true" src="pics/Aso.jpg" id="Aso"> </img>
-        <img class="draggable" draggable="true" src="pics/paru-paro.jpg" id="Paru-paro"> </img>
-        <img class="draggable" draggable="true" src="pics/ibon.jpg" id="Ibon"> </img>
+        <img class="draggable" draggable="true" src="pics/gabi.png" id="Gabi"> </img>
+        <img class="draggable" draggable="true" src="pics/umaga.png" id="Umaga"> </img>
+        <img class="draggable" draggable="true" src="pics/hapon.png" id="Hapon"> </img>
+        <img class="draggable" draggable="true" src="pics/tanghali.png" id="Tanghali"> </img>
+        <img class="draggable" draggable="true" src="pics/salamat.png" id="Salamat"> </img>
+        <img class="draggable" draggable="true" src="pics/kamusta.png" id="Kamusta"> </img>
         </div>
   </div>
     </div>
@@ -60,12 +60,12 @@ $resultCheck = mysqli_num_rows($result);
   <div class="row">
     <!-- Content for the second row goes here -->
       <div id="draggable-container" class="droppable-points">
-          <div class="droppable" data-draggable-id="Lalaki"> <span> Lalaki </span> </div> 
-          <div class="droppable" data-draggable-id="Kamay"> <span> Kamay </span> </div>
-          <div class="droppable" data-draggable-id="Babae"> <span> Babae </span> </div>
-          <div class="droppable" data-draggable-id="Aso"> <span> Aso </span> </div> 
-          <div class="droppable" data-draggable-id="Paru-paro"> <span> Paru-paro </span> </div>
-          <div class="droppable" data-draggable-id="Ibon"> <span> Ibon </span> </div>
+          <div class="droppable" data-draggable-id="Umaga"> <span> Magandanag Umaga </span> </div> 
+          <div class="droppable" data-draggable-id="Hapon"> <span> Magandang Hapon </span> </div>
+          <div class="droppable" data-draggable-id="Gabi"> <span> Magandang Gabi </span> </div>
+          <div class="droppable" data-draggable-id="Tanghali"> <span> Magandang Tanghali </span> </div> 
+          <div class="droppable" data-draggable-id="Salamat"> <span> Salamat Po </span> </div>
+          <div class="droppable" data-draggable-id="Kamusta"> <span> Kamusta Po </span> </div>
         </div>
         <br>
         <div class="score-indicator">

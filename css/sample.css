@@ -145,9 +145,9 @@ body{
 }
 
   #draggable-container > img {
+    height: 164px;
+    width: 246px;
     max-width: 100%;
-    
-    background-color: rgba(255, 255, 255, 0.8);
     align-items: center;
     padding: 10%;
     font-size: 30px;
@@ -210,7 +210,7 @@ columns: -2px; */
 }
 
 .droppable span {
-    font-size: 1.25rem;
+    font-size: 1.05rem;
     pointer-events: none;
 }
 
@@ -237,7 +237,7 @@ img {
     justify-content: center;
     align-items: center;
     text-align: center;
-    font-size: 23px;
+    font-size: 15px;
     font-weight: bold;
     transition: border-width 0.2s, transform 0.2s, background-color 0.4s;
     padding: 18px 0px;
