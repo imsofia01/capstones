@@ -131,7 +131,7 @@ if (isset($_POST['signup_submit'])) {
 						<div class="group">
 							<input type="submit" name="signup_submit" class="button" value="Sign Up">
 						</div>
-
+                        
 				
 					</form>
 				</div>
