@@ -80,7 +80,7 @@ arrow_back
             // Redirect to the next page when the video ends
             var result = confirm("Gusto mo bang ipag-patuloy ang pagsusulit?");
             if (result) {
-                window.location.href = 'save-names.php'; // Replace with the actual URL of the assessment page
+                window.location.href = 'save-namesD.php'; // Replace with the actual URL of the assessment page
             }
         }
     });
