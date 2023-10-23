@@ -110,6 +110,28 @@ if (isset($_POST['signup_submit'])) {
 					</div>
 				</div>
 
+                <div class="sign-up-htm">
+					<form action="teacher.php" method="post">
+						<div class="group">
+							<label for="username" class="label">Username</label>
+							<input id="username" type="text" name="signup_username" class="input" required>
+						</div>
+						<div class="group">
+							<label for="password" class="label">Password</label>
+							<input id="password" type="password" name="signup_password" class="input" data-type="password" required>
+						</div>
+						<div class="group">
+							<label for="cpassword" class="label">Repeat Password</label>
+							<input id="cpassword" type="password" name="signup_cpassword" class="input" data-type="password" required>
+						</div>
+						<div class="group">
+							<label for="email" class="label">Email Address</label>
+							<input id="email" type="text" name="signup_email" class="input" required>
+						</div>
+						<div class="group">
+							<input type="submit" name="signup_submit" class="button" value="Sign Up">
+						</div>
+
 				
 					</form>
 				</div>
