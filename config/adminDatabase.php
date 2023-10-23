@@ -9,8 +9,8 @@
      $conn = mysqli_connect($servername,  
          $username, $password, $database); 
 
-         $sql = "SELECT username, password, cpassword, email, FROM sign_up";
-         $result = mysqli_query($conn, $sql);
+        //  $sql = "SELECT username, password, cpassword, email, FROM sign_up";
+        //  $result = mysqli_query($conn, $sql);
    
     if($conn) { 
         echo "success";  

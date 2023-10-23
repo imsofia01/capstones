@@ -7,6 +7,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 if (isset($_POST['username'])  )
  {
     $username = $_POST['username'];
+    $selectedName = $_POST['guro'];
     $currentDate = date("Y-m-d"); // Get the current date and time
 
   
@@ -19,7 +20,7 @@ if (isset($_POST['username'])  )
 
 
 // Create the SQL INSERT query
-$sql = "INSERT INTO names (username, petsa) VALUES ('$username', '$currentDate')";
+$sql = "INSERT INTO names (username, guro, petsa) VALUES ('$username', '$selectedName', '$currentDate')";
 $result = mysqli_query($conn,$sql);
 
 if (!$result) {
@@ -51,11 +52,10 @@ if (!$result) {
     </div>
 
     <div class="user-box">
-      <label for="selectName">Pumili ng Pangalan ng Guro:</label>
-      <select id="selectName" name="selectedName">
-        <option value="Option 1">Option 1</option>
-        <option value="Option 2">Option 2</option>
-        <option value="Option 3">Option 3</option>
+      <label for="guro">Pumili ng Pangalan ng Guro:</label>
+      <select id="selectName" name="guro">
+        <option value="Teacher Sarah">Teacher Sarah</option>
+        <option value="Teacher Rose">Teacher Rose</option>
         <!-- Add more options as needed -->
       </select>
     </div>

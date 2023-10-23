@@ -1,3 +1,33 @@
+<?php
+
+  require_once('config/database.php');
+  require_once('config/Dresults.php');
+
+  // Function to get names based on search query
+  function getNamesBySearch($conn, $searchQuery) {
+  $escapedSearchQuery = mysqli_real_escape_string($conn, $searchQuery);
+  $query = "SELECT * FROM drag_img WHERE pangalan LIKE '%$searchQuery%'";
+  $result = mysqli_query($conn, $query);
+  return $result;
+
+  if(isset($_POST['search'])) {
+    $searchQuery = $_POST['search'];
+    $result = getNamesBySearch($conn, $searchQuery);
+
+    while ($row = mysqli_fetch_assoc($result)) {
+        // Generate table rows using the retrieved data
+    }
+} else {
+    $query = "SELECT * FROM drag_img";
+    $result = mysqli_query($conn, $query);
+
+    while ($row = mysqli_fetch_assoc($result)) {
+        // Generate table rows using the retrieved data
+    }
+}
+}
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,8 +38,8 @@
     <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/dash.css">
-    <title>Guro admin</title>
+    <link rel="stylesheet" type="text/css" href="css/tableAlpabeto.css">
+    <title>Document</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
@@ -47,7 +77,7 @@
       </div>
     </li>
 
-    <li id="dash_dashboard"><a class="waves-effect" href="#!"><b>Dashboard</b></a></li>
+    <li id="dash_dashboard"><a class="waves-effect" href="AdminDash.php"><b>Dashboard</b></a></li>
 
     <ul class="collapsible" data-collapsible="accordion">
       <li id="dash_users">
@@ -118,8 +148,8 @@
 
     <nav>
       <div class="nav-wrapper indigo darken-2">
-        <a style="margin-left: 20px;" class="breadcrumb" href="#!">GURO</a>
-        <a class="breadcrumb" href="#!">Talaan ng Nangunguna</a>
+        <a style="margin-left: 20px;" class="breadcrumb" href="#!">Admin</a>
+        <a class="breadcrumb" href="#!">Index</a>
 
         <div style="margin-right: 20px;" id="timestamp" class="right"></div>
       </div>
@@ -132,116 +162,55 @@
         <div style="padding: 35px;" align="center" class="card">
           <div class="row">
             <div class="left card-title">
-              <b>User Management</b>
+              <b>TALAAN NG NANGUNGUNA</b>
             </div>
           </div>
 
           <div class="row">
-            <a href="#!">
-              <div style="padding: 30px;" class="grey lighten-3 col s5 waves-effect">
-                <i class="indigo-text text-lighten-1 large material-icons">person</i>
-                <span class="indigo-text text-lighten-1"><h5>Seller</h5></span>
-              </div>
-            </a>
-            <div class="col s1">&nbsp;</div>
-            <div class="col s1">&nbsp;</div>
+          <table id="fantasyTable" class="display responsive no-wrap order-column" width="100%">
+          <button type="submit" class="btn btn-danger"><i class="fas fa-trash"></i>Tanggalin </button>
+      
+<thead>
+  <tr>
+     <th> alisin </th>
+     <th> Pangalan</th>
+     <th> Petsa </th>
+     <th> Tamang Sagot </th>
+     <th> Maling sagot </th>
+     <th> Kabuoang Sagot </th>
+  </tr>
+ </thead>
+</tr>
+  <tr>
+  <?php
+      $query = "SELECT * FROM drag_img ORDER BY total DESC"; // Ordering by 'puntos' column in descending order
+      $result = mysqli_query($conn, $query);
 
-            <a href="#!">
-              <div style="padding: 30px;" class="grey lighten-3 col s5 waves-effect">
-                <i class="indigo-text text-lighten-1 large material-icons">people</i>
-                <span class="indigo-text text-lighten-1"><h5>Customer</h5></span>
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
+    while ($row = mysqli_fetch_assoc($result)) 
+        {
+      ?>
+      
+    <td> <input type="checkbox" value="<?php echo $row['id']; ?>" name="id[]"> </td>
+    <td > <?php echo $row['pangalan'];?> </td>
+    <td> <?php echo $row['petsa'];?> </td>
+    <td> <?php echo $row['correctCount'];?> </td>
+    <td> <?php echo $row['wrongCount'];?> </td>
+    <td> <?php echo $row['total'];?> </td>
+  
+    
+  </tr>
+  <?php                    
+    }
+            
+  ?> 
+  
+  
+  </tr>
+</table>
 
-      <div class="col s6">
-        <div style="padding: 35px;" align="center" class="card">
-          <div class="row">
-            <div class="left card-title">
-              <b>Product Management</b>
-            </div>
-          </div>
-          <div class="row">
-            <a href="#!">
-              <div style="padding: 30px;" class="grey lighten-3 col s5 waves-effect">
-                <i class="indigo-text text-lighten-1 large material-icons">store</i>
-                <span class="indigo-text text-lighten-1"><h5>Product</h5></span>
-              </div>
-            </a>
-
-            <div class="col s1">&nbsp;</div>
-            <div class="col s1">&nbsp;</div>
-
-            <a href="#!">
-              <div style="padding: 30px;" class="grey lighten-3 col s5 waves-effect">
-                <i class="indigo-text text-lighten-1 large material-icons">assignment</i>
-                <span class="indigo-text text-lighten-1"><h5>Orders</h5></span>
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col s6">
-        <div style="padding: 35px;" align="center" class="card">
-          <div class="row">
-            <div class="left card-title">
-              <b>Brand Management</b>
-            </div>
-          </div>
-
-          <div class="row">
-            <a href="#!">
-              <div style="padding: 30px;" class="grey lighten-3 col s5 waves-effect">
-                <i class="indigo-text text-lighten-1 large material-icons">local_offer</i>
-                <span class="indigo-text text-lighten-1"><h5>Brand</h5></span>
-              </div>
-            </a>
-
-            <div class="col s1">&nbsp;</div>
-            <div class="col s1">&nbsp;</div>
-
-            <a href="#!">
-              <div style="padding: 30px;" class="grey lighten-3 col s5 waves-effect">
-                <i class="indigo-text text-lighten-1 large material-icons">loyalty</i>
-                <span class="indigo-text text-lighten-1"><h5>Sub Brand</h5></span>
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <div class="col s6">
-        <div style="padding: 35px;" align="center" class="card">
-          <div class="row">
-            <div class="left card-title">
-              <b>Category Management</b>
-            </div>
-          </div>
-          <div class="row">
-            <a href="#!">
-              <div style="padding: 30px;" class="grey lighten-3 col s5 waves-effect">
-                <i class="indigo-text text-lighten-1 large material-icons">view_list</i>
-                <span class="indigo-text text-lighten-1"><h5>Category</h5></span>
-              </div>
-            </a>
-            <div class="col s1">&nbsp;</div>
-            <div class="col s1">&nbsp;</div>
-
-            <a href="#!">
-              <div style="padding: 30px;" class="grey lighten-3 col s5 waves-effect">
-                <i class="indigo-text text-lighten-1 large material-icons">view_list</i>
-                <span class="truncate indigo-text text-lighten-1"><h5>Sub Category</h5></span>
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
+           
+        
+      
 
     <div class="fixed-action-btn click-to-toggle" style="bottom: 45px; right: 24px;">
       <a class="btn-floating btn-large pink waves-effect waves-light">

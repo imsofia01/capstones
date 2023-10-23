@@ -76,6 +76,7 @@ arrow_back
         <tr>
             <th> alisin </th>
             <th>Pangalan</th>
+            <th>Guro</th>
             <th> Petsa </th>
             <th> Bilang ng Tanong </th>
             <th> Tamang sagot </th>
@@ -98,6 +99,7 @@ arrow_back
       ?>
 <td> <input type="checkbox" value="<?php echo $row['id']; ?>" name="id[]"> </td>
     <td > <?php echo $row['username'];?> </td>
+    <td > <?php echo $row['guro'];?> </td>
     <td> <?php echo $row['petsa'];?> </td>
     <td> <?php echo $row['total_tanong'];?> </td>
     <td> <?php echo $row['total_correct'];?> </td>
