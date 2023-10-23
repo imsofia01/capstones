@@ -78,7 +78,7 @@
       </div>
     </li>
 
-    <li id="dash_dashboard"><a class="waves-effect" href="#!"><b>Dashboard</b></a></li>
+    <li id="dash_dashboard"><a class="waves-effect" href="AdminDash.php"><b>Dashboard</b></a></li>
 
     <ul class="collapsible" data-collapsible="accordion">
       <li id="dash_users">
@@ -101,8 +101,8 @@
         <div id="dash_products_body" class="collapsible-body">
           <ul>
             <li id="products_product">
-              <a class="waves-effect" style="text-decoration: none;" href="#!">Alpabetong Filipino</a>
-              <a class="waves-effect" style="text-decoration: none;" href="#!">Magagalang na Pananalita</a>
+            <a class="waves-effect" style="text-decoration: none;" href="tableAlpabeto.php">Alpabetong Filipino</a>
+              <a class="waves-effect" style="text-decoration: none;" href="tableMagagalang.php">Magagalang na Pananalita</a>
             </li>
           </ul>
         </div>
@@ -192,7 +192,8 @@
         {
       ?>
       
-    <td> <input type="checkbox" value="<?php echo $row['id']; ?>" name="id[]"> </td>
+    <td> 
+        <input type="checkbox" value="<?php echo $row['id']; ?>" name="id[]"> </td>
     <td> <?php echo $row['username'];?> </td>
     <td> <?php echo $row['guro'];?> </td>
     <td> <?php echo $row['petsa'];?> </td>

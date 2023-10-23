@@ -77,7 +77,7 @@
       </div>
     </li>
 
-    <li id="dash_dashboard"><a class="waves-effect" href="#!"><b>Dashboard</b></a></li>
+    <li id="dash_dashboard"><a class="waves-effect" href="AdminDash.php"><b>Dashboard</b></a></li>
 
     <ul class="collapsible" data-collapsible="accordion">
       <li id="dash_users">
@@ -100,8 +100,8 @@
         <div id="dash_products_body" class="collapsible-body">
           <ul>
             <li id="products_product">
-              <a class="waves-effect" style="text-decoration: none;" href="#!">Alpabetong Filipino</a>
-              <a class="waves-effect" style="text-decoration: none;" href="#!">Magagalang na Pananalita</a>
+              <a class="waves-effect" style="text-decoration: none;" href="tableAlpabeto.php">Alpabetong Filipino</a>
+              <a class="waves-effect" style="text-decoration: none;" href="tableMagagalang.php">Magagalang na Pananalita</a>
             </li>
           </ul>
         </div>
@@ -168,6 +168,8 @@
 
           <div class="row">
           <table id="fantasyTable" class="display responsive no-wrap order-column" width="100%">
+          <button type="submit" class="btn btn-danger"><i class="fas fa-trash"></i>Tanggalin </button>
+      
 <thead>
   <tr>
      <th> alisin </th>
