@@ -107,15 +107,57 @@ arrow_back
 </div>
 </article>
 <article>
-
 <div class="article-wrapper">
   <figure>
-    <img src="https://picsum.photos/id/103/800/450" alt="" />
+    <img src="./pics/po.png" alt="" />
   </figure>
   <div class="article-body">
     <br>
-    <h2>Po at opo</h2>
-
+    <h2>Po</h2>
+  </div>
+</div>
+</article>
+<article>
+<div class="article-wrapper">
+  <figure>
+    <img src="./pics/opo.png" alt="" />
+  </figure>
+  <div class="article-body">
+    <br>
+    <h2>Opo</h2>
+  </div>
+</div>
+</article>
+<article>
+<div class="article-wrapper">
+  <figure>
+    <img src="./pics/kamusta.png" alt="" />
+  </figure>
+  <div class="article-body">
+    <br>
+    <h2>Kamusta</h2>
+  </div>
+</div>
+</article>
+<article>
+<div class="article-wrapper">
+  <figure>
+    <img src="./pics/paalam.png" alt="" />
+  </figure>
+  <div class="article-body">
+    <br>
+    <h2>Paalam</h2>
+  </div>
+</div>
+</article>
+<article>
+<div class="article-wrapper">
+  <figure>
+    <img src="./pics/salamat.png" alt="" />
+  </figure>
+  <div class="article-body">
+    <br>
+    <h2>Salamat</h2>
   </div>
 </div>
 </article>
