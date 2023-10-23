@@ -147,7 +147,7 @@ body{
   #draggable-container > img {
     background-color: rgba(255, 255, 255, 0.8);
     align-items: center;
-    padding: 10px 0;
+    padding: 10%;
     font-size: 30px;
   }
 
@@ -222,9 +222,11 @@ img {
     font-size: 23px;
     font-weight: bold;
     transition: border-width 0.2s, transform 0.2s, background-color 0.4s;
-    padding: 10%;
+    padding: 18px 0px;
     border: 1px dashed #101010;
     background-color: #f2f2f2;
+    height: 13rem;
+    width: 10rem;
   
 }
 
