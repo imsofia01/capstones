@@ -1,472 +1,195 @@
-header,
-main,
-footer {
-  padding-left: 150px;
+body{
+  background-color: #4e54c8;
   margin: 0;
-}
-
-body {
   padding: 0;
-  background: white;
-  margin: 0;
-  position: relative;
-  height: 100vh;
 }
 
-@media only screen and (max-width: 992px) {
-  header,
-  main,
-  footer {
-    padding-left: 0;
-  }
-}
-
-#credits li,
-#credits li a {
+#mySidenav a {
+  position: absolute;
+  left: -80px;
+  transition: 0.3s;
+  padding: 25px;
+  width: 100px;
+  text-decoration: none;
+  font-size: 20px;
   color: white;
+  border-radius: 0 5px 5px 0;
 }
 
-#credits li a {
-  font-weight: bold;
+#mySidenav a:hover {
+  left: 0;
 }
 
-.footer-copyright .container,
-.footer-copyright .container a {
-  color: #BCC2E2;
+#about {
+  top: 20px;
+  background-color: #04AA6D;
 }
 
-.fab-tip {
-  position: fixed;
-  right: 85px;
-  padding: 0px 0.5rem;
-  text-align: right;
-  background-color: #323232;
-  border-radius: 2px;
-  color: #FFF;
-  width: auto;
+#blog {
+  top: 105px;
+  background-color: #2196F3;
 }
 
-ul{
-    padding: 0;
-    margin: 0;
+#projects {
+  top: 215px;
+  background-color: #f44336;
 }
 
-
-.progress {
-    position: relative;
-    height: 20px;
-    display: block;
-    width: 100%;
-    background-color: #acece6;
-    border-radius: 2px;
-    margin: 0.5rem 0 1rem 0;
-    overflow: hidden;
+#contact {
+  top: 300px;
+  background-color: #555
 }
 
 /* CUDE ANIMATION */
 .area{
-    background: #614BC3;  
-    background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);  
-    width: 100%;
-    height: 100vh; 
-    position: relative;
-    
-  }
-  /* Add this CSS to your stylesheet */
-@media (max-width: 767px) {
-  #fantasyTable {
-    width: 100%;
-    max-width: 300%;
-    overflow-x: auto;
-  }
+
+  background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);  
+  width: 100%;
+  height:100%;
+  position: fixed;
+
 }
 
-  
-  .circles li{
-    position: fixed;
-    display: block;
-    list-style: none;
-    width: 20px;
-    height: 20px;
-    background: rgba(255, 255, 255, 0.2);
-    animation: animate 25s linear infinite;
-    bottom: -150px;
-    
-  }
-  
-  .circles li:nth-child(1){
-    left: 25%;
-    width: 80px;
-    height: 80px;
-    animation-delay: 0s;
-  }
-  
-  
-  .circles li:nth-child(2){
-    left: 10%;
-    width: 20px;
-    height: 20px;
-    animation-delay: 2s;
-    animation-duration: 12s;
-  }
-  
-  .circles li:nth-child(3){
-    left: 70%;
-    width: 20px;
-    height: 20px;
-    animation-delay: 4s;
-  }
-  
-  .circles li:nth-child(4){
-    left: 40%;
-    width: 60px;
-    height: 60px;
-    animation-delay: 0s;
-    animation-duration: 18s;
-  }
-  
-  .circles li:nth-child(5){
-    left: 65%;
-    width: 20px;
-    height: 20px;
-    animation-delay: 0s;
-  }
-  
-  .circles li:nth-child(6){
-    left: 75%;
-    width: 110px;
-    height: 110px;
-    animation-delay: 3s;
-  }
-  
-  .circles li:nth-child(7){
-    left: 35%;
-    width: 150px;
-    height: 150px;
-    animation-delay: 7s;
-  }
-  
-  .circles li:nth-child(8){
-    left: 50%;
-    width: 25px;
-    height: 25px;
-    animation-delay: 15s;
-    animation-duration: 45s;
-  }
-  
-  .circles li:nth-child(9){
-    left: 20%;
-    width: 15px;
-    height: 15px;
-    animation-delay: 2s;
-    animation-duration: 35s;
-  }
-  
-  .circles li:nth-child(10){
-    left: 85%;
-    width: 150px;
-    height: 150px;
-    animation-delay: 0s;
-    animation-duration: 11s;
-  }
-  
-  
-  
-  
-  @media (max-width: 480px) {
-    .context h2 {
-        font-size: 3rem; /* Further adjust font size for smaller screens */
-    }
-  
-    .circles li:nth-child(1) {
-        width: 30px; /* Further adjust circle size for smaller screens */
-        height: 30px;
-    }
-  
-    /* Further adjust other circle sizes as needed for smaller screens */
-  }
-  
-  @keyframes animate {
+.circles{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
 
-    0%{
-        transform: translateY(0) rotate(0deg);
-        opacity: 1;
-        border-radius: 0;
-    }
+.circles li{
+  position: absolute;
+  display: block;
+  list-style: none;
+  width: 20px;
+  height: 20px;
+  background: rgba(255, 255, 255, 0.2);
+  animation: animate 25s linear infinite;
+  bottom: -150px;
   
-    100%{
-        transform: translateY(-1000px) rotate(720deg);
-        opacity: 0;
-        border-radius: 50%;
-    }
-  
-  }
-    
+}
+
+.circles li:nth-child(1){
+  left: 25%;
+  width: 80px;
+  height: 80px;
+  animation-delay: 0s;
+}
 
 
+.circles li:nth-child(2){
+  left: 10%;
+  width: 20px;
+  height: 20px;
+  animation-delay: 2s;
+  animation-duration: 12s;
+}
+
+.circles li:nth-child(3){
+  left: 70%;
+  width: 20px;
+  height: 20px;
+  animation-delay: 4s;
+}
+
+.circles li:nth-child(4){
+  left: 40%;
+  width: 60px;
+  height: 60px;
+  animation-delay: 0s;
+  animation-duration: 18s;
+}
+
+.circles li:nth-child(5){
+  left: 65%;
+  width: 20px;
+  height: 20px;
+  animation-delay: 0s;
+}
+
+.circles li:nth-child(6){
+  left: 75%;
+  width: 110px;
+  height: 110px;
+  animation-delay: 3s;
+}
+
+.circles li:nth-child(7){
+  left: 35%;
+  width: 150px;
+  height: 150px;
+  animation-delay: 7s;
+}
+
+.circles li:nth-child(8){
+  left: 50%;
+  width: 25px;
+  height: 25px;
+  animation-delay: 15s;
+  animation-duration: 45s;
+}
+
+.circles li:nth-child(9){
+  left: 20%;
+  width: 15px;
+  height: 15px;
+  animation-delay: 2s;
+  animation-duration: 35s;
+}
+
+.circles li:nth-child(10){
+  left: 85%;
+  width: 150px;
+  height: 150px;
+  animation-delay: 0s;
+  animation-duration: 11s;
+}
 
 
-
-
-  .border-right {
-      border-right: thin solid #F5F5F5
-  }
-  .m-b-20 {
-      margin: 0 0 20px 0;
-  }
-  .m-b-30 {
-      margin: 0 0 30px 0;
-  }
-  .m-b-60 {
-      margin: 0 0 30px 0;
-  }
-  .category-row ul {
-      list-style: none;
-  }
-  .category-row li a {
-      font-style: normal;
-  }
-  .category-row ul li {
-      margin-left: 0;
-  }
-  .category-row a > img {
-      margin: 0 0 30px 0;
-  }
-  .category-row a > img:hover {
-      opacity: 0.54;
-      filter: alpha(opacity=54); /* For IE8 and earlier */
-  }
-  .category-link-sm {
-      color: #2196F3;
-      font-size: 12px;
-  }
-  .category-link {
-      color: #2196F3;
-  }
-  .ga-arrow-right {
-      position: relative;
-      top: .3em;
-  }
-  .hero {
-      background: linear-gradient( rgba(0, 0, 0, .75), rgba(0, 0, 0, .5) ), url('http://s7d2.scene7.com/is/image/Watscocom/baker_landing_20161212_rheem-destination-unknown-04?scl=1&qlt=90,1&resMode=sharp2&op_usm=1.75,0.3,2,0') no-repeat;
-      background-size: cover;
-      background-color: #000000;
-      text-shadow: 1px 2px 3px #000000;
-      position: relative;
-      padding: 30px 30px 0 30px;
-  }
-  .hero p > img {
-      display: inline;
-      padding: 10px
-  }
-  .inverse {
-      color: white
-  }
-  .inverse a {
-      color: white
-  }
-  #fantasyTable {
-      width: 100%;
-      border-collapse: collapse;
-  }
-
-  /* Add a media query for smaller screens */
+/* Responsive styles */
 @media (max-width: 768px) {
-    #fantasyTable {
-      font-size: 14px; /* Decrease font size on smaller screens */
-    }
+  .context h2 {
+      font-size: 4rem; /* Adjust font size for smaller screens */
   }
 
-  /* Add this CSS to your stylesheet */
-@media (max-width: 767px) {
-  #fantasyTable {
-    width: 100%;
-    max-width: 100%;
-    overflow-x: auto;
+  .circles li:nth-child(1) {
+      width: 40px; /* Adjust circle size for smaller screens */
+      height: 40px;
   }
+
+  /* Adjust other circle sizes as needed for smaller screens */
 }
-  #fantasyTable th {
-      background: #D6D6D6;
-      font-size: .75rem;
-      font-weight: 400;
-      color: #474443;
-      border-bottom: solid thin #C1C1C1;
-      border-right: solid thin #C1C1C1;
-      border-top: solid thin #D6D6D6;
-      border-left: solid thin #D6D6D6;
-  }
-  #fantasyTable td {
-      height: 44px;
-      padding: 4px 8px;
-      font-size: .75rem;
-      font-weight: 400;
-      color: #474443;
-      border-bottom: solid thin #C1C1C1;
-      border-right: solid thin #C1C1C1;
-      border-top: solid thin #D6D6D6;
-      border-left: solid thin #D6D6D6;
+
+@media (max-width: 480px) {
+  .context h2 {
+      font-size: 3rem; /* Further adjust font size for smaller screens */
   }
 
-  /*controls odd rows*/
-  #fantasyTable tr:nth-child(odd) {
-      background: #FFFFFF;
-      border-bottom: solid thin #C1C1C1;
-      border-right: solid thin #C1C1C1;
-      border-top: solid thin #D6D6D6;
-      border-left: solid thin #D6D6D6;
-  }
-  /*controls even rows*/
-  #fantasyTable tr:nth-child(even) {
-      background: #FFFFFF;
-      border-bottom: solid thin #C1C1C1;
-      border-right: solid thin #C1C1C1;
-      border-top: solid thin #D6D6D6;
-      border-left: solid thin #D6D6D6;
-  }
-  /*controls column 1*/
-  #fantasyTable td:nth-child(1) {
-      background: #FFFFFF;
-      color: #0082D6;
-      font-size: 1.5rem;
-      font-weight: 700;
-      text-align: center;
-      border-left: solid 1px #FFFFFF;
-  }
-  /*controls column 1 header*/
-  #fantasyTable th:nth-child(1) {
-      text-align: center;
-      border-left: solid 1px #FFFFFF;
-  }
-  /*controls column 2*/
-  #fantasyTable td:nth-child(2) {
-      text-transform: uppercase;
-  }
-  /*controls column 5*/
-  #fantasyTable td:nth-child(5) {
-      background: #EDEDED;
-      text-align: left;
-      color: #0082D6;
-      font-weight: 700;
-  }
-  /*controls column head 5*/
-  #fantasyTable th:nth-child(5) {
-      background: #D6D6D6;
-      text-align: left;
-  }
-  /*controls column 6*/
-  #fantasyTable td:nth-child(6) {
-      background: #EDEDED;
-      color: #0082D6;
-      text-align: left;
-      font-weight: 700;
-  }
-  /*controls column head 6*/
-  #fantasyTable th:nth-child(6) {
-      background: #D6D6D6;
-      text-align: left;
+  .circles li:nth-child(1) {
+      width: 30px; /* Further adjust circle size for smaller screens */
+      height: 30px;
   }
 
-  .pointLeader img {
-      float: left;
-      padding-right: 20px;
-      font-weight: 900;
-  }
-  .pointLeader p {
-      font-size: .75rem;
-      text-align: left
-  }
-  .pointLeader h4 {
-      font-weight: 900;
-      text-align: left
-  }
-  .align-center {
-      text-align: center
-  }
-  .learnMore {
-      padding: 0 0 0 10px
-  }
-  .md-label {
-      background: #BABABA
-  }
-  .md-label-orange {
-      background: #f78d2c;
-      padding: 0.3rem 0.5rem;
+  /* Further adjust other circle sizes as needed for smaller screens */
+}
+
+
+
+
+@keyframes animate {
+
+  0%{
+      transform: translateY(0) rotate(0deg);
+      opacity: 1;
       border-radius: 0;
-      color: white
   }
-  .md-caps {
-      text-transform: uppercase
-  }
-  .card {
-    border: solid thin #F5F5F5;
-    padding: 2rem 1rem;
-    width: 210%; /* Set the initial width to 100% to make it responsive */
-    max-width: 920px; /* Set a maximum width to prevent it from becoming too wide on large screens */
-    margin: 0 auto; /* Center the card horizontally on the page */
-  }
-  
-  /* Add a media query for smaller screens */
-  @media (max-width: 968px) {
-    .card {
-      padding: 3rem; /* Decrease padding on smaller screens */
-      max-width: 920px;
-    }
-  }
-  
-  .callout {
-      border: solid thin #F5F5F5;
-      background-color: #D6D6D6;
-      border-radius: 5px;
-      padding: .5rem;
-      width: auto;
-  }
-  .md-black {
-      font-weight: 900;
-  }
-  .linethrough {
-      text-align: center;
-      position: relative;
-      z-index: 1;
-  }
-  .linethrough:before {
-      border-top: 2px solid #dfdfdf;
-      content: "";
-      margin: 0 auto; /* this centers the line to the full width specified */
-      position: absolute; /* positioning must be absolute here, and relative positioning must be applied to the parent */
-      top: 15px;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      width: 95%;
-      z-index: -1;
-  }
-  .linethrough span {
-      /* to hide the lines from behind the text, you have to set the background color the same as the container */ 
-      background: #FFFFFF;
-      padding: 0 15px;
-  }
-  .max-width-50 {
-      max-width: 50%
-  }
-  /*controls responsive button for opening hidden columns*/
-  table.dataTable.dtr-inline.collapsed>tbody>tr>td:first-child:before, table.dataTable.dtr-inline.collapsed>tbody>tr>th:first-child:before {
-      background-color: #0d82fb;
-      border: none;
-    font-size:12px
-  }
-  /* give space between search bar and table */
-  .dataTables_filter {
-      margin-bottom: 20px
-  }
-  
-  @media screen and (max-width: 39.9375em) {
-  /* give space between search bar and table */
-  .dataTables_filter {
-      display: none !important
-  }
-  }
-  
 
-  input{
-    color: #000;
+  100%{
+      transform: translateY(-1000px) rotate(720deg);
+      opacity: 0;
+      border-radius: 50%;
   }
+
+}

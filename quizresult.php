@@ -97,7 +97,7 @@ arrow_back
     while ($row = mysqli_fetch_assoc($result)) 
         {
       ?>
-<td> <input type="checkbox" value="<?php echo $row['id']; ?>" name="id[]"> </td>
+    <td> <input type="checkbox" value="<?php echo $row['id']; ?>" name="id[]"> </td>
     <td > <?php echo $row['username'];?> </td>
     <td > <?php echo $row['guro'];?> </td>
     <td> <?php echo $row['petsa'];?> </td>
