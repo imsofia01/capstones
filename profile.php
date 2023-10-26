@@ -40,7 +40,7 @@ arrow_back
 
             </ul>
 
-<div class="container emp-profile">
+<div class="custom-box">
             <form method="post">
                 <div class="row">
                     <div class="col-md-4">
@@ -70,9 +70,7 @@ arrow_back
                                 <li class="nav-item">
                                     <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">About</a>
                                 </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="true">Timeline</a>
-                                </li>
+                              
                             </ul>
                         </div>
                     </div>
@@ -103,7 +101,7 @@ arrow_back
                                                 <label>Email</label>
                                             </div>
                                             <div class="col-md-6">
-                                                <p>kshitighelani@gmail.com</p>
+                                                <p>delacruzd@gmail.com</p>
                                             </div>
                                         </div>
                                         <div class="row">
@@ -119,34 +117,11 @@ arrow_back
                                                 <label>Profession</label>
                                             </div>
                                             <div class="col-md-6">
-                                                <p>Bachelor of Science in Secondary Education Major in Filipino</p>
+                                                <p>Bachelor of Science in Elementary Education</p>
                                             </div>
                                         </div>
                             </div>
-                            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-                                        <div class="row">
-                                            <div class="col-md-6">
-                                                <label>Experience</label>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <p>Expert</p>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-6">
-                                                <label>Hourly Rate</label>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <p>10$/hr</p>
-                                            </div>
-                                        </div>
-                                        
-                                    
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <label>Your Bio</label><br/>
-                                        <p>Your detail description</p>
-                                    </div>
+                            
                                 </div>
                             </div>
                         </div>

@@ -81,6 +81,14 @@ h2{
 
   }
 
+  @media (max-width: 789px) {
+    .area {
+        width: 100%;
+        height: 405%;
+    }
+}
+  
+
   .cols{
     display: -webkit-box;
     display: -ms-flexbox;
@@ -414,7 +422,7 @@ h1 span:nth-child(14){ animation-delay:.65s; }
 	position: absolute;
 	top: 0;
 	left: 0;
-	height: 120px;
+	height: 220px;
 	width: 0;
 	border-radius: 15px;
 	background-color: #4368c5e9;

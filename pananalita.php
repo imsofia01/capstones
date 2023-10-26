@@ -168,7 +168,7 @@ arrow_back
 
 <div class="card">
 		<a href="video2.php">
-        <button id="startButton"> Magagalang na Pananalita at Pagbati </button>
+        <button id="startButton"> Pagsusulit sa Magagalang na Pananalita at Pagbati </button>
         </a>
 
 </body>

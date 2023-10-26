@@ -33,20 +33,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/font/material-design-icons/Material-Design-Icons.woff">
-    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/tableAlpabeto.css">
-    <title>Document</title>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-</head>
-
-<body>
-<header>
-<div class="area" >
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/tableAlpabeto.css">
+</head>
+<script src="js/search.js"></script>
+<script src="js/adminSearch.js"></script>
+<body>
+
 <ul class="circles">
                     <li></li>
                     <li></li>
@@ -61,127 +62,80 @@
 
             </ul>
 
-            <head>
- 
-
-  <ul id="slide-out" class="side-nav fixed z-depth-2">
-    <li class="center no-padding">
-      <div class="indigo darken-2 white-text" style="height: 180px;">
-        <div class="row">
-          <img style="margin-top: 5%; border-radius: 50px" width="100" height="100" src="./pics/teacher.jpg" />
-
-          <p style="margin-top: -13%;">
-            Teacher Sarah
-          </p>
-        </div>
-      </div>
-    </li>
-
-    <li id="dash_dashboard"><a class="waves-effect" href="AdminDash.php"><b>Dashboard</b></a></li>
-
-    <ul class="collapsible" data-collapsible="accordion">
-      <li id="dash_users">
-        <div id="dash_users_header" class="collapsible-header waves-effect"><b>Students</b></div>
-        <div id="dash_users_body" class="collapsible-body">
-          <ul>
-            <li id="users_seller">
-              <a class="waves-effect" style="text-decoration: none;" href="#!">Student list</a>
-            </li>
-
-            <li id="users_customer">
-              <a class="waves-effect" style="text-decoration: none;" href="#!">Customer</a>
-            </li>
-          </ul>
-        </div>
-      </li>
-
-      <li id="dash_products">
-        <div id="dash_products_header" class="collapsible-header waves-effect"><b>Talaan ng nangunguna</b></div>
-        <div id="dash_products_body" class="collapsible-body">
-          <ul>
-            <li id="products_product">
-              <a class="waves-effect" style="text-decoration: none;" href="tableAlpabeto.php">Alpabetong Filipino</a>
-              <a class="waves-effect" style="text-decoration: none;" href="tableMagagalang.php">Magagalang na Pananalita</a>
-            </li>
-          </ul>
-        </div>
-      </li>
 
 
-      <li id="dash_brands">
-        <div id="dash_brands_header" class="collapsible-header waves-effect"><b>Setting</b></div>
-        <div id="dash_brands_body" class="collapsible-body">
-          <ul>
-            <li id="brands_brand">
-              <a class="waves-effect" style="text-decoration: none;" href="#!">Profile</a>
-            </li>
 
-            <li id="brands_sub_brand">
-              <a class="waves-effect" style="text-decoration: none;" href="#!">Logout</a>
-            </li>
-          </ul>
-        </div>
-      </li>
-      
-    </ul>
-  </ul>
+    <div class="hero">
+        <nav id="menuBar">
+            <img src="./pics/logo.png" class="logo">
+            <ul>
+                <li><a href="AdminDash.php">PROFILE</a></li>
+                <li><a href="tableAlpabeto.php">ALPABETONG FILIPINO</a></li>
+                <li><a href="tableMagagalang.php">MAGAGALANG NA PANANALITA</a></li>
+                
+                
+               
+               
+            </ul>
+            <img src="./pics/teacher.jpg" class="user-pic" onclick="toggleMenu()">
+            
+            <div class="sub-menu-wrap" id="subMenu">
+                <div class="sub-menu">
+                    <div class="user-info">
+                        <img src="./pics/teacher.jpg" class="user-pic">
+                        <h2>Sarah Mae Dela Cruz</h2>
+                    </div>
+                    <hr>
+                    
 
-  <header>
-    <ul class="dropdown-content" id="user_dropdown">
-      <li><a class="indigo-text" href="#!">Profile</a></li>
-      <li><a class="indigo-text" href="teacher.php">Logout</a></li>
-    </ul>
+                    <a href="teacher.php" class="sub-menu-link">
+                        <img src="./pics/logout.png">
+                        <p>Log out</p>
+                        <span>></span>
+                    </a>
 
-    <nav class="indigo" role="navigation">
-      <div class="nav-wrapper">
-        <a data-activates="slide-out" class="button-collapse show-on-" href="#!"><img style="margin-top: 17px; margin-left: 5px;" src="https://res.cloudinary.com/dacg0wegv/image/upload/t_media_lib_thumb/v1463989873/smaller-main-logo_3_bm40iv.gif" /></a>
-
-        <ul class="right hide-on-med-and-down">
-          <li>
-            <a class='right dropdown-button' href='' data-activates='user_dropdown'><i class=' material-icons'>account_circle</i></a>
-          </li>
-        </ul>
-
-        <a href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
-      </div>
-    </nav>
-
-    <nav>
-      <div class="nav-wrapper indigo darken-2">
-        <a style="margin-left: 20px;" class="breadcrumb" href="#!">Admin</a>
-        <a class="breadcrumb" href="#!">Index</a>
-
-        <div style="margin-right: 20px;" id="timestamp" class="right"></div>
-      </div>
-    </nav>
-  </header>
-
-  <main>
-    <div class="row">
-      <div class="col s6">
-        <div style="padding: 35px;" align="center" class="card">
-          <div class="row">
-            <div class="left card-title">
-              <b>TALAAN NG NANGUNGUNA</b>
+                 
+                </div>
             </div>
-          </div>
+           
+        </nav>
 
-          <div class="row">
-          <table id="fantasyTable" class="display responsive no-wrap order-column" width="100%">
+     
+        
+
+        <main class="table">
+        <section class="table__header">
+        <h1> TALAAN NG NANGUNGUNA</h1>
+            <div class="input-group">
+                <input type="search" name ="search" id="search"<?php echo isset($searchQuery) ? $searchQuery : ''; ?> placeholder="Search Data...">
+                <img src="./pics/search.png" alt="">
+            </div>
+            <div class="export__file">
+                
+              
+                <div class="export__file-options">
+              
+                </div>
+            </div>
+        </section>
+        <form action="adminDelete.php" method="post">
           <button type="submit" class="btn btn-danger"><i class="fas fa-trash"></i>Tanggalin </button>
-      
-<thead>
-  <tr>
-     <th> alisin </th>
-     <th> Pangalan</th>
-     <th> Petsa </th>
-     <th> Tamang Sagot </th>
-     <th> Maling sagot </th>
-     <th> Kabuoang Sagot </th>
-  </tr>
- </thead>
-</tr>
-  <tr>
+        <section class="table__body">
+            <table>
+                <thead>
+                    <tr>
+                    <th> alisin </th>
+                    <th> Pangalan <span class="icon-arrow">&UpArrow;</span></th>
+                    <th> petsa <span class="icon-arrow">&UpArrow;</span></th>
+                    <th> Tamang sagot <span class="icon-arrow">&UpArrow;</span></th>
+                    <th>Maling sagot <span class="icon-arrow">&UpArrow;</span></th>
+                    <th>Puntos <span class="icon-arrow">&UpArrow;</span></th>
+                    </tr>
+                </thead>
+                <tbody id="myTable">
+                    <tr>
+                    </tr> 
+      <tr>
   <?php
       $query = "SELECT * FROM drag_img ORDER BY total DESC"; // Ordering by 'puntos' column in descending order
       $result = mysqli_query($conn, $query);
@@ -208,64 +162,17 @@
   </tr>
 </table>
 
-           
-        
-      
-
-    <div class="fixed-action-btn click-to-toggle" style="bottom: 45px; right: 24px;">
-      <a class="btn-floating btn-large pink waves-effect waves-light">
-        <i class="large material-icons">add</i>
-      </a>
-
-      <ul>
-        <li>
-          <a class="btn-floating red"><i class="material-icons">note_add</i></a>
-          <a href="" class="btn-floating fab-tip">Add a note</a>
-        </li>
-
-        <li>
-          <a class="btn-floating yellow darken-1"><i class="material-icons">add_a_photo</i></a>
-          <a href="" class="btn-floating fab-tip">Add a photo</a>
-        </li>
-
-        <li>
-          <a class="btn-floating green"><i class="material-icons">alarm_add</i></a>
-          <a href="" class="btn-floating fab-tip">Add an alarm</a>
-        </li>
-
-        <li>
-          <a class="btn-floating blue"><i class="material-icons">vpn_key</i></a>
-          <a href="" class="btn-floating fab-tip">Add a master password</a>
-        </li>
-      </ul>
-    </div>
-  </main>
-
-  <footer class="indigo page-footer">
-    <div class="container">
-      <div class="row">
-        <div class="col s12">
-          <h5 class="white-text">Icon Credits</h5>
-          <ul id='credits'>
-            <li>
-              Gif Logo made using <a href="https://formtypemaker.appspot.com/" title="Form Type Maker">Form Type Maker</a> from <a href="https://github.com/romannurik/FORMTypeMaker" title="romannurik">romannurik</a>
-            </li>
-            <li>
-              Icons made by <a href="https://material.io/icons/">Google</a>, available under <a href="https://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache License Version 2.0</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="footer-copyright">
-      <div class="container">
-         <span>Made By <a style='font-weight: bold;' href="https://github.com/piedcipher" target="_blank">Tirth Patel</a></span>
-      </div>
-    </div>
-  </footer>
 </body>
 
 </html>
+<script>
+          let subMenu = document.getElementById("subMenu");
+      
+      function toggleMenu() {
+          subMenu.classList.toggle("open-menu");
+          
 
+      }
+</script>
 </body>
 </html>
