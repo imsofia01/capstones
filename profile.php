@@ -19,7 +19,7 @@
 <body>
 
 <div class="toggle">
-        <a href="dashboard.php" class="material-symbols-outlined">
+        <a href="AdminDash.php" class="material-symbols-outlined">
 arrow_back
 </a>
     </div>
