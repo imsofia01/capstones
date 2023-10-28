@@ -26,8 +26,9 @@ html {
     font-family: 'Assistant', sans-serif;
     margin: 0 0 30px;
     padding: 0;
-    color: #000000;
+    color: #05184a;
     text-align: center;
+    font-size: 2rem;
   }
   
   .login-box .user-box {
@@ -39,7 +40,7 @@ html {
     width: 100%;
     padding: 10px 0;
     font-size: 16px;
-    color: #000000;
+    color: #ffffff;
     margin-bottom: 30px;
     border: none;
     border-bottom: 1px solid #1450A3;
@@ -54,7 +55,7 @@ html {
     left: 0;
     padding: 10px 0;
     font-size: 15px;
-    color: #fff;
+    color: #ffffff;
     pointer-events: none;
     transition: .5s;
   }

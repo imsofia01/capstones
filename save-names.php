@@ -52,7 +52,7 @@ if (!$result) {
     </div>
 
     <div class="user-box">
-      <label for="guro">Pumili ng Pangalan ng Guro:</label>
+      <label for="guro">Piliin ang Pangalan ng Guro:</label>
       <select id="selectName" name="guro">
         <option value="Teacher Sarah">Teacher Sarah</option>
         <option value="Teacher Rose">Teacher Rose</option>

@@ -125,11 +125,11 @@
                 <thead>
                     <tr>
                     <th> alisin </th>
-                    <th> Pangalan <span class="icon-arrow">&UpArrow;</span></th>
-                    <th> petsa <span class="icon-arrow">&UpArrow;</span></th>
-                    <th> Tamang sagot <span class="icon-arrow">&UpArrow;</span></th>
-                    <th>Maling sagot <span class="icon-arrow">&UpArrow;</span></th>
-                    <th>Puntos <span class="icon-arrow">&UpArrow;</span></th>
+                    <th> Pangalan </th>
+                    <th> petsa </th>
+                    <th> Tamang sagot </th>
+                    <th>Maling sagot </th>
+                    <th>Puntos </th>
                     </tr>
                 </thead>
                 <tbody id="myTable">

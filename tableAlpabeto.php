@@ -66,7 +66,7 @@
 
 
     <div class="hero">
-        <nav id="menuBar">
+        <nav>
             <img src="./pics/logo.png" class="logo">
             <ul>
               <li><a href="AdminDash.php">PROFILE</a></li>

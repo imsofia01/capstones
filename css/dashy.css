@@ -137,10 +137,7 @@
 .profile-tab label{
   font-weight: 600;
 }
-.profile-tab p{
-  font-weight: 600;
-  color: #0062cc;
-}
+
 
 /* image modal */
 body {font-family: Arial, Helvetica, sans-serif;}
@@ -303,6 +300,9 @@ nav ul{
     text-align: right;
 }
 
+
+
+
 nav ul li{
     display: inline-block;
     list-style: none;
@@ -318,9 +318,70 @@ nav ul li a{
     font-weight: bold;
 }
 
-nav ul li a.open-menu{
+
+/* Style the wrapbar (navigation items) */
+.wrapbar {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  position: absolute;
+  top: 96%;
+  height: 100px;
+  right: 5%;
+  height: 188%;
+  width: 290px;
+  background-color: #818182;
+  border-radius: 20px;
+  overflow: hidden;
+  transition: max-height 0.5s;
+  z-index: 2;
+  
+}
+
+.wrapbar li {
+  margin: 0 15px;
+}
+
+.wrapbar a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+#wrapbar{
+  padding: 20px;
+  margin: 10px;
+  overflow: hidden;
+}
+
+
+#wrapbar {
+  display: none;
+}
+
+.menu-icon.open-menu{
     max-height: 400px;
 }
+
+
+/* Hide the letter when the screen width is less than a certain value */
+/* @media (max-width: 1049px) {
+  nav ul li a{
+      display: none;
+  }
+} */
+
+/* Show the letter when the screen width is greater than a certain value */
+/* @media (min-width: 1049px) {
+  nav ul li a {
+      display: block;
+  }
+} */
+
+
+
+
+
 
 .sub-menu-wrap{
     position: absolute;
@@ -510,6 +571,8 @@ nav ul li a.open-menu{
     animation-duration: 11s;
   }
   
+
+
   
   /* Responsive styles */
   @media (max-width: 768px) {
@@ -556,3 +619,38 @@ nav ul li a.open-menu{
     }
   
   }
+
+  /* nav */
+      /* Style for the menu bar icon */
+      .menu-icon {
+        float: right;
+        display: block; /* Show the icon */
+        cursor: pointer;
+        font-size: 24px;
+       
+        color: #ffffff;
+        margin-top: 10px;
+        padding: 20px;
+      }
+
+      @media (max-width: 480px) {
+        .menu-icon{
+        margin-top: -5px;
+        }
+      }
+
+      @media (max-width: 360px) {
+        .menu-icon{
+        margin-top: -41px;
+        }
+      }
+
+      @media (max-width: 450px) {
+        .menu-icon{
+        margin-top: 0px;
+        }
+      }
+
+
+
+

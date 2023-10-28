@@ -28,7 +28,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 if (isset($_POST['signup_submit'])) {
     // Sign-up form submission
     $signup_username = $_POST['signup_username'];
-    $signup_password = password_hash($_POST['signup_password'], PASSWORD_BCRYPT);
+    $signup_password = $_POST['signup_password'];
     $signup_cpassword = $_POST['signup_cpassword'];
     $signup_email = $_POST['signup_email'];
 	
@@ -105,9 +105,6 @@ if (isset($_POST['signup_submit'])) {
 						</div>
 					</form>
 					<div class="hr"></div>
-					<div class="foot-lnk">
-						<a href="#forgot">Forgot Password?</a>
-					</div>
 				</div>
 
                 <div class="sign-up-htm">

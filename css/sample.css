@@ -93,9 +93,10 @@ body{
 }
 
 .home-box h1{
-    color: #0d6e6b;
-    font-family: 'Geologica';
-    font-size: 50px;
+    color: #270bbd;
+    font-family: 'Geologica' 'Arial';
+    font-size: 60px;
+    font-weight: bold;
 }
 
 .home-box h2{

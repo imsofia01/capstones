@@ -27,19 +27,18 @@
             </ul>
 
 
-    <div class="hero">
+            <div class="hero">
         <nav>
             <img src="./pics/logo.png" class="logo">
-            <ul>
-                <li><a href="#">PROFILE</a></li>
+            <div class="menu-icon" id="menuIcon" onclick="toggleWrapbar()">&#9776;</div>
+            <ul class="wrapbar" id="wrapbar">
+              <li><a href="AdminDash.php">PROFILE</a></li>
                 <li><a href="tableAlpabeto.php">ALPABETONG FILIPINO</a></li>
                 <li><a href="tableMagagalang.php">MAGAGALANG NA PANANALITA</a></li>
-               
-               
-               
+
             </ul>
             <img src="./pics/teacher.jpg" class="user-pic" onclick="toggleMenu()">
-
+            
             <div class="sub-menu-wrap" id="subMenu">
                 <div class="sub-menu">
                     <div class="user-info">
@@ -54,9 +53,13 @@
                         <p>Log out</p>
                         <span>></span>
                     </a>
+
+                 
                 </div>
             </div>
+           
         </nav>
+
 
         <div class="custom-box">
             <form method="post">
@@ -177,12 +180,21 @@ span.onclick = function() {
 
     <script>
         let subMenu = document.getElementById("subMenu");
-      
+        let menuIcon =document.getElementById("menuIcon");
+
         function toggleMenu() {
             subMenu.classList.toggle("open-menu");
-            
-
         }
+
+        function toggleWrapbar() {
+     var wrapbar = document.getElementById("wrapbar");
+    if (wrapbar.style.display === "block") {
+        wrapbar.style.display = "none";
+    } else {
+        wrapbar.style.display = "block";
+    }
+}
+
 
     </script>
 </body>

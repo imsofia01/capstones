@@ -7,11 +7,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 if (isset($_POST['pangalan'])  )
  {
     $username = $_POST['pangalan'];
+    $selectedName = $_POST['guro'];
     $currentDate = date("Y-m-d"); // Get the current date and time
 
 
 // Create the SQL INSERT query
-$sql = "INSERT INTO drag_img (pangalan, petsa) VALUES ('$username', '$currentDate')";
+$sql = "INSERT INTO drag_img (pangalan, guro, petsa) VALUES ('$username', '$selectedName', '$currentDate')";
 $result = mysqli_query($conn,$sql);
 
 if (!$result) {
@@ -40,6 +41,15 @@ if (!$result) {
     <div class="user-box">
         <input type="text" id="name" name="pangalan" required="">
         <label for="pangalan"> ILAGAY ANG PANGALAN </label>
+    </div>
+
+    <div class="user-box">
+      <label for="guro">Piliin ang Pangalan ng Guro:</label>
+      <select id="selectName" name="guro">
+        <option value="Teacher Sarah">Teacher Sarah</option>
+        <option value="Teacher Rose">Teacher Rose</option>
+        <!-- Add more options as needed -->
+      </select>
     </div>
   
     <button type="submit" name="submit" onclick="hideLoginBox()" value="submit">
