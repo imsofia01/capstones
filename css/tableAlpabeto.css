@@ -44,6 +44,7 @@ nav ul li{
   display: inline-block;
   list-style: none;
   margin: 10px 20px;
+  text-decoration: none;
 }
 
 nav ul li a{
@@ -53,19 +54,57 @@ nav ul li a{
   font-size: 20px;
   font-weight: bold;
 }
-/* Hide the letter when the screen width is less than a certain value */
-@media (max-width: 568px) {
-  nav ul li a{
-      display: none;
-  }
+
+
+/* Style the wrapbar (navigation items) */
+.wrapbar {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  position: absolute;
+  top: 96%;
+  font-size: 2rem;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  height: 100px;
+  right: 4%;
+  height: 218%;
+  width: 399px;
+  background-color: #8e3df2;
+  border-radius: 20px;
+  overflow: hidden;
+  transition: max-height 0.5s;
+  z-index: 2;
+
 }
 
-/* Show the letter when the screen width is greater than a certain value */
-@media (min-width: 569px) {
-  nav ul li a {
-      display: block;
-  }
+.wrapbar li {
+margin: 0 15px;
 }
+
+.wrapbar a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+  text-transform: capitalize;
+  font-size: 1.3rem;
+
+}
+
+#wrapbar{
+padding: 19px;
+margin: 15px;
+overflow: hidden;
+}
+
+
+#wrapbar {
+display: none;
+}
+
+.menu-icon.open-menu{
+  max-height: 400px;
+}
+
 
 
 nav ul li a.open-menu{
@@ -401,6 +440,32 @@ main.table {
   transition: .2s;
 }
 
+/* Media query for screens with a maximum width of 768px */
+@media (max-width: 768px) {
+  .table__header {
+    flex-direction: column;
+       /* padding: 1rem 0.5rem; */
+       height: 35%; /* Allow the header to grow in height based on content */
+  text-align: center; /* Center the content within the header */
+  justify-content: flex-start; /* Align content to the top */
+  align-items: center;
+  position: relative; /* Make the header a relative container */
+  padding-bottom: 2rem; /* Add some padding to the bottom for the input group */
+  box-sizing: border-box; /* Include padding in the height calculation */
+  overflow: hidden; /* Hide any overflow beyond the header */
+}
+
+/* Adjust the search input to appear at the top when responsive */
+.table__header .input-group {
+  width: 50%;
+  height: 30px;
+  margin-top: 20px; /* Adjust the margin as needed */
+  position: absolute;
+  bottom: 1rem; /* Position it at the bottom of the header */
+}
+}
+
+
 .table__header .input-group:hover {
   width: 45%;
   background-color: #fff8;
@@ -422,6 +487,7 @@ main.table {
 
 .table__body {
   width: 95%;
+  height: 50vh;
   max-height: calc(89% - 1.6rem);
   background-color: rgba(27, 26, 26, 0.733);
 
@@ -580,79 +646,73 @@ thead th.active,tbody td.active {
   color: #6c00bd;
 }
 
-.export__file {
+
+/* search bar */
+.box{
   position: relative;
 }
 
-.export__file .export__file-btn {
-  display: inline-block;
-  width: 2rem;
-  height: 2rem;
-  background: #fff6 url(images/export.png) center / 80% no-repeat;
-  border-radius: 50%;
-  transition: .2s ease-in-out;
+.input {
+  padding: 10px;
+  width: 80px;
+  height: 80px;
+  background: none;
+  border: 4px solid #ffd52d;
+  border-radius: 50px;
+  box-sizing: border-box;
+  font-family: Comic Sans MS;
+  font-size: 26px;
+  color: #ffd52d;
+  outline: none;
+  transition: .5s;
 }
-
-.export__file .export__file-btn:hover { 
-  background-color: #3c3c3c;
-  transform: scale(1.15);
-  cursor: pointer;
+.box:hover input{
+  width: 350px;
+  background: #3b3640;
+  border-radius: 10px;
 }
-
-.export__file input {
-  display: none;
-}
-
-.export__file .export__file-options {
+.box i{
   position: absolute;
-  right: 0;
-  
-  width: 12rem;
-  border-radius: .5rem;
-  overflow: hidden;
-  text-align: center;
-
-  opacity: 0;
-  transform: scale(.8);
-  transform-origin: top right;
-  
-  box-shadow: 0 .2rem .5rem #0004;
-  
+  top: 50%;
+  right: 15px;
+  transform: translate(-50%,-50%);
+  font-size: 26px;
+  color: #ffd52d;
   transition: .2s;
 }
-
-.export__file input:checked + .export__file-options {
-  opacity: 1;
-  transform: scale(1);
-  z-index: 100;
+.box:hover i{
+  opacity: 0;
+  z-index: -1;
 }
 
-.export__file .export__file-options label{
-  display: block;
-  width: 100%;
-  padding: .6rem 0;
-  background-color: #f2f2f2;
-  
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-
-  transition: .2s ease-in-out;
+/* YouTube icon */
+#ytb {
+height: 50px;
+width: 50px;
+text-align: center;
+line-height: 52px;
+border: 2px solid transparent;
+color: #ff1717;
+font-size: 25px;
+transition: 0.3s;
 }
 
-.export__file .export__file-options label:first-of-type{
-  padding: 1rem 0;
-  background-color: #86e49d !important;
+#ytb:hover{
+border-radius: 50%;
+border-color: #ff1717;
+box-shadow: 0 0 10px #ff4040;
 }
 
-.export__file .export__file-options label:hover{
-  transform: scale(1.05);
-  background-color: #fff;
-  cursor: pointer;
-}
 
-.export__file .export__file-options img{
-  width: 2rem;
-  height: auto;
-}
 
+  /* nav */
+      /* Style for the menu bar icon */
+      .menu-icon {
+        float: right;
+        display: block; /* Show the icon */
+        cursor: pointer;
+        font-size: 54px;
+        color: #ffffff;
+        margin-top: 10px;
+        padding: 20px;
+      }

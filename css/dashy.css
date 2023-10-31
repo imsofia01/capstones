@@ -45,7 +45,7 @@
 
 }
 .profile-img img{
-    width: 51%;
+    width: 25%;
     height: 60%;
 }
 .profile-img .file {
@@ -326,11 +326,13 @@ nav ul li a{
   padding: 0;
   position: absolute;
   top: 96%;
+  font-size: 2rem;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   height: 100px;
-  right: 5%;
-  height: 188%;
-  width: 290px;
-  background-color: #818182;
+  right: 4%;
+  height: 218%;
+  width: 399px;
+  background-color: #8e3df2;
   border-radius: 20px;
   overflow: hidden;
   transition: max-height 0.5s;
@@ -344,8 +346,11 @@ nav ul li a{
 
 .wrapbar a {
   text-decoration: none;
-  color: #fff;
+  color: #ffffff;
   font-weight: bold;
+  text-transform: capitalize;
+  font-size: 1.3rem;
+  
 }
 
 #wrapbar{
@@ -626,30 +631,12 @@ nav ul li a{
         float: right;
         display: block; /* Show the icon */
         cursor: pointer;
-        font-size: 24px;
-       
+        font-size: 54px;
         color: #ffffff;
         margin-top: 10px;
         padding: 20px;
       }
 
-      @media (max-width: 480px) {
-        .menu-icon{
-        margin-top: -5px;
-        }
-      }
-
-      @media (max-width: 360px) {
-        .menu-icon{
-        margin-top: -41px;
-        }
-      }
-
-      @media (max-width: 450px) {
-        .menu-icon{
-        margin-top: 0px;
-        }
-      }
 
 
 

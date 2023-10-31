@@ -65,18 +65,18 @@
 
 
 
-    <div class="hero">
+            <div class="hero">
         <nav>
-            <img src="./pics/logo.png" class="logo">
-            <ul>
+        <div class="menu-icon" id="menuIcon" onclick="toggleWrapbar()">&#9776;
+            
+            
+            <ul class="wrapbar" id="wrapbar">
               <li><a href="AdminDash.php">PROFILE</a></li>
                 <li><a href="tableAlpabeto.php">ALPABETONG FILIPINO</a></li>
                 <li><a href="tableMagagalang.php">MAGAGALANG NA PANANALITA</a></li>
-                
-                
-               
-               
+
             </ul>
+            </div>
             <img src="./pics/teacher.jpg" class="user-pic" onclick="toggleMenu()">
             
             <div class="sub-menu-wrap" id="subMenu">
@@ -107,7 +107,7 @@
         <h1> TALAAN NG NANGUNGUNA</h1>
             <div class="input-group">
                 <input type="search" name ="search" id="search"<?php echo isset($searchQuery) ? $searchQuery : ''; ?> placeholder="Search Data...">
-                <img src="./pics/search.png" alt="">
+               
             </div>
             <div class="export__file">
                 
@@ -182,13 +182,14 @@
             
 
         }
-        function myFunction() {
-  var x = document.getElementById("nav");
-  if (x.className === "nav") {
-    x.className += " responsive";
-  } else {
-    x.className = "topnav";
-  }
+
+        function toggleWrapbar() {
+     var wrapbar = document.getElementById("wrapbar");
+    if (wrapbar.style.display === "block") {
+        wrapbar.style.display = "none";
+    } else {
+        wrapbar.style.display = "block";
+    }
 }
 
         

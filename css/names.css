@@ -116,6 +116,13 @@ html {
     border-radius: 5px;
     
   }
+
+.login-box form #selectName option{
+    font-size: 1.5rem;
+    height: 20px;
+    position: relative;
+    width: 20px;
+}
   
   
   
