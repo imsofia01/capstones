@@ -21,7 +21,7 @@ nav{
   align-items: center;
   justify-content: space-between;
   position: relative;
-  background-color: #000000;
+  background-color: #0000008a;
   
 }
 
@@ -69,7 +69,7 @@ nav ul li a{
   right: 4%;
   height: 218%;
   width: 399px;
-  background-color: #8e3df2;
+  background-color: #8e3df2a9;
   border-radius: 20px;
   overflow: hidden;
   transition: max-height 0.5s;

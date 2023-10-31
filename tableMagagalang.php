@@ -71,9 +71,9 @@
             
             
             <ul class="wrapbar" id="wrapbar">
-              <li><a href="AdminDash.php">PROFILE  ></a></li>
-                <li><a href="tableAlpabeto.php">ALPABETONG FILIPINO  ></a></li>
-                <li><a href="tableMagagalang.php">MAGAGALANG NA PANANALITA  ></a></li>
+              <li><a href="AdminDash.php">PROFILE</a></li>
+                <li><a href="tableAlpabeto.php">ALPABETONG FILIPINO</a></li>
+                <li><a href="tableMagagalang.php">MAGAGALANG NA PANANALITA</a></li>
 
             </ul>
         </div>
