@@ -399,7 +399,7 @@ h1{
   color: #ffffff;
   font-size: 1.5rem;
     text-align: center;
-    padding: 56px;
+    padding: 10px;
 }
 
 /* Data table */
@@ -445,7 +445,7 @@ main.table {
   .table__header {
     flex-direction: column;
        /* padding: 1rem 0.5rem; */
-       height: 35%; /* Allow the header to grow in height based on content */
+       height: 28%; /* Allow the header to grow in height based on content */
   text-align: center; /* Center the content within the header */
   justify-content: flex-start; /* Align content to the top */
   align-items: center;
