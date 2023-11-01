@@ -64,7 +64,7 @@ html {
   .login-box .user-box input:valid ~ label {
     top: -20px;
     left: 0;
-    color: #ffffff;
+    color: #000000;
     font-size: 12px;
     font-family: 'Assistant', sans-serif;
   }
@@ -73,7 +73,7 @@ html {
     position: relative;
     display: inline-block;
     padding: 10px 20px;
-    color: #262626;
+    color: #000000;
     font-size: 16px;
     text-decoration: none;
     text-transform: uppercase;
@@ -84,15 +84,28 @@ html {
     margin-top: 55px;
   }
 
+  .login-box .user-box #selectName option{
+      height: 200px;
+  }
+
+ 
   .login-box form #selectName{
     margin-top: 45px;
-    width: 100px;
-    height: 40px;
+    border-radius: 10px;
+    height: 43px;
+    padding: 10px 10px;
+    background-color: skyblue;
   }
+
+
 
 .login-box .user-box label {
   font-size: 20px;
 }
+
+/* dropdown */
+
+
 
   
   button{
@@ -117,11 +130,12 @@ html {
     
   }
 
-.login-box form #selectName option{
-    font-size: 1.5rem;
+.login-box form option{
+    font-size: 1rem;
     height: 20px;
     position: relative;
     width: 20px;
+    
 }
   
   

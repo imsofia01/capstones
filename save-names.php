@@ -37,7 +37,7 @@ if (!$result) {
 <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
- 
+    <script src="https://codepen.io/garetmckinley/pen/rPKgEX.js"></script>
     <link rel="stylesheet" href="css/names.css">
     <title>Ilagay ang pangalan</title>
     <link rel="icon" type="image/x-icon" href="./pics/logo.png">
@@ -59,6 +59,10 @@ if (!$result) {
         <!-- Add more options as needed -->
       </select>
     </div>
+
+
+
+    
 
   
   

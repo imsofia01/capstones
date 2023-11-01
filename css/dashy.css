@@ -270,6 +270,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
     min-height: 100vh;
     background: #614BC3;
     color: #000000;
+    position: absolute;
 }
 
 nav{
@@ -332,7 +333,7 @@ nav ul li a{
   right: 4%;
   height: 218%;
   width: 399px;
-  background-color: #8e3df2a9;
+  background-color: #2c0c54ec;
   border-radius: 20px;
   overflow: hidden;
   transition: max-height 0.5s;

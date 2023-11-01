@@ -10,6 +10,7 @@
   min-height: 100vh;
   background: #614BC3;
   color: #ffffff;
+  position: absolute;
 }
 
 nav{
@@ -69,7 +70,7 @@ nav ul li a{
   right: 4%;
   height: 218%;
   width: 399px;
-  background-color: #8e3df2a9;
+  background-color: #2c0c54ec;
   border-radius: 20px;
   overflow: hidden;
   transition: max-height 0.5s;
@@ -490,7 +491,7 @@ main.table {
 
 .table__body {
   width: 95%;
-  height: 50vh;
+  height: 45vh;
   max-height: calc(89% - 1.6rem);
   background-color: rgba(27, 26, 26, 0.733);
 

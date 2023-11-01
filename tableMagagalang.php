@@ -118,7 +118,7 @@
                 </div>
             </div>
         </section>
-        <form action="adminDelete.php" method="post">
+        <form action="magalangDelete.php" method="post">
           <button type="submit" class="btn btn-danger"><i class="fas fa-trash"></i>Tanggalin </button>
         <section class="table__body">
             <table>
