@@ -11,18 +11,17 @@ const quiz = [
     answer: 2
     },
     {
-    q: 'KA KE KI __ KU ?',
-    option:['KA', 'KE', 'KO', 'KI'],
+    q: 'Alin sa mga sumusunod na salita ang nag sisimula sa Letrang B?',
+    option:['Bata', 'Araw', 'Damit', 'Ubas'],
     answer: 2
     },
     {
-    q: ' BA __ E ?',
-    option:[ 'BU', 'DA', 'LA', 'BA'],
+    q: 'Kumpletuhin ang salitang BA__E ?',
+    option:[ 'KA', 'DA', 'LA', 'BA'],
     answer: 3,
-    image: "../pics/girl.jpg" // Add the image URL for this question
     },
     {
-    q: ' LA LA __ ?',
+    q: 'Kumpletuhin ang salitang LA LA __ ?',
     option:[ 'BU', 'KI', 'LA', 'BA'],
     answer: 1
     }

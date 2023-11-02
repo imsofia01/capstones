@@ -119,6 +119,11 @@ body{
     display: inline-block;
 }
 
+.assess-box h2 {
+    color: #000c1a;
+    font-weight: bold;
+}
+
 .assess-box .tanong-bilang,
 .assess-box .tanong-text,
 .assess-box .option-container,
@@ -180,7 +185,7 @@ body{
     top: 0;
     height: 100%;
     width: 100%;
-    background-color: rgb(17, 205, 17);
+    background-color: rgb(21, 146, 21);
     z-index: -1;
     animation: slideInLeft .5s ease forwards;
 }
@@ -199,7 +204,7 @@ body{
     top: 0;
     height: 100%;
     width: 100%;
-    background-color: red;
+    background-color: rgb(157, 34, 34);
     z-index: -1;
     animation: slideInLeft .5s ease forwards;
 }
