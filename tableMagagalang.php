@@ -126,6 +126,7 @@
                     <tr>
                     <th> alisin </th>
                     <th> Pangalan </th>
+                    <th> Guro </th>
                     <th> petsa </th>
                     <th> Tamang sagot </th>
                     <th>Maling sagot </th>
@@ -146,6 +147,7 @@
       
     <td> <input type="checkbox" value="<?php echo $row['id']; ?>" name="id[]"> </td>
     <td > <?php echo $row['pangalan'];?> </td>
+    <td > <?php echo $row['guro'];?> </td>
     <td> <?php echo $row['petsa'];?> </td>
     <td> <?php echo $row['correctCount'];?> </td>
     <td> <?php echo $row['wrongCount'];?> </td>

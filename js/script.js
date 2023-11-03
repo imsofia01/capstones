@@ -13,7 +13,7 @@ const quiz = [
     {
     q: 'Alin sa mga sumusunod na salita ang nag sisimula sa Letrang B?',
     option:['Bata', 'Araw', 'Damit', 'Ubas'],
-    answer: 2
+    answer: 0
     },
     {
     q: 'Kumpletuhin ang salitang BA__E ?',

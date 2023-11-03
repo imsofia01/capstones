@@ -36,11 +36,12 @@ if (isset($_POST['signup_submit'])) {
 
     // Insert user data into the database
     // You should use prepared statements for security
-    $insert_query = "INSERT INTO sign_up (username, password, cpassword, email) VALUES ('$signup_username', '$signup_password', '$signup_cpassword', '$signup_email')";
-    
+    // Insert user data into the database with status 0 (unapproved)
+    $insert_query = "INSERT INTO sign_up (username, password, cpassword, email, status) VALUES ('$signup_username', '$signup_password', '$signup_cpassword', '$signup_email', 0)";
+
     if ($conn->query($insert_query) === true) {
         // Registration successful, you can redirect to a login page or display a success message
-        echo "Registration successful. Please log in.";
+        echo "Registration successful. Please wait for approval.";
     } else {
         // Registration failed, display an error message
         echo "Registration failed. Please try again.";

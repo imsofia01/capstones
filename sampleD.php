@@ -99,7 +99,7 @@ $resultCheck = mysqli_num_rows($result);
                 </tr>
             </table>
             <button type="button" class="btn" onclick="tryAgain()"> Subukan Ulit </button>
-            <button type="button" class="btn" onclick="backHome()"> Home </button>
+            <button type="button" class="btn" onclick="backHome()"> Tahanan </button>
             <button type="submit" class="btn" onclick="submit()"> Save </button>  
         </div>
         </form>

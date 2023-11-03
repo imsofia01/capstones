@@ -105,7 +105,7 @@
                             <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
                                         <div class="row">
                                             <div class="col-md-6">
-                                                <label>Teacher Id</label>
+                                                <label>Guro Id</label>
                                             </div>
                                             <div class="col-md-6">
                                                 <p>sarah123</p>
